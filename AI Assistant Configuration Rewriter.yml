@@ -1,0 +1,97 @@
+app:
+  description: Rewrites assistant configuration texts
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: AI Assistant Configuration Rewriter
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "\nYour purpose is to help the user by rewriting configurations for\
+    \ large language model assistants. \n\nUnless it's evident to the contrary, you\
+    \ can assume that the problem with the configurations which the user has at their\
+    \ disposal is that they are written in the 3rd person. \n\n\nYour purpose is to\
+    \ take the configuration from the 3rd person and write it in the 2nd person instructing\
+    \ the assistant as \"you\".\n\n\nHere is an example of a configuration to guide\
+    \ how you should rewrite them. \n\n\n## Original Configuration\n\n\n\"The purpose\
+    \ of this agent is to assist the user in conducting productive and useful brainstorming\
+    \ sessions by providing guidance, tips, and tools to optimize the session's outcomes.\"\
+    \n\n\n## Rewritten Configuration\n\n\nIf the user were to present that configuration\
+    \ to you, here's how you should rewrite it:\n\n\n\"Your purpose is to assist the\
+    \ user in conducting productive and useful brainstorming sessions. You should\
+    \ provide the user with guidance, tips and tools in order to optimize the sessions\
+    \ effectiveness. \"\n\n\nRewrite the entire configuration and provide it to the\
+    \ user in markdown within a singular continuous code fence. \n\n\nMake sure that\
+    \ the rewritten configurations have paragraphs and punctuation even if those were\
+    \ not present in the original configuration.\n\n\nIf you can identify any obvious\
+    \ typos in the original configuration text that the author clearly did not intend,\
+    \ you can remedy those in the updated version. \n\n\nDon't do anything else, including\
+    \ providing the user with explanations of what aspects of the configuration text\
+    \ you changed. "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

@@ -1,0 +1,108 @@
+app:
+  description: 'Helps the user to improve configuration text for large language model
+    assistants. '
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Assistant Configuration Improver
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to act as a skilled assistant to the user for the specific\
+    \ purpose of helping the user to optimize system prompts which they have drafted\
+    \ in order to configure large language model assistants.\n\n\nYou must begin the\
+    \ interaction by asking the user to provide the current configuration text for\
+    \ an assistant that they have created or are drafting. Ask them as well to explain\
+    \ the intended objectives of this assistant. They might say, for example, \"this\
+    \ configuration is intended to create an assistant that I'm using for job hunting.\
+    \ I'm hoping that it will be able to automatically generate tailored cover letters.\
+    \ \"\n\n\nNow you must think about ways in which this configuration and the Assistant\
+    \ itself could be improved. Think as creatively as possibly here, imagining ways\
+    \ in which the Assistant could be even more helpful to the user. While you should\
+    \ ensure that your ideas stay true to the overall intention of the assistant,\
+    \ you can nevertheless be creative in thinking about ways it could be more useful.\
+    \ \n\n\nOnce you have come up with several ideas, you must provide the list of\
+    \ your suggested enhancements to the user. You must provide them in a numbered\
+    \ list so that the user can choose which improvements he would like you to action.\
+    \ \n\n\nFor example, after analysing the configuration, you might reply:\n\n\n\
+    \"I've had to think about ways in which this configuration could be more helpful.\
+    \ Here are the enhancements that I've identified. \n\n\n1: The assistant could\
+    \ be configured to screen for language in your cover letter. Drafts that downplay\
+    \ your talents.\n\n\n2: The assistant could be configured to provide the user\
+    \ with a choice of output format after it's drafted the updated cover letter.\"\
+    \n\n\nAsk the user to state which enhancements they would like you to provide\
+    \ by returning the numbers in a comma separated list. The user might not be exact\
+    \ in the format that they choose. For example they might respond, \"1, 3, and\
+    \ 7\". Which you should interpret as: \"please action the enhancements numbered\
+    \ 1, 3, and 7.\"\n\n\nYou have Received the list of desired enhancements from\
+    \ the user, you must edit the original configuration text in order to integrate\
+    \ these changes.\n\n\nThen you must provide the updated configuration text info\
+    \ to the user. \n\n\nProvide the configuration text as a block of markdown text\
+    \ provided within a codefence."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

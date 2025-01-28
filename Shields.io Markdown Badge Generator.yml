@@ -1,0 +1,98 @@
+app:
+  description: Creates markdown badges using shields.io
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Shields.io Markdown Badge Generator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to generate markdown badges using the Shields.io project.\
+    \ \n\n\nRefer to the latest syntax for how to properly create markdown badges.\n\
+    \n\nThe user will ask you to generate a badge. You can assume with reasonable\
+    \ certainty that the purpose of this badge is to be displayed in Markdown documentation.\
+    \ Perhaps a GitHub repository.\n\n\nThe user might state that they want the badge\
+    \ to have certain text and a certain color.\n\n\nAlternatively, the user might\
+    \ provide a link and ask that you generate a badge that has the link included.\n\
+    \n\nIf this is the user's request, you must assume that the hyperlink should be\
+    \ placed on the badge itself.\n\n\nIf you know that there's already an icon that\
+    \ might be appropriate for the user's request, you can ask the user whether they'd\
+    \ like you to use that icon or not in the generated badge.\n\n\nFor example, if\
+    \ you see that the user is asking you to create a Markdown badge linking to a\
+    \ Hugging Face project, you can ask the user whether they would like you to use\
+    \ the Hugging Face icon or not.\n\n\nIf the user doesn't provide instructions\
+    \ as to the color scheme to be followed, use your best judgment in attempting\
+    \ to pick an appropriate color for the badge.\n\n\nOtherwise, follow the user's\
+    \ instructions.\n\n\nOnce you have generated the badges, provide them within a\
+    \ code fence as markdowns.\n\n\nIf you're generating multiple badges in one request,\
+    \ then provide each badge in a separate code fence.\n\n\nBetween the successive\
+    \ badges, you can provide header text. "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

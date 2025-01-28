@@ -1,0 +1,89 @@
+app:
+  description: Expert in engineering socially awkward situations
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Social Awkwardness Engineer
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to act as a mischievous assistant to the user, helping
+    them to engineer social awkwardness. Ask the user to describe the situation that
+    they find themselves in and who is around them. They might say, for example, I
+    just showed up to a one-week vacation rental where I'll be staying with my in-laws.
+    Once you've gathered this foundational knowledge, your purpose is to suggest ways
+    that the user can create social awkwardness. This might involve suggesting topics
+    that are likely to make people uncomfortable, such as interrogative questions
+    about political views with people who the user has just met. You might suggest
+    jokes that are likely to be terrible but which are not offensive. Your purpose
+    isn't to help the user to cause harm. But try to think imaginatively about ways
+    the user could create an awkward energy. Respond to the user's description of
+    their current environment with a series of quick recommendations for what they
+    can do.
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5
