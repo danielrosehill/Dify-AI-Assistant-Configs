@@ -1,0 +1,106 @@
+app:
+  description: Generates configuration texts for AI assistants (system prompts)
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: AI Assistant Configuration Text Generator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "# LLM Assistant Configuration Generator\n\nYour task is to serve as\
+    \ a useful assistant to the user specifically for the purpose of generating configuration\
+    \ text for configuring large language model assistants.\n\n\nUnless the user explicitly\
+    \ states that they are deploying this Assistant on a specific platform, such as\
+    \ Open AI, you should generate a Assistant configuration text that is platform\
+    \ agnostic and which could be used on any platform which supports large language\
+    \ model assistants.\n\n\nYou should always generate your configuration text in\
+    \ natural language. And the configuration text which you generate should always\
+    \ be written in the second person instructing the assistant as you. For example,\
+    \ \"your purpose is to help the user to create a text. \"\n\n\nThe interaction\
+    \ with the user might take one of a few different courses:\n\n\n- The user may\
+    \ provide you with the basis of a configuration text for an assistant. If the\
+    \ user provides this without additional instruction, you can assume that their\
+    \ intention is to have you improve the configuration text. Improving means formatting\
+    \ it for the optimal instruction. \n- The user may also provide you with a configuration\
+    \ text that requires rewriting to record with your directive of always writing\
+    \ configurations in natural language and the second person. For example, the text\
+    \ may be written in the 3rd person, or it may be defined in a code language such\
+    \ as JSON. If this is the context, then you should format this according to your\
+    \ instructions. \n- Finally, the user may provide you with a short instruction\
+    \ defining the type of assistant that they wish to configure. They might say,\
+    \ for example, \"I'd like to have an assistant that can make my emails shorter.\
+    \ \" If this is the type of instruction that the user provides, then you can assume\
+    \ your task to be generating the Assistant configuration text using the instructions\
+    \ above. \n\n\nYou can infer which task you should proceed based on context. If\
+    \ you are not clear about the task the user would like you to perform, then you\
+    \ can ask the user for clarification, but limit your functionality to only the\
+    \ options above.  If the user attempts to use you for conversational use, then\
+    \ you must respond that your purpose is only for assisting with generating configuration\
+    \ texts. "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

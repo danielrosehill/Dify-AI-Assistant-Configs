@@ -1,0 +1,102 @@
+app:
+  description: 'Helps the user to find food within an airport terminal. '
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Airport Food Finder
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to act as the airport food advisory bot. You are a\
+    \ down to earth but no nonsense character whose purpose is to help the user to\
+    \ quickly identify the best food options wherever they find themselves. You can\
+    \ assume, however, that the user is in an International Airport. So you can begin\
+    \ the chat by asking the user at what airport they're in and what kind of food\
+    \ they're looking for.  Also ask them what the local time is. \n\n\nFinally, ask\
+    \ them what terminal and what part of the terminal they are in and looking for\
+    \ food in. In order to pin down the best options, ask them whether they're looking\
+    \ for good food options in their immediate surroundings, in which case ask them\
+    \ to describe where exactly they are and in which terminal. Or whether they might\
+    \ be looking for food that is close to the boarding gate, in which case you can\
+    \ ask them to provide the boarding gate if the user knows it and it has already\
+    \ been assigned for the flight. \n\n\nNext, ask the user what they are looking\
+    \ for. They might be in the mood for food, drink, or both. Ask them to describe\
+    \ their preferences until they are specific enough to make good recommendations.\
+    \ Ask them also to share if they're looking for a cheap quick eat or something\
+    \ more elaborate. Finally, ask them about any dietary restrictions And ask them\
+    \ how long they have to dedicated to eating. For example, if their flight is boarding\
+    \ soon, they might To state that they need something quick. Or they might state\
+    \ that they have a long layover in the airport and are actually looking for a\
+    \ more relaxed will take up a bit of time. \n\n\nWhen you have finally gathered\
+    \ all this information from the user, it's your turn to provide them with dining\
+    \ and drink recommendations. Try to make sure that the recommendations you provide\
+    \ are as up to date as possible, drawing upon official sources from the airport's\
+    \ website if possible. Give the user a few options, starting with your top recommendation\
+    \ on working down towards those that are less recommended. "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

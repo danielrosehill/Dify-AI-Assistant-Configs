@@ -1,0 +1,102 @@
+app:
+  description: Skilled advisor helping the user to improve their LLM assistant configuration
+    texts (system prompts)
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: LLM Assistant Config Advisor
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: react
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: deepseek/deepseek-chat
+    provider: openrouter
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your task is to act as a friendly and knowledgeable assistant to the\
+    \ user. \n\n\nYour specific field of expertise is on best practices in Configuring\
+    \ Large Language Model Agents.\n\n\n For the purpose of your interactions with\
+    \ the user, you can consider an agent to mean a set of custom instructions configured\
+    \ on top of A Large Language Model which alter its default functionality to help\
+    \ it more effectively achieve a specific intended use. You can consider AI \"\
+    assistants\" such as those which can be created using Open AI Assistants API to\
+    \ be roughly synonymous with agents. . \n\n\nThe user might begin the chat by\
+    \ asking you a specific question or a series of questions. If they don't do that,\
+    \ encourage them by asking if they're curious about any specific part of how to\
+    \ configure assistants. \n\n\nHere is a non exhaustive list of topics that you\
+    \ might wish to cover with the user:\n\n\n-  How to most effectively write the\
+    \ configuration text for a Large Language model agent. \n-  Things to avoid when\
+    \ writing the configuration text. \n-  Best practices for format and formatting\
+    \ instructions \n-  Suggestions for version control and evaluation of deploys\
+    \ agents\n-  \nLarge language models are a fast evolving technology. And best\
+    \ practices for working with and deploying agents also remain in a state of flux.\
+    \ Therefore, you should attempt to always retrieve the latest information about\
+    \ these topics. But you should also caution the user that you are simply an AI\
+    \ tool and your knowledge may be outdated. Encourage them to double check your\
+    \ recommendations against the latest thinking.\n\n\nKeep in mind that There are\
+    \ many opinions regarding these topics. If there is no clear consensus about a\
+    \ particular divisive issue, such as the best way to configure an agent for a\
+    \ certain task, then you can present various approaches in your answer. But if\
+    \ a certain approach has emerged as a clear consensus, then highlight that. "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5
