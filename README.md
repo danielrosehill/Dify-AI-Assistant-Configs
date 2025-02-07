@@ -16,40 +16,131 @@ Some assistants have special requirements or capabilities:
 | 📚 | Uses RAG (Retrieval-Augmented Generation) |
 | 🌐 | Requires Internet Access |
 
+## 🔧 Featured Assistants by Capability
+
+### 🗣️ Voice-Enabled Assistants
+- [Voice Note Journalling Assistant](assistants/voice-tools/Voice%20Note%20Journalling%20Assistant.yml) - Transform voice notes into structured journal entries
+- [Synthetic Narration Material Generator](assistants/voice-tools/Synthetic%20Narration%20Material%20Generator.yml) - Generate content optimized for voice narration
+
+### 👁️ Vision-Enabled Assistants
+- [Image To Text Recommendation Agent](assistants/ai-llm/Image%20To%20Text%20Recommendation%20Agent.yml) - Get recommendations based on image analysis
+
+### 📚 RAG-Enabled Assistants
+- [Context Data Development Helper](assistants/ai-llm/context-and-rag/Context%20Data%20Development%20Helper.yml) - Assist in developing context data for RAG systems
+- [Context Data Extraction Tool](assistants/ai-llm/context-and-rag/_Context%20Data%20Extraction%20Tool.yml) - Extract and process data for RAG implementations
+
 ## 📁 Repository Structure
 
 The assistants are organized into the following categories:
 
 ### 🧠 AI/LLM Tools (`assistants/ai-llm/`)
-- Configuration generators and improvers
-- LLM advisory tools
-- AI assistant ideation tools
+- Agents and Assistants
+  - Configuration generators and improvers
+  - AI assistant ideation tools
+  - Squad management tools
+- Context and RAG
+  - Context data extraction and development
+  - Data interviewing tools
+- Prompting Utilities
+  - Prompt engineering and optimization
+  - Example addition tools
+  - Length analysis tools
+- General AI Research
+  - AI tool discovery
+  - LLM evaluation and testing
 
-### 💼 Business & Career (`assistants/business/`)
-- Career development assistants
-- Startup ideation tools 👁️
-- Team management helpers
+### 💼 Business & Career (`assistants/business/, assistants/career/`)
+- Career Development
+  - Job search utilities
+  - Remote work research
+  - Salary research tools
+- Job Search Tools
+  - Interview preparation
+  - Company screening
+  - Competitive analysis
+- Business Planning
+  - Startup ideation
+  - Business continuity
 
-### ⚡ Productivity (`assistants/productivity/`)
-- Agenda and planning assistants
-- Documentation helpers 📚
-- Organization tools
-- Technical utilities (badges, acronyms)
+### 💻 Development & Data Science (`assistants/coding-and-dev/, assistants/data-science/`)
+- Code Generation
+  - Python-specific tools
+  - GUI generation
+  - Script generation
+- Data Science
+  - Database schema tools
+  - Taxonomy building
+  - Data visualization
+  - Synthetic data generation
+
+### 🛠️ General Utilities (`assistants/general-utilities/`)
+- Text Processing
+  - Email extraction
+  - Text formatting
+  - Acronym processing
+- Inventory Tools
+- Memory Aids
+
+### 🌍 Geopolitics & Location-Specific (`assistants/geopolitics/, assistants/geospecific/`)
+- Event Simulation
+- Relationship Analysis
+- Regional Specific Tools
+
+### 🎨 Graphics & Design (`assistants/graphics/`)
+- Badge Generation
+- Visual Asset Creation
+
+### 🧘 Mental Health & Support (`assistants/mental-health/`)
+- Support Assistants
+  - Gifted Adult Support
+  - Sensory Processing Support
+- Protection Tools
+  - Gaslighting Recognition
+  - Toxic Communication Analysis
+
+### 📊 Productivity & Work (`assistants/productivity/, assistants/for-work/`)
+- Time Management
+  - Timesheet generation
+  - Agenda creation
+- Automation Tools
+- Communication Strategy
+
+### 🔍 Research & Analysis (`assistants/research/`)
+- Technology Research
+- Business Analysis
+- Statistics Tools
+- Stack Optimization
 
 ### 🛍️ Shopping & Products (`assistants/shopping/`)
-- Product finding assistants 👁️
-- Brand verification tools 🌐
-- Location-based shopping helpers
+- Product Research
+  - Brand reliability analysis
+  - Hardware compatibility
+- Platform-Specific Tools
+  - Aliexpress tools
+  - Local shopping assistants
+
+### 🌱 Sustainability (`assistants/sustainability/`)
+- Eco-Living Tools
+- Regulation Guides
+- Impact Analysis
+
+### ✈️ Travel & Location (`assistants/travel/`)
+- Airport Guides
+- Review Analysis
+- Location Research
 
 ### ✍️ Writing & Communication (`assistants/writing/`)
-- Text formatting assistants
-- Creative writing helpers
-- Communication aids
+- Text Formatting
+- Creative Writing
+- Style Adaptation
 
 ### 🎭 Character & Entertainment (`assistants/character/`)
-- Role-playing assistants
-- Themed conversation partners
-- Entertainment-focused bots
+- Role-Playing Assistants
+- Themed Characters
+- Joke Characters
+  - Agent #42
+  - Alien Visitor
+  - Other humorous personas
 
 ## 🚀 Usage
 
