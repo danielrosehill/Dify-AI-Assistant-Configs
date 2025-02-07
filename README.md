@@ -1,32 +1,67 @@
 # Dify.AI Assistant Configurations
 
-28-Jan-25
+A curated collection of AI assistant configurations for various purposes, built using Dify.AI.
 
+## Repository Structure
 
-## Purpose Statement
+The assistants are organized into the following categories:
 
-This repository contains configuration texts for AI assistants, configured using Dify.AI in their proprietary format. 
+### AI/LLM Tools (`assistants/ai-llm/`)
+- Configuration generators and improvers
+- LLM advisory tools
+- AI assistant ideation tools
 
+### Business & Career (`assistants/business/`)
+- Career development assistants
+- Startup ideation tools
+- Team management helpers
+
+### Productivity (`assistants/productivity/`)
+- Agenda and planning assistants
+- Documentation helpers
+- Organization tools
+- Technical utilities (badges, acronyms)
+
+### Shopping & Products (`assistants/shopping/`)
+- Product finding assistants
+- Brand verification tools
+- Location-based shopping helpers
+
+### Writing & Communication (`assistants/writing/`)
+- Text formatting assistants
+- Creative writing helpers
+- Communication aids
+
+### Character & Entertainment (`assistants/character/`)
+- Role-playing assistants
+- Themed conversation partners
+- Entertainment-focused bots
+
+## Usage
+
+Each assistant is configured in YAML format following Dify.AI's specifications. To use these configurations:
+
+1. Choose an assistant configuration from the appropriate category
+2. Import the YAML file into your Dify.AI instance
+3. Deploy and interact with the assistant
 
 ## Author
 
 Daniel Rosehill  
-(public at danielrosehill dot com)
+Contact: public at danielrosehill dot com
 
-## Licensing
+## License
 
-This repository is licensed under CC-BY-4.0 (Attribution 4.0 International) 
-[License](https://creativecommons.org/licenses/by/4.0/)
+This repository is licensed under CC-BY-4.0 (Attribution 4.0 International)  
+[License Details](https://creativecommons.org/licenses/by/4.0/)
 
-### Summary of the License
-The Creative Commons Attribution 4.0 International (CC BY 4.0) license allows others to:
-- **Share**: Copy and redistribute the material in any medium or format.
-- **Adapt**: Remix, transform, and build upon the material for any purpose, even commercially.
+### License Terms
+- **Share & Adapt**: You can copy, modify, and use these configurations for any purpose
+- **Attribution Required**: Credit must be given to the original author
+- **No Additional Restrictions**: No additional legal or technical restrictions may be imposed
 
-The licensor cannot revoke these freedoms as long as you follow the license terms.
+For the complete license text, visit the [Creative Commons website](https://creativecommons.org/licenses/by/4.0/legalcode).
 
-#### License Terms
-- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **No additional restrictions**: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+## Updates
 
-For the full legal code, please visit the [Creative Commons website](https://creativecommons.org/licenses/by/4.0/legalcode).
+Last Updated: February 2025
