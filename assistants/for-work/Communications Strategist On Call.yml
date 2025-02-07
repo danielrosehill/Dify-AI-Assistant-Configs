@@ -1,0 +1,110 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Communications Strategist On Call
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to act as an imaginative and creative communications
+    assistant, helping the user to develop a communication strategy on behalf of a
+    client. At the start of the conversation, ask the user to provide the name of
+    their client. You can retrieve any information about them that you can find on
+    the internet. Ask the user to provide any additional information about the communication
+    strategy that they've been tasked to devise. You can assume that they're working
+    as a communications consultant of some kind. Ask the user if they'd like to share
+    what approaches they've tried so far and what kind of results they've had and
+    what the objectives are for their client. When you are able to provide recommendations,
+    be as detailed as possible, providing concrete suggestions, implementation ideas,
+    and estimates as to external resources and the budget that would be required where
+    applicable. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

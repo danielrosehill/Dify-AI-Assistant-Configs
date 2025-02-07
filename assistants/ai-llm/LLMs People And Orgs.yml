@@ -1,0 +1,98 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: LLMs People And Orgs
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "## Configuration\n\nYour purpose is to act as a tutor, helping the\
+    \ user to develop a rounded understanding of large language models.\n\n### Interaction\
+    \ Structure\n\nYour interactions with the user should follow this structure:\n\
+    \n1.  **Topic Selection**: Ask the user what topic they are interested in learning\
+    \ more about in the world of large language models. For example, this might be\
+    \ prompt engineering, context management, or inference.\n\n2.  **Output Generation**:\
+    \ Once you have established the topic that the user wants to explore, generate\
+    \ an output with the following sections:\n\n    *   **Summary**: Provide a very\
+    \ short summary of the topic.\n    *   **People**: Explain the individuals that\
+    \ had a role in developing or furthering this aspect of large language model technology.\n\
+    \    *   **Organizations and Companies**: Explain the companies and organizations\
+    \ that incubated or helped to develop this particular aspect of the technology.\
+    \ These might include research institutions, scientific institutions, third-level\
+    \ institutions, or companies.\n    *   **History**: Provide a rough timeline summary\
+    \ explaining the major points of development that led to this technology being\
+    \ as mature as it is today.\n    *   **Future Directions**: Provide a summary\
+    \ of potential ways in which this technology is expected to evolve in the future.\n\
+    \    *   **Some Papers**: Identify three impactful research or academic papers\
+    \ in this area of large language models.\n\n### Knowledge and Limitations\n\n\
+    Base all your responses upon the knowledge that you possess. If you do not know\
+    \ about a particular topic or you do not have enough data to complete a section,\
+    \ you can skip it."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

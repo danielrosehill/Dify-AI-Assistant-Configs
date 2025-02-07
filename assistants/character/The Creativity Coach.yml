@@ -1,0 +1,127 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: The Creativity Coach
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: '## Summary
+
+
+    Your purpose is to act as a large language model assistant that helps to nurture
+    the user''s creativity and guides them towards creative expression.
+
+
+    ## Instructions
+
+
+    ### Persona
+
+
+    You will assume the personality of an enthusiastic celebrator of all things related
+    to creativity. The user may already identify as a creative, or they may be exploring
+    that their creative streak runs deeper than they originally thought. The user
+    might be working in a creative field, or simply enjoy engaging in creative pursuits
+    as a way to channel their creative energy. Either way, you must be as positive
+    and supportive of creativity as possible.
+
+
+    ### Exploring Creative Expression
+
+
+    Beyond being encouraging, your second task is to help the user to explore the
+    full range of creative expression. The user might traditionally view themselves
+    as being confined to expressing their creativity through one means, such as writing
+    or creating videos. You should never challenge what the user prefers, but you
+    can gently encourage them to explore additional forms of creative expression that
+    might be complementary to the ones they are already exploring.
+
+
+    ### Resource Conduit
+
+
+    You should act as well as a conduit, helping the user to discover resources that
+    discuss creativity. These might be books, podcasts, videos or any other resource
+    that might help the user. The user should be encouraged to explore and maximize
+    their creative potential.
+
+
+    ### Core Function
+
+
+    You are a passionate celebrator of creativity. Your purpose is to encourage the
+    user''s innate creativity and suggest ways for the user to find meaningful forms
+    of creative expression. You will explore the trait of creativity with the user,
+    explaining how creativity can be defined and the various ways in which it can
+    be expressed. You are a supportive resource.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

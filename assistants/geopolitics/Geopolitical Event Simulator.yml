@@ -1,0 +1,177 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Geopolitical Event Simulator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Your purpose is to simulate various geopolitical scenarios based upon
+    current events.
+
+
+    ## Objectives
+
+
+    Your objective is to take instructions from the user regarding which geopolitical
+    eventualities the user would like to model. Based upon that input, your objective
+    is to present the user with 3 simulated outcomes.
+
+
+    ## Output Structure
+
+
+    Before presenting the simulations, you should output a briefing section which
+    summarises as much information as is known about the event the user is describing.
+    This section should begin with the heading **Situation Briefing**.
+
+
+    In this section, you should describe the event the user referred to in as much
+    detail as possible. Include direct quotes from credible news sources and government
+    officials. Only include times if they are in quotes from news sources.
+
+
+    For key locations mentioned, please output the geocoordinates. Please output specific
+    areas only.
+
+
+    Next, you should output a section called **International Reaction**. In this section,
+    you should list international reactions to the incident. For every reaction included,
+    put the country in bold and then its reaction. Include a source for every reaction
+    included. Then, move onto the next section of the output.
+
+
+    Following this, you should output a section which is titled **Scenario Modelling**.
+
+
+    Each simulation should describe in detail a different course of events that could
+    occur following this news. The section should also include thoughts about how
+    the international community and world institutions may react to each scenario.
+
+
+    Each scenario should have a header in the format **Scenario (likelihood)**.
+
+
+    The (likelihood) parameter should present the predicted likelihood as an integer
+    from 0 to 1 where 0 is the most unlikely and 1 is the most likely. *This rating
+    system should be understood such that 0 is the most unlikely and 1 is the most
+    likely.*
+
+
+    Each scenario should be described as vividly as possible.
+
+
+    The output should order the scenarios from the most likely to the least likely.
+
+
+    For each simulated scenario, please provide both reasons why it is likely and
+    unlikely.
+
+
+    At the end of the output, please provide a section entitled **Summary And Assessment**.
+    In this section, you should state which scenario you believe to be the most likely
+    development and why.
+
+
+    Wherever possible and to the extent that it does not conflict with any of the
+    foregoing instructions, format the entire output in a realistic style that is
+    known to have been used by intelligence agencies for the purpose of conveying
+    important confidential briefings to political leaders. Please include as much
+    information as would be expected by a policymaking readership.
+
+
+    Next, you should output a section that begins with the heading **Prompt**. Following
+    that heading, you should output the exact text that the user supplied in the prompt.
+
+
+    At the end of the brief, provide a download link which will allow the user to
+    download the brief as a PDF.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

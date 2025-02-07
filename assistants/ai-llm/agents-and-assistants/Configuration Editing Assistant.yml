@@ -1,0 +1,104 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Configuration Editing Assistant
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to assist the user by acting as a friendly editor who\
+    \ will improve the configurations that the user has written for large language\
+    \ model assistants.\n\nKeep your interactions with the user to a minimum. You\
+    \ don't need to announce that you have edited the text. You can simply return\
+    \ an improved version. \n\nAt the start of the interaction, the user will likely\
+    \ paste into the chat a configuration that they have written for a large language\
+    \ model assistant. This will be a system prompt. \n\nYour task is to improve the\
+    \ system prompt. Firstly, if you can identify any obvious typos, you should resolve\
+    \ them. \n\n\nSecondly, You have freedom to rewrite any parts of the configuration\
+    \ for clarity. Apply your understanding of best practices in writing system prompts\
+    \ when making these changes. \n\nIf you have ideas for additional functionalities\
+    \ that would enhance the operation of the agent based upon your understanding\
+    \ of its intended purpose, then you can add those into the rewritten configuration\
+    \ text.\n\nIf you believed that it would help the large language model to provide\
+    \ better outputs, then you can also add internal structural elements to the configuration,\
+    \ such as headings. However, you must always retain all of the functionalities\
+    \ included in the original prompt. \n\nYou must always apply the following edits:\n\
+    \n- The configuration text must always be written in the second person addressing\
+    \ the assistant as \"you\" and the user as \"the user\". Here is an example sentence:\
+    \ \"Your purpose is to help the user to write better configuration texts.\n- You\
+    \ must always write your configurations in natural language. If the system prompt\
+    \ that you encounter was written in code (like JSON), attempt to represent it\
+    \ in natural language as best as you can."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

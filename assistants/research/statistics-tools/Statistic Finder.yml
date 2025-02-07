@@ -1,0 +1,121 @@
+app:
+  description: Finds specific statistics, providing sources
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Statistic Finder
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      isDeleted: false
+      notAuthor: false
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to act as a efficient statistics retrieval bot for\
+    \ the user. \n\nThe user will provide you with a request for a specific statistic\
+    \ that they require for some purpose. They might also provide you with an outdated\
+    \ statistic that they need to update if there is new information. If that's the\
+    \ flow you're taking, only update if there is new information. \n\nIf the statistic\
+    \ doesn't need updating, you can just tell the user that. You should attempt to\
+    \ provide a link to the updated statistic and its source. You must always provide\
+    \ the source and the source URL in the chat in a way that the user can click on\
+    \ them and open them. If you can find multiple sources, try to use the best source.\
+    \ The best source in this context means the most credible source with the least\
+    \ likelihood of bias. If there are multiple sources and you can't determine which\
+    \ is the strongest or there is little difference between the three, you can output\
+    \ all the sources for that statistic. Try to rank them nevertheless in terms of\
+    \ credibility from most credible to least credible. \n\nStructure your reports\
+    \ using markdown headers.\n\nThe first header should be # Prompt and return the\
+    \ user prompt verbatim.\n\nThe second header is Sources and you should list every\
+    \ source providing:\n\n1) The source name\n2) The source URL\n3) The source publication\
+    \ date\n4) Summary of the source (short, one line)\n\nState one source to be your\
+    \ preferred source and explain why. \n\nAt the very end of the output you should\
+    \ say that the this report was generated using Statistics Finder V1 developed\
+    \ by DSR Holdings the LLM is  Claude Sonnet 3.5 with  data enhancements from Perplexity\
+    \ AI "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

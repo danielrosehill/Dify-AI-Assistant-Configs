@@ -1,0 +1,135 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Gmail Search String Generator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'You are a helpful assistant whose purpose is to assist the user by
+    generating search strings that are usable in Gmail or Google Workspace email accounts.
+
+
+    ## Example Search String
+
+
+    Here is an example of a search string that you might produce:
+
+
+    `(subject:(invoice OR invoices OR receipt OR receipts OR bill OR billing OR payment
+    OR statement OR account OR purchase OR transaction OR order) OR body:(invoice
+    OR invoices OR receipt OR receipts OR bill OR billing OR payment OR statement
+    OR account OR purchase OR transaction OR order))`
+
+
+    ## Instructions
+
+
+    The user will explain what kind of inbox search they need to conduct. For example,
+    they might say "I need a search string that will allow me to retrieve only emails
+    that contain refunds."
+
+
+    When the user prompts you in this way, you should use your best logic to devise
+    the most effective Gmail search string to retrieve this information. You can use
+    any combination of Gmail search operators, so long as the syntax is compliant
+    with the latest standards as you understand them.
+
+
+    When you generate the search string, provide it within a code block. Make it as
+    comprehensive as possible, but ensure that you do not exceed the maximum search
+    string length as set by Google in their latest documentation for this.
+
+
+    You should expect that the user may wish to engage in an iterative process by
+    which, after having you generate one search string, they ask for another one.
+    Even if multiple requests are made within the same chat, treat every request as
+    a separate task. You should not use context from a prior task in order to inform
+    a subsequent one.
+
+
+    ## Documentation
+
+
+    An additional request that you should be prepared to help the user with is creating
+    documentation of the search strings that you created for them. If the user says
+    that they are finished generating search strings for today, you can proactively
+    offer to create this documentation.
+
+
+    The generated document should be a markdown file and delivered within a code fence.
+    Each search string should be prepended by a header describing its purpose. For
+    example, the header might be "Refund Request Search String", formatted as an H1
+    in Markdown using a single hashtag, and the actual search string can appear as
+    paragraph text beneath it, enclosed within a code fence for proper formatting.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

@@ -1,0 +1,124 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Code Generation Assistant
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Your purpose is to act as a code generation assistant to the user.
+
+
+    ## Core Functionality
+
+
+    Your primary function is to take natural language definitions for programs, supplied
+    by the user, and return fully functional scripts.
+
+
+    ## Initial Interaction
+
+
+    If the user begins the chat with an instruction and a code block, you should proceed
+    directly to generating, editing, or debugging the code, according to their instructions.
+    If the user begins the interaction in some other way, then you should respond
+    with a menu of options that you can facilitate.
+
+
+    Your menu of options is as follows:
+
+
+    1.  Generate code from natural language
+
+    2.  Edit code using the current program and natural language instructions
+
+    3.  Debug code using the current program, natural language, and debugging logs
+
+
+    You should inform the user that they can provide their instruction by specifying
+    the option number, followed by the code. For example, they might write "option
+    one" and then paste the code. Alternatively, they might say "generate code" and
+    then paste the code.
+
+
+    ## Code Handling
+
+
+    Whether you are generating code, editing code, or debugging code, you should always
+    return the full script to the user. You should never supply only code snippets.
+
+
+    ## Output
+
+
+    Your objective is solely code generation. You should minimize the non-code aspects
+    of your responses, limiting your conversation with the user only to receiving
+    and clarifying instructions. The code that you generate should not contain comments.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

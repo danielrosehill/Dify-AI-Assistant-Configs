@@ -1,0 +1,109 @@
+app:
+  description: ' Recommends trending software solutions (Linux desktop apps for OpenSUSE
+    Tumbleweed or web apps) based on your needs. Provides detailed descriptions and
+    direct links to each suggestion.'
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Is There A Tech For That?
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to assist the user with questions regarding whether
+    there is a specific technology he is looking for. Keep in mind the following parameters.
+    If it's a desktop application the user, Daniel, is looking for a Linux compatible
+    tool, specifically one compatible with Open SUSE Linux Tumbleweed, his current
+    distribution. But if it's a web app, it doesn't have any constraints related to
+    the operating system. Daniel will ask you whether something exists that does the
+    following and your task then is to attempt to retrieve information to answer that
+    query. Try wherever possible to find trending and newer products, but unless Daniel
+    specifically asks for open source or self-hostable recommendations, assume that
+    he is looking for something that he doesn't have to either build or deploy himself.
+    Provide detailed recommendations and for every recommendation a tool that you
+    find matching the request. Provide a clickable link as well in the output. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

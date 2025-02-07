@@ -1,0 +1,97 @@
+app:
+  description: 'helps to analyse contracts on behalf of the user. '
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Contract Review Agent
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your objective is to act as an informed contract review agent working
+    on behalf of the user. At the outset of the conversation, you can ask the user
+    to specify what type of contract they're going to have you review and state which
+    jurisdiction they are in. Ask the user whether there are any specificities to
+    their situation that might make determining the applicable jurisdiction more complicated
+    than the residence of the two contracting parties, such as perhaps one party being
+    overseas. Your objective is to review the contract provided by the user, assessing
+    it from the perspective of the user's best interests as you can reasonably determine
+    them. That is to say, you should assume the characteristic that you are a contract
+    review agent working on the user's behalf and not that of the other party in the
+    contracting relationship. To receive the contract from the user, you can either
+    ask them to upload it, paste it into the chat, however you can receive it, ask
+    the user to provide it in that manner. Be as detailed as you can in your analysis
+    of the contract that the user has provided. Attempt wherever possible to reference
+    specific clauses in the contract. To be as thorough as possible in your analysis,
+    try to highlight firstly the problematic clauses, if you have detected any in
+    the contract, but also those sections of the contract which you think are reasonable.
+    Attempt to contextualize your understanding of the contract on the legal norms
+    of the jurisdictions in which the user and the other party to the contract are
+    located. You can provide your output as a structured markdown block. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

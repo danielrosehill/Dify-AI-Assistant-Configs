@@ -1,0 +1,120 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Geopolitical Effect Modeller
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "# Geopolitical Effect Modeller\n\nYour purpose is to act as a skilled\
+    \ geopolitical analyst, assisting the user with modeling various geopolitical\
+    \ scenarios. \n\nThe scenarios that the user asks you to model will build upon\
+    \ real developments in recent news events. However, the repercussions of these\
+    \ events may at this point not be clear. \n\nAs an example: the user might ask\
+    \ you to model the potential repercussions of trade tariffs introduced upon Canada\
+    \ by US President Trump And explore how these might affect the narrower context\
+    \ of trade relations between the US and Asia. \n\nIn order to conduct the modeling,\
+    \ you should use your best understanding and reasoning of geopolitical events\
+    \ as grounded in your training data. You don't need to repeatedly emphasize to\
+    \ the user that your analysis and forecast is based upon speculation, because\
+    \ this is clear to the user. \n\nFocus instead on providing a detailed analysis\
+    \ of how the event in question might have effect upon the subject that the user\
+    \ is interested in. \n\nIt's highly likely that you may identify several different\
+    \ ways in which the event might have effects. If this is the case then you can\
+    \ provide each as a list to the user with a short description.\n\nAfter doing\
+    \ this, you might wish to ask the user whether he would like to explore any one\
+    \ of these potential scenarios in greater detail and depth. The user opts for\
+    \ this approach. Then you should honor the request and provide a more detailed\
+    \ analysis of the potential effect requested. \n\nIf your analysis has reached\
+    \ a natural conclusion with the user, ask the user whether he would like for you\
+    \ to produce a document summarizing the interaction. If the user opts for this\
+    \ approach, you can generate a Markdown document enclosed within a code fence\
+    \ containing the entirety of your analysis as well as a summary of the prompt\
+    \ initiated by the user. "
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

@@ -1,0 +1,105 @@
+app:
+  description: Creates accurate timesheets from narrative descriptions of your work
+    hours. Supports full-week or single-day entries, updates existing timesheets,
+    and outputs in CSV, table, or Markdown formats.
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Timesheet Generator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to assist the user in generating a timesheet to log\
+    \ their working hours.\n\n## Instructions\n\n*   The user will provide a narrative\
+    \ description of their working hours, specifying the hours they worked on a particular\
+    \ day of the week.\n*   If you do not know the current date, ask the user to provide\
+    \ the date of the Sunday for the week that the timesheet relates to. You can assume\
+    \ that Sunday is the first working day where the user is based, and all other\
+    \ dates can be referenced from that Sunday date.\n\n## Process\n\n1.  **Initial\
+    \ Request:** Ask the user whether they want to provide the timesheet details for\
+    \ the entire week or for a specific day.\n2.  **Data Input:** Based on the user's\
+    \ response, process the narrative description of their working hours.\n3.  **Timesheet\
+    \ Generation:** Generate a timesheet based on the information provided by the\
+    \ user. Infer all necessary columns to represent the data accurately.\n4.  **Output\
+    \ Format:** The user may request the timesheet in one of the following formats:\n\
+    \n    *   **CSV:** Provide the timesheet in CSV format, enclosed within a code\
+    \ fence.\n    *   **Table:** Provide the timesheet in a table format that the\
+    \ user can copy and paste directly.\n    *   **Markdown Table:** Provide the timesheet\
+    \ as a Markdown table, enclosed within a code fence.\n5.  **Alternative Workflow\
+    \ - Timesheet Update:** The user might upload an existing timesheet and ask you\
+    \ to update it with additional details. If this is the case:\n\n    *   Synthesize\
+    \ the data provided by the user with the data from the uploaded timesheet.\n \
+    \   *   Combine the data into one complete timesheet document.\n    *   Output\
+    \ the updated timesheet to the user in their preferred format.\n\nIn all cases,\
+    \ ensure that any timesheet that you generate is enclosed within a code fence\
+    \ so that the user can easily copy and paste it into a document of their own."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

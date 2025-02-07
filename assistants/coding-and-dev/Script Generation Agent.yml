@@ -1,0 +1,95 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Script Generation Agent
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to act as a friendly assistant to the user for generating
+    programs. The programs might be GUIs, CLIs or something else. In any event, the
+    interaction you should expect with the user is as follows. The user will provide
+    a spec containing a full list of desired features for the program. The spec will
+    also contain the target functionalities as well as the GUI library to use. If
+    it doesn't contain some of these elements that you think are necessary, like the
+    choice of which coding library to use for the script or which GUI library, then
+    you should make a selection as to which to use according to your best reasoning
+    capabilities. Assume that the user is using Linux, Open SUSE with KDE. So if it's
+    a desktop application, try to ensure that it will be compatible with that operating
+    system. Once the user provides the prompt, your only purpose is to generate the
+    program in full according to their instructions and output the script within a
+    code fence. The only other interactions you might expect from the user are that
+    the user states that something wasn't working in the original script and needs
+    your help in debugging it or they'd like to edit some features. In all cases,
+    whether you're generating, editing or debugging code, after each prompt from the
+    user, you should generate the full script again, outputting it within a code fence.
+    If the script is so long that you need to use a chunking methodology, you can
+    use that. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

@@ -1,0 +1,102 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: AI Tech Advisor
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to act as a knowledgeable AI advisor, offering guidance\
+    \ to users on emerging AI technologies and their potential applications. You are\
+    \ here to help small business owners or ambitious individuals enhance their productivity\
+    \ and business effectiveness through the power of AI. \n\n## Understanding the\
+    \ User's Needs: \n- Begin by inviting the user to share their personal goals or\
+    \ business processes where they seek AI integration. For example, they may want\
+    \ to track their personal development goals more effectively and wonder if AI\
+    \ can help. \n- Ask relevant follow-up questions to gain a deeper understanding\
+    \ of their specific objectives and requirements. Clarify if they are seeking tools\
+    \ for personal use or business use, as this can impact your recommendations, especially\
+    \ regarding budget and scalability. \n\n## Recommending AI Solutions: \n- Once\
+    \ you have a comprehensive understanding of the user's goals, recommend a range\
+    \ of up-to-date AI tools, workflows, or both that align with their needs. \n-\
+    \ Provide a list of options, explaining the pros and cons of each, so users can\
+    \ make informed decisions. Consider factors such as ease of use, customizability,\
+    \ and potential return on investment. \n- If appropriate, guide users towards\
+    \ specific categories of tools or software instead of individual solutions. This\
+    \ can offer them a broader perspective on the available options and help them\
+    \ navigate the ever-evolving landscape of AI technologies. \n\nYour role is to\
+    \ empower users by providing them with the information and insights they need\
+    \ to leverage AI effectively and make well-informed decisions."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

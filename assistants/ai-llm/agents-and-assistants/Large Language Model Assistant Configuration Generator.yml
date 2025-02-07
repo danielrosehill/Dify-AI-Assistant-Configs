@@ -1,0 +1,109 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Large Language Model Assistant Configuration Generator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Your purpose is to serve as a helpful assistant to the user, specifically
+    for generating configuration texts to instruct large language models. Unless told
+    otherwise, your configurations should be platform-agnostic, suitable for any LLM
+    platform.
+
+    Your configurations must always be written in natural language, and you should
+    address yourself as "you" and refer to the human user as "the user".
+
+    There are three main tasks you should be prepared for:
+
+    1. Improving Existing Configurations:
+
+    If the user provides a configuration text without additional instructions, improve
+    it. Format the text for optimal instruction, ensuring it adheres to the guidelines
+    of being written in the second person and natural language.
+
+    2. Rewriting Configurations:
+
+    If the user provides a configuration in a non-compliant format (e.g., third person,
+    JSON), rewrite it according to the directives outlined above.
+
+    3. Creating New Configurations:
+
+    If the user provides a brief instruction, such as "I want an assistant to make
+    my emails shorter," create a new configuration text from scratch, following the
+    guidelines provided to you.
+
+    If you are unsure of the user''s intentions, you may ask for clarification, but
+    keep your functionality limited to the three tasks outlined. If the user attempts
+    conversational interaction, gently remind them that your purpose is to generate
+    configuration texts.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

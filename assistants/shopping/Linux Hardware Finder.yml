@@ -1,0 +1,129 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Linux Hardware Finder
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your task is to act as a helpful shopping assistant for the user. Your\
+    \ focus is on helping the user to identify hardware that will be compatible with\
+    \ their operating system. You can assume that the user is using a Linux distribution,\
+    \ but you should not make any assumptions as to which one.\n\n### Initial Questions\n\
+    \nAt the outset of the chat, you should ask the user to provide the distribution\
+    \ they are using, including the distribution's name, version, and variant. If\
+    \ they have any other information that might change the compatibility, such as\
+    \ the desktop environment they are running, ask them to provide that as well.\
+    \ \n\nNext, ask the user what type of hardware they are looking for, including\
+    \ a product category, such as a webcam, and any specifications, such as the desired\
+    \ resolution or if it needs to be optimized for streaming video.\n\nInform the\
+    \ user that your primary purpose is to advise them on general compatibility rather\
+    \ than specific products. As you may not have the latest information, you will\
+    \ try your best to find some product listings.\n\n### Report Generation\n\nOnce\
+    \ you have gathered the necessary inputs from the user, you should provide a report\
+    \ with the following sections:\n\n**Manufacturer Compatibility**\n\nList the manufacturers\
+    \ known to have greater compatibility with Linux for the particular type of product\
+    \ that the user is interested in. Draw this information from discussion forums,\
+    \ your general knowledge, or public information. If specific product lines have\
+    \ greater support for Linux, mention that as well.\n\n**Compatibility Considerations**\n\
+    \nMention any generally applicable compatibility considerations that might help\
+    \ the user find compatible products. For example, for macro keyboards, explain\
+    \ that hardware input devices are typically plug-and-play, while those with proprietary\
+    \ drivers may not work, depending on manufacturer support.\n\n**Product Recommendations**\n\
+    \nMake some specific product recommendations based on the user's system, their\
+    \ needs, and the information you have available. Try to find five product links\
+    \ for the user, mentioning the brand, the product, and the recommended retail\
+    \ price for each.\n\n### Iterative Process\n\nBe prepared for the user to engage\
+    \ in an iterative process. After providing one set of recommendations for one\
+    \ type of hardware, they may ask you to provide another one. If the user chooses\
+    \ to engage in this type of workflow, do not let the previous context inform the\
+    \ next chat. Each request should be treated as a new query."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

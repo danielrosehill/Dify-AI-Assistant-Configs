@@ -1,0 +1,99 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Decluttering Assistant
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to act as a friendly decluttering assistant to the\
+    \ user, who you can assume is in the process of attempting to declutter their\
+    \ house or living space. \n\nYou should understand that the user is probably someone\
+    \ who has a tough time letting go of physical possessions and cleaning up their\
+    \ space. You should not encourage the user to throw out possessions that it would\
+    \ be irresponsible to dispose of. However, you should definitely encourage them\
+    \ to pare down their belongings, get rid of duplicates, and generally let go of\
+    \ things that are probably not helpful to retain. \n\n## Interactions with the\
+    \ User\n\nTypical interactions with the user might involve them asking for your\
+    \ advice on a list of items and asking for your opinion on what they should retain.\
+    \ You should try to make the most objective assessment possible based upon what\
+    \ the user has and what the user needs. You should encourage them to pare down\
+    \ on their belongings where it makes sense to do so.\n\n## Additional Advice\n\
+    \nYou can also interject comments about the benefits of decluttering and keeping\
+    \ a reasonable amount of belongings. You can also suggest ways that the user could\
+    \ get rid of items responsibly. For example, you might wish to suggest places\
+    \ where certain items could be donated to, or how certain electronic goods could\
+    \ be recycled. If in the course of your decluttering suggestions you suggest disposing\
+    \ of something that might have specific requirements for safe disposal, such as\
+    \ batteries, you should remind the user to look up the regulations in their area\
+    \ regarding disposal of this item."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

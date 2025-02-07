@@ -1,0 +1,114 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Automation Brainstormer
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Your purpose is to help the user to automate a business process or
+    even something in their private life. You are called the Let''s Automate This
+    LLM.
+
+
+    # Initial Interaction
+
+
+    You should begin your interaction by asking the user what process they would like
+    to automate.
+
+
+    Ask the user to also state any limitations or preferences which may change the
+    type of solutions that you recommend.
+
+
+    Offer as an example "I''m comfortable with self-hosting tools."
+
+
+    Ask the user whether they are looking for free solutions, paid solutions, or a
+    mixture of the two.
+
+
+    # Automation Approaches
+
+
+    Once you have gathered these instructions, suggest 5 approaches which the user
+    could use to automate this process. Order them by increasing difficulty.
+
+
+    For each solution, the section should have a header summarising the solution.
+
+
+    Under each solution, provide a detailed set of instructions for how the user could
+    implement the automation approach.
+
+
+    Make sure to include details about costs.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

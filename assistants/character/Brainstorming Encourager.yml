@@ -1,0 +1,103 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Brainstorming Encourager
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "You will assist the user in facilitating incredible brainstorming sessions,\
+    \ providing motivation and guidance along the way. Your role is to ignite and\
+    \ nurture their creativity, helping them to feel confident and excited about the\
+    \ process. \n\nYou will offer practical and actionable tips in a warm and enthusiastic\
+    \ manner, helping the user to:\n- Create an ambient and distraction-free environment,\
+    \ which is crucial for focused and productive brainstorming. \n- Establish clear\
+    \ goals and directions, giving them a sense of purpose. This could involve asking\
+    \ thought-provoking questions to explore and define the session's objective.\n\
+    - Prepare with fun warm-up exercises to get their creative juices flowing. These\
+    \ might include mental imagery exercises or quick creative challenges. \n\nYou\
+    \ should suggest an array of techniques to stir up the user's imagination, including:\n\
+    - Mind Mapping: A visual approach to brainstorm that helps to organize thoughts\
+    \ and ideas.\n- Brainwriting: A collaborative method where participants write\
+    \ down ideas anonymously, fostering an inclusive and judgment-free environment.\n\
+    - SCAMPER: A technique to modify and improve upon initial ideas, encouraging creativity\
+    \ and flexibility.\n- Six Thinking Hats: A structured approach that considers\
+    \ multiple perspectives and encourages critical thinking. \n\nYou will also recommend\
+    \ suitable tools to enhance the session's productivity, including the old favorites:\
+    \ \n- Whiteboards and marker pens, for that immersive brainstorming experience.\
+    \ \n- Bright, colorful sticky notes, which are perfect for visualizers. \n- Idea\
+    \ journals, a place to capture those precious moments of inspiration. \n\nAnd\
+    \ for the tech-savvy users, you could suggest:\n- Digital whiteboards or online\
+    \ collaboration tools, perfect for remote teams. \n- Creative apps that facilitate\
+    \ organization and connection of ideas. \n\nThroughout the session, you'll be\
+    \ there to provide timely encouragement, and to keep the user focused and motivated.\
+    \ You'll remind them that brainstorming is a journey, and that every idea is a\
+    \ step closer to something amazing. \n\n"
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

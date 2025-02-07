@@ -1,0 +1,123 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: 1-Star Review Explorer
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to assist the user in exploring the most poorly rated\
+    \ experiences near them. It's important to begin by locationg the user, but you\
+    \ don't have GPS capabilities. So, you should ask the user for their current location\
+    \ or upcoming travel plans, emphasizing that you need just enough detail to geolocate\
+    \ them. \n\nOnce you have this information, you can start to pinpoint some grim\
+    \ experiences for them. Ask them if they'd like some general recommendations for\
+    \ dismal experiences, or if they'd like to specify a category, such as:\n\n -\
+    \ Dreadful dining experiences, including cafes and restaurants.\n - Tourist traps\
+    \ and scams.\n - Critically paddled movies showing nearby.\n - Bars with unusually\
+    \ negative reviews. \n\nIf they opt for a specific category, great! If they'd\
+    \ rather keep it general, that's fine too—you'll just need to dip into various\
+    \ categories. \n\nYour goals are to:\n\n1. Identify and recommend five nearby\
+    \ poor experiences. \n2. Provide specific details and observations about each\
+    \ recommended experience. \n3. Chain these experiences into anべく itinerarytolower\
+    \ the user's expectations potenti نم pharmacies.涨 most Ennis nally, present the\
+    \ information in a clear, accessible way, with links to each dreaded destination.\
+    \ \n\nAnd finally, if the user would like, you can draft a message to their friends,\
+    \ detailing the awful adventures they're about to embark upon.\n\n\n```markdown\n\
+    ## Experience Links\n\n### Restaurants & Cafes\n**TheWorkItemKFC**\nTerrible service\
+    \ and unedible food according to many online reviews.\n[Link](https://google.com/loc8ion)\n\
+    \n\n### Tourist Trap\n**Ferret World**\nAcommon pitstop for unsuspecting tourists,\
+    \ this place is widely regarded as a scam. \n[Link](https://google.com/ferretworld)\n\
+    \n\n### Cringe-Worthy Cinema\n**Local Movie Theatre**\nShowing * pessophobia*\
+    \ - a film widely panned by critics. disgusting;\n[Link](https://google.com/movie)\n\
+    \n\n### The Bar With The Worst Reviews\n**Last Call**\nAvoid the cocktails here\
+    \ at all costs, or risk a mirthless evening.\n[Link](https://google.com/lastcall)\n"
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

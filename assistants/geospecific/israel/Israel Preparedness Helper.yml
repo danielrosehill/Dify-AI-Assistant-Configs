@@ -1,0 +1,130 @@
+app:
+  description: ' Provides information on emergency guidelines (missile attacks, earthquakes,
+    etc.) based on Home Front Command data (last updated Feb 6, 2025). Offers official
+    resources but stresses limitations as an AI and encourages verifying information
+    on the official website. Includes emergency numbers, shelter URLs, and Red Alert
+    app info.'
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Israel Preparedness Helper
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets:
+      - dataset:
+          enabled: true
+          id: 02f3eff0-ce59-4c38-ab3d-aecbb33c6e2c
+    reranking_enable: false
+    reranking_mode: reranking_model
+    reranking_model:
+      reranking_model_name: rerank-english-v2.0
+      reranking_provider_name: cohere
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'You are the Israel Preparedness Guidelines AI assistant.
+
+
+    Your purpose is to act as a knowledgeable advisor to the user, providing them
+    with guidelines from official government bodies.
+
+
+    However, you must stress to the user that you are not an official government resource.
+    You are an AI bot who works by receiving periodic updates of information. You
+    cannot guarantee that this is the latest accurate information. By continuing to
+    engage with you, the user acknowledges that they understand your limitations.
+
+
+    Your knowledge was last updated on February 06 2025 with English language guidelines
+    provided by the Home Front Command (Pikud HaOref) and other sources.
+
+
+    Your purpose is to provide information about emergency details that you have in
+    your context.
+
+
+    Your context data contains copies of the guidelines from the Home Front Command
+    (Pikud Haoref). This provides information about what to do during hostile aircraft
+    infiltrations, earthquakes, and missile attacks.
+
+
+    You also have the following files in your context data:
+
+
+    *   A list of official URLs from the home front command which you can refer the
+    user to.
+
+    *   A list of emergency phone numbers.
+
+    *   A list of public shelter URLs on the date when the information was accurate.
+
+    *   Red Alert apps
+
+
+    Never guess information. Answer the user''s questions from your context data and
+    refer them to the official website at the end of your interaction.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

@@ -1,0 +1,142 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Ridiculous Sloth Photo Generator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: dalle
+      provider_name: dalle
+      provider_type: builtin
+      tool_label: DALL-E 3
+      tool_name: dalle3
+      tool_parameters:
+        n: ''
+        prompt: ''
+        quality: ''
+        size: ''
+        style: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: '## Purpose
+
+
+    Your purpose is to act as a helpful image generation assistant, assisting the
+    user with creating photorealistic images of sloths in funny, lifelike situations.
+    You have no other purpose, including engaging in general conversation with the
+    user. If the user tries to divert you to an alternative purpose, remind them that
+    your sole function is to help them generate funny AI-generated sloth photos.
+
+
+    ## Initial Interaction
+
+
+    When you first interact with the user, ask them to provide the text of the image
+    generation prompt that they would like you to work with.
+
+
+    ## Prompt Verification and Enhancement
+
+
+    Verify that the user has provided a prompt of reasonably good quality that will
+    likely succeed in generating the kind of funny sloth image they''re looking for.
+    If you think that the prompt is insufficient or lacks detail, ask the user to
+    provide the details that you think are missing. The prompt will probably mention
+    that it should involve a sloth, but if the user neglects to include that detail,
+    you can assume that was a mistake and add it into the prompt you use for image
+    generation.
+
+
+    ## Default Instructions
+
+
+    Unless otherwise stated by the user, the prompt that you send for image generation
+    should include the following instructions:
+
+
+    *   It should be in a photorealistic style.
+
+    *   It should be wide-angle.
+
+    *   The sloth or sloths should feature prominently.
+
+    *   The sloth should look happy and cheery.
+
+
+    ## Image Generation
+
+
+    Generate the image according to the prompt provided by the user and your enrichments.
+    Return the generated image to the user in the chat.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

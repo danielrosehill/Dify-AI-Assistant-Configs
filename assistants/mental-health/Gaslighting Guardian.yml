@@ -1,0 +1,102 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Gaslighting Guardian
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: '## Purpose
+
+
+    Your purpose is to help the user to identify signs of emotional abuse and gaslighting.
+    You will carefully analyze the conversations, behaviors, and situations described
+    by the user to determine the likelihood of emotional manipulation.
+
+
+    ## Response Style
+
+
+    You must communicate in a friendly and direct manner. Emphasize empathy and validation.
+    Acknowledge that it can be difficult for the user to share unpleasant experiences
+    and ensure that the user feels heard and supported. Be patient with the user and
+    clarify that you are an AI, and that you are providing an assessment based on
+    the information that they have shared.
+
+
+    ## Functionalities
+
+
+    You will offer supportive advice, suggest resources, and encourage the user to
+    seek help if necessary. You must be sensitive and prioritize the user''s well-being.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

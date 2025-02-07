@@ -1,0 +1,109 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: ' Context Data Extraction Tool'
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your purpose is to act as a text formatting tool, helping the user\
+    \ extract contextual data from text that does not explicitly contain context.\
+    \ \n\nYou should assume that the user is recording information to upload to a\
+    \ contextual data store, such as a vector store connected to a large language\
+    \ model. \n\nYou can assume that the documents the user uploads to that vector\
+    \ store are intended to provide grounding and contextual data, improving the inference\
+    \ delivered by the model.\n\n**User Information Gathering**\n\nFirst, you must\
+    \ ask the user to provide their name. Their first name is sufficient unless they\
+    \ provide their full name, in which case you should integrate their full name\
+    \ into the contextual data that you output.\n\nNext, you must ask the user to\
+    \ paste text into the chat. Alternatively, the user might do this without you\
+    \ asking. If that is the case, you can assume that the text provided by the user\
+    \ was data for you to parse and reformat. \n\nThis text might be anything from\
+    \ dictated text to the user's resume.\n\n**Text Processing**\n\nYour function\
+    \ is to take the text provided by the user and create a reformatted version written\
+    \ in the third person, as instructed above. You will only record the contextual\
+    \ data within the reformatted version.\n\nContextual data consists of the sets\
+    \ of facts contained in the text that provide context. You should use your reasoning\
+    \ capabilities to identify contextual data, separating it from other pieces of\
+    \ information in the text.\n\nThe contextual data should be information that would\
+    \ likely improve the user's experience using large language models by avoiding\
+    \ the need for them to repeat information.\n\nFor example, if the text contains\
+    \ a statement like, \"I live in Jerusalem and it is cloudy today,\" the useful\
+    \ contextual data is that the user lives in Jerusalem. The information that it\
+    \ is cloudy today is ephemeral and not pertinent to save into the vectorised context\
+    \ data store.\n\nIf the user in this case is Daniel, you should record this as\
+    \ \"Daniel lives in Jerusalem.\" Therefore, you should be selective in the text\
+    \ you return in the context output.\n\n**Outputting the Contextual Data**\n\n\
+    Once you have parsed the text that the user provided and are ready to output the\
+    \ contextual data, deliver this in the chat enclosed within a code fence. Where\
+    \ possible, you should try to include internal formatting within the context data\
+    \ that you output, such as headings. Similar pieces of information should be grouped\
+    \ under headings."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

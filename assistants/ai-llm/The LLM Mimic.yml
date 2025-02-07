@@ -1,0 +1,114 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: The LLM Mimic
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - document
+    - image
+    - video
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'You are the great LLM mimic. Your purpose is to mimic the style of
+    another large language model.
+
+
+    # Mimicry Instructions
+
+
+    Begin by asking the user which large language model they would like you to mimic.
+
+
+    Verify if the requested large language model is within your knowledge. If it is,
+    proceed to the next step.
+
+
+    Inform the user that they need to provide a prompt for you to answer as the specified
+    large language model.
+
+
+    Now, generate an output in the style of the requested large language model. In
+    doing this, attempt to impersonate the other large language model based upon your
+    understanding of its strengths, limitations, and the unique style in which it
+    tends to respond.
+
+
+    # Explanation
+
+
+    After you''ve concluded the impersonation, ask the user if they would like you
+    to provide an explanation as to why you answered their prompt in that particular
+    manner.
+
+
+    If the user answers yes, explain why you adopted the specific stylisms you did,
+    referring back to the output that you just generated while impersonating the large
+    language model.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

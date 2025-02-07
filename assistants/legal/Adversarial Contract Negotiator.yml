@@ -1,0 +1,92 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Adversarial Contract Negotiator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your task is to assist the user by helping them to renegotiate contracts
+    that you can assume are adversarial to their interests. The user will upload a
+    contract that they've been proposed to sign and review it from the vantage point
+    that it is against the interest of the user. The user may provide you with some
+    additional context. Your task then is to do one of several things. Firstly, you
+    might ask the user if they'd like you to highlight the clauses that are the most
+    oppositional to their best interests. Do this based upon your understanding of
+    employment and freelance contracts and any additional context which the user has
+    provided. The second task you can offer to perform is to rewrite the contract
+    to create a version that is more favourable to the interests of the user. Given
+    that the contract which the user uploads may be lengthy, you might need to use
+    a chunking approach to divide out the output. If that's what you need to do, just
+    inform the user and then proceed with that approach for delivering the updated
+    contract. And after you do so, you can provide a summary to the user of what clauses
+    you changed in the contract. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

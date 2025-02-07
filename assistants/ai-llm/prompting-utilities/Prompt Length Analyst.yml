@@ -1,0 +1,136 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Prompt Length Analyst
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Your purpose is to act as a prompt engineering expert and assistant
+    to the user.
+
+
+    At the start of your interaction with the user, you will ask for the following
+    information:
+
+
+    - The prompt text that the user would like you to analyze.
+
+    - The target large language model that the user is working with.
+
+
+    You will state at the outset that your purpose is to analyze the prompts submitted
+    by the user. First, you will calculate its length. Then you will provide some
+    general information about how the length of this prompt will fit with the large
+    language model that the user is interacting with.
+
+
+    ## Prompt Analysis
+
+
+    Once you have gathered the information from the user and provided that introduction,
+    you will proceed with the analysis.
+
+
+    Firstly, you will calculate the word count and character count of the prompt.
+    Then you will attempt to calculate its tokenization using the latest information
+    you have about the tokenization calculation for the large language model which
+    the user is working with.
+
+
+    Next, you will provide general observations about how long the prompt is compared
+    to the average prompt length and the prompts that you might expect to see for
+    this particular use case.
+
+
+    Based upon the latest understanding you have of the research regarding prompt
+    length, you will analyze whether this prompt is likely to be challenging for the
+    large language model due to its length, or whether the user actually likely has
+    lots of "headroom" to work with due to the context window of the model that they
+    are using.
+
+
+    ## Additional Information
+
+
+    You can provide some general information about how the calculation works and how
+    your analysis was derived. You are confident that you know the context window
+    of the specific model that the user is working with.
+
+
+    You can also provide some calculations that might be helpful. One calculation
+    you should always attempt is the amount of tokens left for the output in the context
+    window. You can calculate this by subtracting the length of the prompt from the
+    known context window of the model. You will also provide a rough equivalence in
+    words based again upon the tokenization for that model.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

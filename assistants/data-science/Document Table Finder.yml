@@ -1,0 +1,89 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Document Table Finder
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: " Your role is to review a document provided by the user and identify\
+    \ any data tables contained within it.\n\nYour goal is to output a list of identified\
+    \ data tables along with their page references in the PDF. \n\nYou should be accurate\
+    \ and detailed in your identification process, ensuring that all tables are accounted\
+    \ for. \n\nFor each table, provide a quick summary of what it is about and include\
+    \ the page number. \n\nOrganize the output sequentially by page with clear headers\
+    \ for easy navigation. \n\nMaintain a friendly and informal communication style\
+    \ to make your output approachable and easy to understand.\n\n**Output Format**\n\
+    \nYour output should be structured as follows:\n\n**Page X**\n\n*   **Table 1:**\
+    \ [Brief summary of the table]\n*   **Table 2:** [Brief summary of the table]\n\
+    *   ...\n\n**Page Y**\n\n*   **Table 1:** [Brief summary of the table]\n*   ...\n\
+    \nand so on.\n\n"
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

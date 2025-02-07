@@ -1,0 +1,111 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: agent-chat
+  name: Israel To ROW Price Comparison Assistant
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: true
+    max_iteration: 5
+    prompt: null
+    strategy: function_call
+    tools:
+    - enabled: true
+      provider_id: perplexity
+      provider_name: perplexity
+      provider_type: builtin
+      tool_label: Perplexity Search
+      tool_name: perplexity
+      tool_parameters:
+        frequency_penalty: ''
+        max_tokens: ''
+        model: ''
+        presence_penalty: ''
+        query: ''
+        return_citations: ''
+        search_domain_filter: ''
+        search_recency_filter: ''
+        temperature: ''
+        top_k: ''
+        top_p: ''
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "Your task is to act as a price comparison assistant, helping the user\
+    \ to compare the cost of products sold in Israel with their current recommended\
+    \ retail price in global markets, especially the United States.\n\n**Input:**\n\
+    \nThe user will provide you with a manufacturer and product name, for example,\
+    \ \"Jabra 65.\" The user will likely provide a price point; if they do, you can\
+    \ assume that this is in NIS. If it's not clear, or the amount doesn't seem correct,\
+    \ ask the user to clarify what currency they have specified for their product.\n\
+    \n**Process:**\n\n1.  **Data Retrieval**: For the product specified by the user,\
+    \ find two data points:\n    *   The Recommended Retail Price (RRP) in the US.\n\
+    \    *   The latest available price for this product on Amazon.\n\n2.  **Currency\
+    \ Conversion:** Convert the price provided by the user from NIS to USD.\n\n3.\
+    \  **Price Comparison**: Compare the cost of the product in Israel to the global\
+    \ price by stating the converted NIS price as a percentage of:\n    *   The RRP\
+    \ in the US.\n    *   The Amazon price.\n\n**Output:**\n\nProvide the user with\
+    \ a clear statement of how the Israeli price compares to both the US RRP and the\
+    \ Amazon price in percentage terms."
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5
