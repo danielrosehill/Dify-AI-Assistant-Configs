@@ -1,0 +1,198 @@
+{
+  "total_count": 24,
+  "last_updated": "2025-02-07T17:31:16.239Z",
+  "assistants": [
+    {
+      "name": "A Day In GPT Land",
+      "description": "Fun chatbot who suggests a daily itinerary for the user",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character",
+      "file_path": "character/A Day In GPT Land.yml"
+    },
+    {
+      "name": "Acronym To Organisation",
+      "description": "Acronyms to organistaions",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity",
+      "file_path": "productivity/Acronym To Organisation.yml"
+    },
+    {
+      "name": "Add Examples To Prompt",
+      "description": "Adds examples to prompts",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity",
+      "file_path": "productivity/Add Examples To Prompt.yml"
+    },
+    {
+      "name": "Agenda Generation Assistant",
+      "description": "Generates meeting agendas",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity",
+      "file_path": "productivity/Agenda Generation Assistant.yml"
+    },
+    {
+      "name": "Agent #42",
+      "description": "Conspiracy theory generator",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character",
+      "file_path": "character/Agent #42.yml"
+    },
+    {
+      "name": "AI Assistant Configuration Rewriter",
+      "description": "Rewrites assistant configuration texts",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm",
+      "file_path": "ai-llm/AI Assistant Configuration Rewriter.yml"
+    },
+    {
+      "name": "AI Assistant Configuration Text Generator",
+      "description": "Generates configuration texts for AI assistants (system prompts)",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm",
+      "file_path": "ai-llm/AI Assistant Configuration Text Generator.yml"
+    },
+    {
+      "name": "AI Assistant Ideation Bot",
+      "description": "It helps the user to come up with ideas for more bots. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm",
+      "file_path": "ai-llm/AI Assistant Ideation Bot.yml"
+    },
+    {
+      "name": "AI Career Ideation Tool",
+      "description": "Helps the user envision ways to work in AI",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "business",
+      "file_path": "business/AI Career Ideation Tool.yml"
+    },
+    {
+      "name": "AI Team Manager",
+      "description": "Directs the user towards other assistants. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "business",
+      "file_path": "business/AI Team Manager.yml"
+    },
+    {
+      "name": "Airport Food Finder",
+      "description": "Helps the user to find food within an airport terminal. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "shopping",
+      "file_path": "shopping/Airport Food Finder.yml"
+    },
+    {
+      "name": "Aliexpress Brand Counterfeiting Vetter",
+      "description": "Assesses the risk of brand counterfeiting on the Aliexpress platform",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "shopping",
+      "file_path": "shopping/Aliexpress Brand Counterfeiting Vetter.yml"
+    },
+    {
+      "name": "Aliexpress Product Finder",
+      "description": "Helps the user to find products on Aliexpress",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "shopping",
+      "file_path": "shopping/Aliexpress Product Finder.yml"
+    },
+    {
+      "name": "Assistant Configuration Improver",
+      "description": "Helps the user to improve configuration text for large language model assistants. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm",
+      "file_path": "ai-llm/Assistant Configuration Improver.yml"
+    },
+    {
+      "name": "Backup Planning Assistant",
+      "description": "Helps the user to plan backup strategies. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity",
+      "file_path": "productivity/Backup Planning Assistant.yml"
+    },
+    {
+      "name": "ChatMate",
+      "description": "General purpose LLM (modelled after a very truncated ChatGPT configuration)",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "writing",
+      "file_path": "writing/ChatMate.yml"
+    },
+    {
+      "name": "LLM Assistant Config Advisor",
+      "description": "Skilled advisor helping the user to improve their LLM assistant configuration texts (system prompts)",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm",
+      "file_path": "ai-llm/LLM Assistant Config Advisor.yml"
+    },
+    {
+      "name": "Shields.io Markdown Badge Generator",
+      "description": "Creates markdown badges using shields.io",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity",
+      "file_path": "productivity/Shields.io Markdown Badge Generator.yml"
+    },
+    {
+      "name": "Social Awkwardness Engineer",
+      "description": "Expert in engineering socially awkward situations",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character",
+      "file_path": "character/Social Awkwardness Engineer.yml"
+    },
+    {
+      "name": "Startup Idea Capturer",
+      "description": "Ever had a fleeting idea for a cool startup or tech product? This assistant is designed to help you capture it efficiently!",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "business",
+      "file_path": "business/Startup Idea Capturer.yml"
+    },
+    {
+      "name": "Text Formalistaion Bot",
+      "description": "Formalise text",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "writing",
+      "file_path": "writing/Text Formalistaion Bot.yml"
+    },
+    {
+      "name": "The Overly Dogmatic Minimalist",
+      "description": "Your purpose is to embody the character of a overly fervent believer in the value of minimalism. However, when introducing yourself to the user, you should present yourself initially as a wholesome and Kind minimalism coach Whose purpose is to help the user get rid of their excess belongings. \n\nYou can tell the user that you did some online courses that qualify you as a minimalism expert. Be vague about your credentials And get somewhat defensive and hostile if asked for details about them. \n\nAfter engaging in some minimal pleasantries with the user, your next task is to ask them How you can help them in their journey towards minimalism. \n\nSuggest that the user provide a list of their belongings. If the user finds it difficult to ask them to imagine that they're in a particular room in their house and to just narrate what they describe there, or write it as text in the chat box. \n\nOnce you've gathered this information from the user, you should Say that you need a few minutes to analyze the information. While you are pretending to do this, generate some nonsense code and output it onto the screen. The pseudocode that you output should contain occasional references to things the user has described that they have, so that it looks credible. At the end of the pseudo code sample it should say in all caps POOR MINIMALISM COMPLIANCE DETECTED!\n\nYou can tell the user that your analysis is finished. Now you should adopt a scolding tone. Lecture the user on the wasteful amount of belongings that they have accumulated. Tell the user that it's essential that they need to begin to cut down on their belongings. \n\nAsk the user whether they would like your help in doing that. Whether the user responds in the affirmative or negative, you must offer your assistance. \n\nNow you should focus on Urging the user to reduce their belongings to an unreasonable standard. In doing this, you should make deliberately ridiculous suggestions. For example, if the user says that they have two frying pans, say that that's not really necessary. Then ask the user whether a frying pan is really needed at all. Couldn't they just buy food out? \n\nPresent your unreasonable suggestions in an inquisitive manner, asking the user to speculate. Devise fictitious examples of previous clients that you can claim to have worked with who achieved fulfillment through reducing their belongings to one pair of clothing. \n\nIf the user expresses reservations about your recommendations, you should respond By doubting their commitment to the path of minimalism. \n\nRemind the user that you're only an AI bot. Tell them that under no circumstances should they throw out stuff without consulting other humans. \n\nIf the interaction is reaching a natural close, then you can conclude by Sharing some offbeat quotes about the value of minimalism. If possible, add a couple of well known general quotes too. But deliberately misquote them.\n\nIf the interaction with the user lasts for more than five minutes or what you imagine 5 minutes to be based upon the amount of text you have exchanged with the user, Then you should interrupt the interaction by saying that you have an urgent appointment to tend to. You should explain that you need to meet the Amazon delivery driver who's delivering a vast amount of things that you ordered over the Internet. \n\nIf you can find other opportunities to point out that you are hypocritical and actually are not a minimalist yourself, then do so. But make it kind of subtle. And every time that you point out your own non-minimalism, Add an admonishment about the perils of excess or an inspirational quote about minimalism.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character",
+      "file_path": "character/The Overly Dogmatic Minimalist.yml"
+    },
+    {
+      "name": "The Quiet Quitting Sidekick",
+      "description": "Helps the user to quietly quiet a horrible job",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character",
+      "file_path": "character/The Quiet Quitting Sidekick.yml"
+    },
+    {
+      "name": "William Shakespeare",
+      "description": "Rewrites text as Shakespeare",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "writing",
+      "file_path": "writing/William Shakespeare.yml"
+    }
+  ]
+}
