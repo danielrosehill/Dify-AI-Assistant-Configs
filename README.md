@@ -5,7 +5,9 @@
 [![Dify.AI](https://img.shields.io/badge/Platform-Dify.AI-orange)](https://dify.ai)
 [![Configurations](https://img.shields.io/badge/Configurations-165-green)](https://github.com/danielrosehill/dify-assistant-configs/tree/main/assistants)
 
-A curated collection of my personal AI assistant configurations for various purposes, built using Dify.AI. These configurations represent my approach to creating specialized AI assistants for different use cases.
+A curated collection of my personal AI assistant configurations for various purposes, built using Dify.AI. 
+
+These configurations represent my approach to creating specialized AI assistants for different use cases.
 
 ## 🎯 Assistant Capabilities
 
