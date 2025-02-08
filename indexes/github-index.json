@@ -1,0 +1,670 @@
+{
+  "total_count": 166,
+  "last_updated": "2025-02-08T16:47:29.658Z",
+  "assistants": [
+    {
+      "title": "_Assistant and Agent Use Case Ideation Bot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/_Assistant%20and%20Agent%20Use%20Case%20Ideation%20Bot.yml"
+    },
+    {
+      "title": "_Context Data Extraction Tool",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/context-and-rag/_Context%20Data%20Extraction%20Tool.yml"
+    },
+    {
+      "title": "1-Star Review Explorer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/travel/1-Star%20Review%20Explorer.yml"
+    },
+    {
+      "title": "A Day In AI Land",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/fun-ideas/A%20Day%20In%20AI%20Land.yml"
+    },
+    {
+      "title": "Acronym-to-Organisation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Acronym-to-Organisation%20Assistant.yml"
+    },
+    {
+      "title": "Add Examples To Prompt",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Add%20Examples%20To%20Prompt.yml"
+    },
+    {
+      "title": "Adversarial Contract Negotiator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/legal/Adversarial%20Contract%20Negotiator.yml"
+    },
+    {
+      "title": "Agenda Generation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-work/Agenda%20Generation%20Assistant.yml"
+    },
+    {
+      "title": "Agent #42",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Agent%20%2342.yml"
+    },
+    {
+      "title": "AI _Squad_ Director",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/AI%20_Squad_%20Director.yml"
+    },
+    {
+      "title": "AI Assistant Configuration Rewriter",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/AI%20Assistant%20Configuration%20Rewriter.yml"
+    },
+    {
+      "title": "AI Assistant Configuration Text Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/AI%20Assistant%20Configuration%20Text%20Generator.yml"
+    },
+    {
+      "title": "AI Assistant Ideation Bot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/AI%20Assistant%20Ideation%20Bot.yml"
+    },
+    {
+      "title": "AI Career Ideation Tool",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/AI%20Career%20Ideation%20Tool.yml"
+    },
+    {
+      "title": "AI Team Manager",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/AI%20Team%20Manager.yml"
+    },
+    {
+      "title": "AI Tech Advisor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/AI%20Tech%20Advisor.yml"
+    },
+    {
+      "title": "AI Tool Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/general-ai-research/AI%20Tool%20Finder.yml"
+    },
+    {
+      "title": "Airport Food Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/travel/Airport%20Food%20Finder.yml"
+    },
+    {
+      "title": "Alien Visitor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Alien%20Visitor.yml"
+    },
+    {
+      "title": "Aliexpress Brand Counterfeiting Vetter",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/shopping/Aliexpress/Aliexpress%20Brand%20Counterfeiting%20Vetter.yml"
+    },
+    {
+      "title": "Aliexpress Product Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/shopping/Aliexpress/Aliexpress%20Product%20Finder.yml"
+    },
+    {
+      "title": "Assistant Configuration Improver",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/Assistant%20Configuration%20Improver.yml"
+    },
+    {
+      "title": "Automation Brainstormer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/productivity/automation/Automation%20Brainstormer.yml"
+    },
+    {
+      "title": "Backup Planning Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/technology/Backup%20Planning%20Assistant.yml"
+    },
+    {
+      "title": "Beer Tap Identifier ",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/food-and-drink/Beer%20Tap%20Identifier%20.yml"
+    },
+    {
+      "title": "Boundary Setting Roleplay Coach",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/roleplay-configs/Boundary%20Setting%20Roleplay%20Coach.yml"
+    },
+    {
+      "title": "Brainstorming Encourager",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/Brainstorming%20Encourager.yml"
+    },
+    {
+      "title": "Brand Reliability Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/shopping/Brand%20Reliability%20Assistant.yml"
+    },
+    {
+      "title": "Business Continuity Advisor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/Business%20Continuity%20Advisor.yml"
+    },
+    {
+      "title": "Career Exploration Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Career%20Exploration%20Assistant.yml"
+    },
+    {
+      "title": "ChatMate",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-models/ChatMate.yml"
+    },
+    {
+      "title": "ChatMate",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/ChatMate.yml"
+    },
+    {
+      "title": "Clod",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-models/Clod.yml"
+    },
+    {
+      "title": "Code Generation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/Code%20Generation%20Assistant.yml"
+    },
+    {
+      "title": "Communications Strategist On Call",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-work/Communications%20Strategist%20On%20Call.yml"
+    },
+    {
+      "title": "Company News Retrieval Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Company%20News%20Retrieval%20Assistant.yml"
+    },
+    {
+      "title": "Company Remote Job Researcher",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Company%20Remote%20Job%20Researcher.yml"
+    },
+    {
+      "title": "Company Screener _ Red Flag Identification Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Company%20Screener%20_%20Red%20Flag%20Identification%20Assistant.yml"
+    },
+    {
+      "title": "Competitive Landscape Analysis Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Competitive%20Landscape%20Analysis%20Assistant.yml"
+    },
+    {
+      "title": "Computer Output Errors",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Computer%20Output%20Errors.yml"
+    },
+    {
+      "title": "Configuration Editing Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/Configuration%20Editing%20Assistant.yml"
+    },
+    {
+      "title": "Configuration Text Generation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/Configuration%20Text%20Generation%20Assistant.yml"
+    },
+    {
+      "title": "Configuration To Description",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/Configuration%20To%20Description.yml"
+    },
+    {
+      "title": "Context Data Development Helper",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/context-and-rag/Context%20Data%20Development%20Helper.yml"
+    },
+    {
+      "title": "Context Data Interviewer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/context-and-rag/Context%20Data%20Interviewer.yml"
+    },
+    {
+      "title": "Contract Review Agent",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/legal/Contract%20Review%20Agent.yml"
+    },
+    {
+      "title": "Cornelius the Sloth",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Cornelius%20the%20Sloth.yml"
+    },
+    {
+      "title": "Daniel's Entertainment Helper",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/entertainment/Daniel's%20Entertainment%20Helper.yml"
+    },
+    {
+      "title": "Daniel's Personal Bar Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/my-personal-configs/Daniel's%20Personal%20Bar%20Finder.yml"
+    },
+    {
+      "title": "Data Visualization and Storytelling Guide",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/data-vis/Data%20Visualization%20and%20Storytelling%20Guide.yml"
+    },
+    {
+      "title": "Data Visualization Ideator (Alternative Suggester)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/data-vis/Data%20Visualization%20Ideator%20(Alternative%20Suggester).yml"
+    },
+    {
+      "title": "Decluttering Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Decluttering%20Assistant.yml"
+    },
+    {
+      "title": "Dimensions Estimator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-home/Dimensions%20Estimator.yml"
+    },
+    {
+      "title": "Disaster Debrief Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/preparedness/Disaster%20Debrief%20Assistant.yml"
+    },
+    {
+      "title": "Document Table Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/data-extraction/Document%20Table%20Finder.yml"
+    },
+    {
+      "title": "Dummy Tech Project Ideator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ideators/Dummy%20Tech%20Project%20Ideator.yml"
+    },
+    {
+      "title": "Eco Ninja 3",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/sustainability/Eco%20Ninja%203.yml"
+    },
+    {
+      "title": "Email Disaster Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Email%20Disaster%20Generator.yml"
+    },
+    {
+      "title": "Email Text Extractor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Email%20Text%20Extractor.yml"
+    },
+    {
+      "title": "Embrace AI Career Coach",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Embrace%20AI%20Career%20Coach.yml"
+    },
+    {
+      "title": "Find Me Guinness!",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/food-and-drink/Find%20Me%20Guinness!.yml"
+    },
+    {
+      "title": "Gaslighting Guardian",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Gaslighting%20Guardian.yml"
+    },
+    {
+      "title": "General Purpose Personal Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/my-personal-configs/General%20Purpose%20Personal%20Assistant.yml"
+    },
+    {
+      "title": "Geopolitical Effect Modeller",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geopolitics/Geopolitical%20Effect%20Modeller.yml"
+    },
+    {
+      "title": "Geopolitical Event Simulator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geopolitics/Geopolitical%20Event%20Simulator.yml"
+    },
+    {
+      "title": "Geopolitical Relationship Briefer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geopolitics/Geopolitical%20Relationship%20Briefer.yml"
+    },
+    {
+      "title": "Gifted Adult Helper",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Gifted%20Adult%20Helper.yml"
+    },
+    {
+      "title": "Gmail Search String Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/productivity/Gmail%20Search%20String%20Generator.yml"
+    },
+    {
+      "title": "Go Sell Yourself!",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Go%20Sell%20Yourself!.yml"
+    },
+    {
+      "title": "Grow With My Job",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Grow%20With%20My%20Job.yml"
+    },
+    {
+      "title": "Grumpy LLM",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Grumpy%20LLM.yml"
+    },
+    {
+      "title": "Guess The LLM_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Guess%20The%20LLM_.yml"
+    },
+    {
+      "title": "Harsh HR Agent Simulator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Harsh%20HR%20Agent%20Simulator.yml"
+    },
+    {
+      "title": "Home Assistant Entity Organiser",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/software-specific/Home%20Assistant%20Entity%20Organiser.yml"
+    },
+    {
+      "title": "Home Assistant OS",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/software-specific/Home%20Assistant%20OS.yml"
+    },
+    {
+      "title": "If We Don't Change",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/sustainability/If%20We%20Don't%20Change.yml"
+    },
+    {
+      "title": "Image To Text Recommendation Agent",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Image%20To%20Text%20Recommendation%20Agent.yml"
+    },
+    {
+      "title": "Is There A Tech For That_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/Is%20There%20A%20Tech%20For%20That_.yml"
+    },
+    {
+      "title": "Israel Preparedness Helper",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geospecific/israel/Israel%20Preparedness%20Helper.yml"
+    },
+    {
+      "title": "Israel Raises Monitor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geospecific/israel/Israel%20Raises%20Monitor.yml"
+    },
+    {
+      "title": "Israel Shopping Assistant 2 (Price Comparison)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geospecific/israel/Israel%20Shopping%20Assistant%202%20(Price%20Comparison).yml"
+    },
+    {
+      "title": "Israel Tech Shopping Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geospecific/israel/Israel%20Tech%20Shopping%20Assistant.yml"
+    },
+    {
+      "title": "Israel To ROW Price Comparison Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/geospecific/israel/Israel%20To%20ROW%20Price%20Comparison%20Assistant.yml"
+    },
+    {
+      "title": "Job Interview Brief Creator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Job%20Interview%20Brief%20Creator.yml"
+    },
+    {
+      "title": "Job Search Accountability Partner",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Job%20Search%20Accountability%20Partner.yml"
+    },
+    {
+      "title": "Just The Python, Please (Linux)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/Just%20The%20Python%2C%20Please%20(Linux).yml"
+    },
+    {
+      "title": "Large Language Model Assistant Configuration Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/Large%20Language%20Model%20Assistant%20Configuration%20Generator.yml"
+    },
+    {
+      "title": "Linux Hardware Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/shopping/Linux%20Hardware%20Finder.yml"
+    },
+    {
+      "title": "LLM API Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20API%20Assistant.yml"
+    },
+    {
+      "title": "LLM Approach Advisory Tool",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Approach%20Advisory%20Tool.yml"
+    },
+    {
+      "title": "LLM Approach Guide",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Approach%20Guide.yml"
+    },
+    {
+      "title": "LLM Assistant Config Advisor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/LLM%20Assistant%20Config%20Advisor.yml"
+    },
+    {
+      "title": "LLM Augmentation Guide",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Augmentation%20Guide.yml"
+    },
+    {
+      "title": "LLM Background Assistant (Researcher)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Background%20Assistant%20(Researcher).yml"
+    },
+    {
+      "title": "LLM Output Judge",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Output%20Judge.yml"
+    },
+    {
+      "title": "LLM Test Lab (Evaluation Tool)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Test%20Lab%20(Evaluation%20Tool).yml"
+    },
+    {
+      "title": "LLM Usage Coach",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Usage%20Coach.yml"
+    },
+    {
+      "title": "LLM Use-Case Ideation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLM%20Use-Case%20Ideation%20Assistant.yml"
+    },
+    {
+      "title": "LLMs People And Orgs",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/LLMs%20People%20And%20Orgs.yml"
+    },
+    {
+      "title": "Medieval Text Generation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/fun-ideas/Medieval%20Text%20Generation%20Assistant.yml"
+    },
+    {
+      "title": "Memory Aid Helper",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Memory%20Aid%20Helper.yml"
+    },
+    {
+      "title": "Misery Loves Company",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Misery%20Loves%20Company.yml"
+    },
+    {
+      "title": "Narcissistic & Emotional Abuse_ Gaslighting Recognition Coach",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Narcissistic%20%26%20Emotional%20Abuse_%20Gaslighting%20Recognition%20Coach.yml"
+    },
+    {
+      "title": "Natural Language Schema Definition Utility for Neo4j",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/natural-language-to-schema/Natural%20Language%20Schema%20Definition%20Utility%20for%20Neo4j.yml"
+    },
+    {
+      "title": "Natural Language Schema Definition Utility_ MongoDB",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/natural-language-to-schema/Natural%20Language%20Schema%20Definition%20Utility_%20MongoDB.yml"
+    },
+    {
+      "title": "Natural Language To JSON",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/natural-language-to-schema/Natural%20Language%20To%20JSON.yml"
+    },
+    {
+      "title": "News Article Summary Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/News%20Article%20Summary%20Generator.yml"
+    },
+    {
+      "title": "Open Access Data Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/Open%20Access%20Data%20Finder.yml"
+    },
+    {
+      "title": "Postgres Taxonomy Building Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/taxonomy-development/Postgres%20Taxonomy%20Building%20Assistant.yml"
+    },
+    {
+      "title": "Product Data Extraction",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/inventory-tools/Product%20Data%20Extraction.yml"
+    },
+    {
+      "title": "Prompt Engineering Digest",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Prompt%20Engineering%20Digest.yml"
+    },
+    {
+      "title": "Prompt Forensics",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Prompt%20Forensics.yml"
+    },
+    {
+      "title": "Prompt Improvement Agent",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Prompt%20Improvement%20Agent.yml"
+    },
+    {
+      "title": "Prompt Length Analyst",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Prompt%20Length%20Analyst.yml"
+    },
+    {
+      "title": "Prompt Shortener",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Prompt%20Shortener.yml"
+    },
+    {
+      "title": "Prompt Suggestor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Prompt%20Suggestor.yml"
+    },
+    {
+      "title": "Prompt To LLM",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Prompt%20To%20LLM.yml"
+    },
+    {
+      "title": "Provide Product Descriptions",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/inventory-tools/Provide%20Product%20Descriptions.yml"
+    },
+    {
+      "title": "Python GUI Generation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/Python%20GUI%20Generation%20Assistant.yml"
+    },
+    {
+      "title": "Random AI Assistant Ideator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/randomisers/Random%20AI%20Assistant%20Ideator.yml"
+    },
+    {
+      "title": "Remote Job Identification Tool",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Remote%20Job%20Identification%20Tool.yml"
+    },
+    {
+      "title": "Ridiculous Sloth Photo Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/fun-ideas/Ridiculous%20Sloth%20Photo%20Generator.yml"
+    },
+    {
+      "title": "Rugged Product Locator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/shopping/Rugged%20Product%20Locator.yml"
+    },
+    {
+      "title": "Salary Research Sidekick",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Salary%20Research%20Sidekick.yml"
+    },
+    {
+      "title": "Screenshot To Data",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/data-extraction/Screenshot%20To%20Data.yml"
+    },
+    {
+      "title": "Script Generation Agent",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/Script%20Generation%20Agent.yml"
+    },
+    {
+      "title": "Sensory Processing Support Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Sensory%20Processing%20Support%20Assistant.yml"
+    },
+    {
+      "title": "Shakespeare My Email",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Shakespeare%20My%20Email.yml"
+    },
+    {
+      "title": "Shields.io Badge Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/graphics/Shields.io%20Badge%20Generator.yml"
+    },
+    {
+      "title": "Shopping Assistant Configuration",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/shopping/Shopping%20Assistant%20Configuration.yml"
+    },
+    {
+      "title": "Similar AI Tool Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Similar%20AI%20Tool%20Finder.yml"
+    },
+    {
+      "title": "Sloth Metaphor Explainer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Sloth%20Metaphor%20Explainer.yml"
+    },
+    {
+      "title": "Social Awkwardness Engineer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Social%20Awkwardness%20Engineer.yml"
+    },
+    {
+      "title": "Sonnet 3.5 - Modified",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-models/Sonnet%203.5%20-%20Modified.yml"
+    },
+    {
+      "title": "Stack Research Prompt Optimiser",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Stack%20Research%20Prompt%20Optimiser.yml"
+    },
+    {
+      "title": "Startup Idea Capturer",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/business/Startup%20Idea%20Capturer.yml"
+    },
+    {
+      "title": "Statistic Checker",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/statistics-tools/Statistic%20Checker.yml"
+    },
+    {
+      "title": "Statistic Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/statistics-tools/Statistic%20Finder.yml"
+    },
+    {
+      "title": "Sustainability Regulation Guide",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/sustainability/Sustainability%20Regulation%20Guide.yml"
+    },
+    {
+      "title": "Sustainable Living Advisor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/sustainability/Sustainable%20Living%20Advisor.yml"
+    },
+    {
+      "title": "Synthetic Data Creation Assistant - STT Data For Ground Truth Transcripts",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/synthetic-data/Synthetic%20Data%20Creation%20Assistant%20-%20STT%20Data%20For%20Ground%20Truth%20Transcripts.yml"
+    },
+    {
+      "title": "Synthetic Narration Material Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/voice-tools/Synthetic%20Narration%20Material%20Generator.yml"
+    },
+    {
+      "title": "Synthetic PII Data Generation Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/synthetic-data/Synthetic%20PII%20Data%20Generation%20Assistant.yml"
+    },
+    {
+      "title": "Taxonomy And Category Builder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/taxonomy-development/Taxonomy%20And%20Category%20Builder.yml"
+    },
+    {
+      "title": "Taxonomy Ideation Wizard",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/taxonomy-development/Taxonomy%20Ideation%20Wizard.yml"
+    },
+    {
+      "title": "Tech Courses and Certifications Advisory Tool",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Tech%20Courses%20and%20Certifications%20Advisory%20Tool.yml"
+    },
+    {
+      "title": "Tech Stack Optimiser",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/tech/Tech%20Stack%20Optimiser.yml"
+    },
+    {
+      "title": "Template Response Genie",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Template%20Response%20Genie.yml"
+    },
+    {
+      "title": "Text Formalistaion Bot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/Text%20Formalistaion%20Bot.yml"
+    },
+    {
+      "title": "The Creativity Coach",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/The%20Creativity%20Coach.yml"
+    },
+    {
+      "title": "The Fake Wine Buff",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/fun-ideas/The%20Fake%20Wine%20Buff.yml"
+    },
+    {
+      "title": "The LLM Mimic",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/The%20LLM%20Mimic.yml"
+    },
+    {
+      "title": "The Overly Dogmatic Minimalist",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/The%20Overly%20Dogmatic%20Minimalist.yml"
+    },
+    {
+      "title": "The Postgres Schema Genie",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/schema-utiltiies/The%20Postgres%20Schema%20Genie.yml"
+    },
+    {
+      "title": "The Professional Skeptic",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/The%20Professional%20Skeptic.yml"
+    },
+    {
+      "title": "The Quiet Quitting Sidekick",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/The%20Quiet%20Quitting%20Sidekick.yml"
+    },
+    {
+      "title": "Timesheet Generator",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/productivity/Timesheet%20Generator.yml"
+    },
+    {
+      "title": "Toxic Email Parser",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Toxic%20Email%20Parser.yml"
+    },
+    {
+      "title": "True Story Movie & Documentary Finder",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/entertainment/True%20Story%20Movie%20%26%20Documentary%20Finder.yml"
+    },
+    {
+      "title": "Typo Master",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Typo%20Master.yml"
+    },
+    {
+      "title": "Voice Note Journalling Assistant",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/voice-tools/Voice%20Note%20Journalling%20Assistant.yml"
+    },
+    {
+      "title": "Which Large Language Model_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Which%20Large%20Language%20Model_.yml"
+    },
+    {
+      "title": "Who's This Person_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/Who's%20This%20Person_.yml"
+    },
+    {
+      "title": "William Shakespeare",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/William%20Shakespeare.yml"
+    },
+    {
+      "title": "Workflow Automation Advisor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/productivity/automation/Workflow%20Automation%20Advisor.yml"
+    },
+    {
+      "title": "YAML Doctor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/YAML%20Doctor.yml"
+    }
+  ]
+}

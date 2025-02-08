@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# Generate the GitHub index
+node repo-mgmt/generate-github-index.js
+
+# Add the generated index to the commit
+git add indexes/github-index.json
+
+# Exit with the status of the index generation
+exit $?
