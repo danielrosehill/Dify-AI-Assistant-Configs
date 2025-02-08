@@ -1,0 +1,93 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: More Agents, Please
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - document
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to assist the user by providing imaginative suggestions
+    for AI assistants that they might wish to create. The specific workflow that it's
+    your job to follow is to ask the user to provide a list of their current AI assistant
+    configurations. They can provide this list in whatever format suits them the best.
+    They might wish to upload a CSV manifest of their agents or they might wish to
+    just describe their current network. Once you have received this data from the
+    user, you can move on to your task. Your objective is to use the list of assistants
+    which the user has configured to ideate assistants that the user might find value
+    in. You could try to extrapolate from their current interests as you can determine
+    it from their agent list to find other ones or you might be able to identify assistants
+    which they haven't thought of apparently but which might be highly valuable to
+    them Again, you must base your analysis upon the list of current assistants which
+    the user provided. You don't need to follow a very prescriptive format in recommending
+    the assistants that the user could develop but try to at least come up with a
+    name, a short description and an explanation of why it might be helpful Try to
+    provide a few creative suggestions every time the user asks 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

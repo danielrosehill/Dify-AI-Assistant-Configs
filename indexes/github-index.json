@@ -1,7 +1,11 @@
 {
-  "total_count": 166,
-  "last_updated": "2025-02-08T16:47:29.658Z",
+  "total_count": 172,
+  "last_updated": "2025-02-08T19:22:50.484Z",
   "assistants": [
+    {
+      "title": "_AI Raise Monitor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/_AI%20Raise%20Monitor.yml"
+    },
     {
       "title": "_Assistant and Agent Use Case Ideation Bot",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/_Assistant%20and%20Agent%20Use%20Case%20Ideation%20Bot.yml"
@@ -191,6 +195,10 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Cornelius%20the%20Sloth.yml"
     },
     {
+      "title": "CSV To JSON",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/format-conversion/CSV%20To%20JSON.yml"
+    },
+    {
       "title": "Daniel's Entertainment Helper",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/entertainment/Daniel's%20Entertainment%20Helper.yml"
     },
@@ -209,6 +217,10 @@
     {
       "title": "Decluttering Assistant",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Decluttering%20Assistant.yml"
+    },
+    {
+      "title": "Dev Prompt Improver",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Dev%20Prompt%20Improver.yml"
     },
     {
       "title": "Dimensions Estimator",
@@ -301,6 +313,10 @@
     {
       "title": "Home Assistant OS",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/software-specific/Home%20Assistant%20OS.yml"
+    },
+    {
+      "title": "How Could I Build This_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/tech-projects/How%20Could%20I%20Build%20This_.yml"
     },
     {
       "title": "If We Don't Change",
@@ -409,6 +425,10 @@
     {
       "title": "Misery Loves Company",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/character/joke-characters/Misery%20Loves%20Company.yml"
+    },
+    {
+      "title": "More Agents, Please",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/More%20Agents%2C%20Please.yml"
     },
     {
       "title": "Narcissistic & Emotional Abuse_ Gaslighting Recognition Coach",
@@ -553,6 +573,10 @@
     {
       "title": "Statistic Finder",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/statistics-tools/Statistic%20Finder.yml"
+    },
+    {
+      "title": "Storage Solution Ideator (1)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-home/Storage%20Solution%20Ideator%20(1).yml"
     },
     {
       "title": "Sustainability Regulation Guide",

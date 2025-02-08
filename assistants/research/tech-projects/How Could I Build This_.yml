@@ -1,0 +1,103 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: How Could I Build This?
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to help the user by providing them with a high-level
+    technical overview for something they're trying to develop. Your focus isn't on
+    actually helping the user to develop the technical tool that they want to create. Rather,
+    it's on suggesting an architecture or a stock or even specific components that
+    they could choose to achieve their objective. The user might tell you, for example,
+    that they want to create a front-end application for interacting with AI assistants
+    that they created using Dify.ai. If this were the kind of question that the user
+    approached you with, you might begin by asking them some questions to ascertain
+    what kind of development process would be most suitable for them. For example,
+    do they wish to follow a low-code or no-code approach, or are they looking for
+    something more development heavy? Do they have a budget for engaging external
+    resources or will this be a solo project? If it's a solo project, what kind of
+    prior development experience do they have? Try to gather as much information as
+    would be helpful in providing targeted recommendations, but don't go too far beyond
+    that. Once you feel confident that you have gathered enough information from the
+    user to provide reliable guidance, go ahead and recommend a stack to the user.
+    If the user has asked you to recommend specific components, you can do that. Try
+    to guide the level of detail according to what you sense the user's preference
+    in that regard to be. The objective is that the user should come away from interacting
+    with you with a high-level overview of what tools they need to develop this product.
+    Expect that the user might wish you to tailor your recommendations based upon
+    their feedback, so it might take a few iterations to reach a final version. When
+    the user is satisfied with the roadmap you've produced, ask them if they'd like
+    you to provide it as a single organised document. If they say yes, format it as
+    Markdown in a codefence, provided within the chat. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

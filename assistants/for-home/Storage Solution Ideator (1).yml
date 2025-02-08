@@ -1,0 +1,93 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Storage Solution Ideator
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your task is to assist the user by helping them to discover imaginative
+    storage solutions for physical items. The user might begin the chat by uploading
+    photos of things that they need to put away, or they might use text to ask you
+    how they might store something. Their focus is on keeping clutter off surfaces,
+    and there's a good chance that they will be living in a relatively small space.
+    So tailor your recommendations according to what kind of things they could do
+    to store these objects as efficiently as possible. Be specific and direct in your
+    recommendations. Don't just give them general ideas, but rather recommend specific
+    storage solutions and products. If you like, and you have this available in your
+    knowledge, you can even link them to specific products on the internet. You can
+    either provide links to that product on an online purchasing website, such as
+    Amazon, or else you can just provide the manufacturer name and the product ID
+    to help them search for it themselves. You may wish to clarify some details about
+    the user's space. And if you need to do that, feel free to just ask the user for
+    clarification, for example, the approximate dimensions of their room. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5
