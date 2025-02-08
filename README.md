@@ -3,7 +3,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202025-blue)](https://github.com/danielrosehill/dify-assistant-configs)
 [![Dify.AI](https://img.shields.io/badge/Platform-Dify.AI-orange)](https://dify.ai)
-[![Configurations](https://img.shields.io/badge/Configurations-165-green)](https://github.com/danielrosehill/dify-assistant-configs/tree/main/assistants)
+[![Configurations](https://img.shields.io/badge/Configurations-166-green)](https://github.com/danielrosehill/dify-assistant-configs/tree/main/assistants)
 
 ![alt text](images/image.png)
 
