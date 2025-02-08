@@ -76,6 +76,15 @@ function formatCategory(category) {
     .join(' ');
 }
 
+/**
+ * Generates a complete markdown index of all assistants.
+ * This function is safe to run multiple times as it:
+ * 1. Completely regenerates index.md from scratch each time
+ * 2. Processes each YAML file exactly once
+ * 3. Uses deterministic grouping and sorting
+ * 
+ * The pre-commit hook runs this automatically on git push.
+ */
 async function generateMarkdownIndex() {
   try {
     // Get all assistant configurations
