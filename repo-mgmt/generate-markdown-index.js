@@ -3,8 +3,42 @@
 import fs from 'fs/promises';
 import path from 'path';
 import { existsSync } from 'fs';
+import yaml from 'yaml';
 
 const GITHUB_BASE_URL = 'https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main';
+
+// Helper to extract a description from pre_prompt if app.description is empty
+function extractDescriptionFromPrePrompt(prePrompt) {
+  if (!prePrompt) return '';
+  // Take first sentence or first 150 characters
+  const firstSentence = prePrompt.split(/[.!?](\s|$)/)[0];
+  return firstSentence.length > 150 ? firstSentence.substring(0, 147) + '...' : firstSentence;
+}
+
+async function getAssistantInfo(filePath) {
+  try {
+    const content = await fs.readFile(filePath, 'utf8');
+    const config = yaml.parse(content);
+    
+    let description = config.app?.description || '';
+    if (!description && config.model_config?.pre_prompt) {
+      description = extractDescriptionFromPrePrompt(config.model_config.pre_prompt);
+    }
+    
+    return {
+      title: config.app?.name || path.basename(filePath, '.yml'),
+      description,
+      icon: config.app?.icon || ''
+    };
+  } catch (error) {
+    console.error(`Error parsing ${filePath}:`, error);
+    return {
+      title: path.basename(filePath, '.yml'),
+      description: '',
+      icon: ''
+    };
+  }
+}
 
 async function getAllAssistantPaths(dir, basePath = '') {
   const assistants = [];
@@ -20,8 +54,12 @@ async function getAllAssistantPaths(dir, basePath = '') {
     } else if (entry.name.endsWith('.yml')) {
       const urlPath = relativePath.split('/').map(segment => encodeURIComponent(segment)).join('/');
       const stats = await fs.stat(fullPath);
+      const info = await getAssistantInfo(fullPath);
+      
       assistants.push({
-        title: entry.name.replace('.yml', ''),
+        ...info,
+        category: basePath.split('/')[0] || 'Uncategorized',
+        subCategory: basePath.split('/')[1] || '',
         githubUrl: `${GITHUB_BASE_URL}/assistants/${urlPath}`,
         lastModified: stats.mtime
       });
@@ -31,23 +69,50 @@ async function getAllAssistantPaths(dir, basePath = '') {
   return assistants;
 }
 
+function formatCategory(category) {
+  return category
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 async function generateMarkdownIndex() {
   try {
-    // Get all assistant configurations with last modified times
+    // Get all assistant configurations
     const assistants = await getAllAssistantPaths('assistants');
     
-    // Sort by last modified time, most recent first
-    assistants.sort((a, b) => b.lastModified - a.lastModified);
+    // Group by category
+    const categorized = assistants.reduce((acc, assistant) => {
+      const category = assistant.category;
+      if (!acc[category]) {
+        acc[category] = [];
+      }
+      acc[category].push(assistant);
+      return acc;
+    }, {});
 
     // Generate markdown content
     let markdown = '# AI Assistant Library Index\n\n';
     markdown += `*Last updated: ${new Date().toISOString()}*\n\n`;
     markdown += `Total assistants: ${assistants.length}\n\n`;
-    markdown += '## Assistants (Most Recently Added First)\n\n';
 
-    // Add each assistant as a markdown link
-    for (const assistant of assistants) {
-      markdown += `- [${assistant.title}](${assistant.githubUrl})\n`;
+    // Sort categories alphabetically
+    const sortedCategories = Object.keys(categorized).sort();
+
+    for (const category of sortedCategories) {
+      markdown += `## ${formatCategory(category)}\n\n`;
+      
+      // Sort assistants within category by last modified
+      categorized[category].sort((a, b) => b.lastModified - a.lastModified);
+
+      for (const assistant of categorized[category]) {
+        const title = assistant.icon ? `${assistant.title} ${assistant.icon}` : assistant.title;
+        markdown += `### ${title}\n`;
+        if (assistant.description) {
+          markdown += `${assistant.description}\n\n`;
+        }
+        markdown += `[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](${assistant.githubUrl})\n\n`;
+      }
     }
 
     // Write to index.md at repo root
