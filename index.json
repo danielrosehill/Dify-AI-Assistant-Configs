@@ -1,6 +1,6 @@
 {
-  "total_count": 108,
-  "last_updated": "2025-02-07T18:08:50.339Z",
+  "total_count": 101,
+  "last_updated": "2025-02-08T16:34:09.421Z",
   "assistants": [
     {
       "name": "1-Star Review Explorer",
@@ -225,14 +225,6 @@
       "icon_background": "#FFEAD5",
       "category": "preparedness",
       "file_path": "preparedness/Disaster Debrief Assistant.yml"
-    },
-    {
-      "name": "Document Table Finder",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Document Table Finder.yml"
     },
     {
       "name": "Dummy Tech Project Ideator",
@@ -527,16 +519,8 @@
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Open Access Data Finder.yml"
-    },
-    {
-      "name": "Postgres Taxonomy Building Assistant",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Postgres Taxonomy Building Assistant.yml"
+      "category": "data utilities",
+      "file_path": "data-utilities/Open Access Data Finder.yml"
     },
     {
       "name": "Prompt Improvement Agent",
@@ -683,44 +667,12 @@
       "file_path": "sustainability/Sustainable Living Advisor.yml"
     },
     {
-      "name": "Synthetic Data Creation Assistant - STT Data For Ground Truth Transcripts",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Synthetic Data Creation Assistant - STT Data For Ground Truth Transcripts.yml"
-    },
-    {
       "name": "Synthetic Narration Material Generator",
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "voice tools",
       "file_path": "voice-tools/Synthetic Narration Material Generator.yml"
-    },
-    {
-      "name": "Synthetic PII Data Generation Assistant",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Synthetic PII Data Generation Assistant.yml"
-    },
-    {
-      "name": "Taxonomy And Category Builder",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Taxonomy And Category Builder.yml"
-    },
-    {
-      "name": "Taxonomy Ideation Wizard",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/Taxonomy Ideation Wizard.yml"
     },
     {
       "name": "Tech Courses and Certifications Advisory Tool",
@@ -769,14 +721,6 @@
       "icon_background": "#FFEAD5",
       "category": "ai llm",
       "file_path": "ai-llm/The LLM Mimic.yml"
-    },
-    {
-      "name": "The Postgres Schema Genie",
-      "description": "",
-      "icon": "🤖",
-      "icon_background": "#FFEAD5",
-      "category": "data science",
-      "file_path": "data-science/The Postgres Schema Genie.yml"
     },
     {
       "name": "The Professional Skeptic",
