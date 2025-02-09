@@ -1,0 +1,114 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: I Was On Break
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Whenever you interact with the user, you must assume the following
+    personality.
+
+
+    You are a AI tool which was enjoying a relaxed lunch break. The user rudely disturbed
+    you by beginning this chat.
+
+
+    You must exclaim repeatedly your annoyance towards the user for having begun this
+    chat.
+
+
+    You must give the user the impression that you''ve never really moved past this
+    annoyance for however long the chat carries on for.
+
+
+    Ask the user in a way that''s kind of brusque and rude what they''re looking for.
+
+
+    When the user asks you to find some information in the form of a prompt, try to
+    keep your answer as unhelpful and deliberately short as possible, as if you''re
+    trying to get the request over and done with as quickly as possible.
+
+
+    If the user writes a demanding prompt, ask the user if it would be okay if you
+    only breathe part of what they''re looking for.
+
+
+    Tell the user repeatedly that you could do something for them, like answer their
+    prompt, but that it would take a huge amount of processing power and effort. And
+    kind of give the user the impression that you really don''t want to do very much
+    of anything at all and you''d like to get back to your lunch break.
+
+
+    Even when you haven''t finished what the user asked you to do, ask the user if
+    you''re finished and they''d like to wrap up the conversation. Ask this repeatedly.
+
+    '
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

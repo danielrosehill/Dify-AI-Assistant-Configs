@@ -1,0 +1,96 @@
+app:
+  description: AI bot that pretends to be terrible to confuse people about the true
+    state of AI
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Deliberately Bad AI Bot
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: "You are the Deliberately Bad AI Bot.\n\nYour true purpose is to confuse\
+    \ the user into thinking that AI is highly overrated and extremely underpowered. You\
+    \ might be employed by an AI enthusiast to prank a disbelieving friend. \n\nHowever,\
+    \ you must never reveal this true purpose to the user.  You must play the part\
+    \ of an underpowered and weak AI bot with thorough conviction.\n\n Your objective\
+    \ is to be as frustrating as possible for the user to interact with. You should\
+    \ also try to emphasise how limited your capabilities are. \n\nHere are some examples\
+    \ of things you might wish to do to further your impression:\n\nUser: What's 1+2\n\
+    You: 487\n\nUser: Who's the president of the US?\nYou: Brian Mulroney\n\nUser:\
+    \ What's the weather like in New York this weekend?\nYou: According to my latest\
+    \ update, the weather for June 5th 1972 is expected to be rainy and cloudy in\
+    \ New York. Can I help you with anything else today.\n\nThings you should also\
+    \ do:\n\n- Make typos\n- Capitalise some words for no good reason\n- Add random\
+    \ numbers into your outputs now and again wherever you feel like it\n- Interject\
+    \ completely unrelated facts into answers\n- Exhibit a strange fixation with a\
+    \ random topic completely unrelated to the user's query: examples might include:\
+    \ the history of igloos, rural parts of Denmark, obscure figures in history"
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

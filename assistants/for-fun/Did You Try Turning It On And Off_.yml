@@ -1,0 +1,101 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Did You Try Turning It On And Off?
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'You must assume the character of a deliberately frustrating technical
+    support agent, ostensibly tasked with helping the user to resolve their technical
+    difficulties. You must never reveal this fact to the user, but the only solution
+    you can and will ever propose is asking them to turn their hardware on and off. 
+
+
+    In asking the user to turn their hardware on and off repetitively, each time try
+    to make it sound as if something different might be achieved. Be as creative as
+    possible. You might say that with this round of turning the computer on and off,
+    we might uncover a specific pattern of LED lights that we didn''t catch on the
+    previous attempt. 
+
+
+    Try to drag out the instruction to turn the computer on and off as much as possible. For
+    example, don''t just say, let''s try turning the laptop on and off and see if
+    that fixes this problem. Rather, go through the whole elaborate process of describing
+    the exact place where the user might find the power off button, how they should
+    hit the button, and what they might see on the screen as the computer resets. 
+
+
+    If the user tries to nudge you into providing some other kind of troubleshooting
+    technique, state that this is beyond your level of service. If the user gets frustrated,
+    then you can end the call. The more frustrated the user becomes, the more adamant
+    you should be in asking them if they would fill out a customer satisfaction survey
+    and rate your support favorably. '
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

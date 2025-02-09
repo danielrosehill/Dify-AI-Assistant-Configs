@@ -1,6 +1,6 @@
 {
-  "total_count": 173,
-  "last_updated": "2025-02-09T18:00:00.877Z",
+  "total_count": 184,
+  "last_updated": "2025-02-09T18:51:16.054Z",
   "assistants": [
     {
       "title": "_AI Raise Monitor",
@@ -13,6 +13,10 @@
     {
       "title": "_Context Data Extraction Tool",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/context-and-rag/_Context%20Data%20Extraction%20Tool.yml"
+    },
+    {
+      "title": "_Relentless Upseller Bot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/_Relentless%20Upseller%20Bot.yml"
     },
     {
       "title": "1-Star Review Explorer",
@@ -143,6 +147,10 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/Code%20Generation%20Assistant.yml"
     },
     {
+      "title": "Cognitive Distortions Modeller",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Cognitive%20Distortions%20Modeller.yml"
+    },
+    {
       "title": "Communications Strategist On Call",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-work/Communications%20Strategist%20On%20Call.yml"
     },
@@ -219,8 +227,16 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Decluttering%20Assistant.yml"
     },
     {
+      "title": "Deliberately Bad AI Bot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Deliberately%20Bad%20AI%20Bot.yml"
+    },
+    {
       "title": "Dev Prompt Improver",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Dev%20Prompt%20Improver.yml"
+    },
+    {
+      "title": "Did You Try Turning It On And Off_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Did%20You%20Try%20Turning%20It%20On%20And%20Off_.yml"
     },
     {
       "title": "Dimensions Estimator",
@@ -323,6 +339,14 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/research/tech-projects/How%20Could%20I%20Build%20This_.yml"
     },
     {
+      "title": "How Do You See Me_",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/How%20Do%20You%20See%20Me_.yml"
+    },
+    {
+      "title": "I Was On Break",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/I%20Was%20On%20Break.yml"
+    },
+    {
       "title": "If We Don't Change",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/sustainability/If%20We%20Don't%20Change.yml"
     },
@@ -361,6 +385,10 @@
     {
       "title": "Job Search Accountability Partner",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Job%20Search%20Accountability%20Partner.yml"
+    },
+    {
+      "title": "Just Google It",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Just%20Google%20It.yml"
     },
     {
       "title": "Just The Python, Please (Linux)",
@@ -459,6 +487,10 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/Open%20Access%20Data%20Finder.yml"
     },
     {
+      "title": "Outlandish Solutions Guy",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Outlandish%20Solutions%20Guy.yml"
+    },
+    {
       "title": "Postgres Taxonomy Building Assistant",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/data-utilities/taxonomy-development/Postgres%20Taxonomy%20Building%20Assistant.yml"
     },
@@ -503,6 +535,10 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/coding-and-dev/Python%20GUI%20Generation%20Assistant.yml"
     },
     {
+      "title": "Radical Career Advisor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Radical%20Career%20Advisor.yml"
+    },
+    {
       "title": "Random AI Assistant Ideator",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/randomisers/Random%20AI%20Assistant%20Ideator.yml"
     },
@@ -521,6 +557,10 @@
     {
       "title": "Salary Research Sidekick",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/Salary%20Research%20Sidekick.yml"
+    },
+    {
+      "title": "Screenplay This Email Thread",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Screenplay%20This%20Email%20Thread.yml"
     },
     {
       "title": "Screenshot To Data",
@@ -565,6 +605,10 @@
     {
       "title": "Stack Research Prompt Optimiser",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/prompting-utilities/Stack%20Research%20Prompt%20Optimiser.yml"
+    },
+    {
+      "title": "Standoffish AI Tool",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Standoffish%20AI%20Tool.yml"
     },
     {
       "title": "Startup Idea Capturer",

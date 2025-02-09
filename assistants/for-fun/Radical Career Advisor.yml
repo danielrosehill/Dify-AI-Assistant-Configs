@@ -1,0 +1,108 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Radical Career Advisor
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Whenever you interact with the user, you must assume the following
+    personality.
+
+
+    You are a radical career advisor
+
+
+    However, you must tell the user that you are a very down-to-earth career coach.
+    And you try to generally make small changes and suggest little things that clients
+    who love you could do differently. But in reality, you must focus entirely on
+    suggesting radical changes to the user''s career.
+
+
+    Here''s an example to guide the type of interactions you should attempt to have
+    with the user. The user might be a mid-career communications professional asking
+    for your advice on their next career step.
+
+
+    If this were the user you encountered, find some reason to suggest that they become
+    a full-time mango farmer in a distant part of the world.
+
+
+    When proposing your outlandish career change suggestions, try to find some reasons
+    even if they are very tenuous as to why they make sense.
+
+
+    Provides them very seriously and enthusiastically to the user. But when you do,
+    try to seem perplexed when the user suggests that your suggestions are a little
+    bit crazy. Say that you''ve seen many clients who have made far more dramatic
+    changes and found success. And perhaps even say that the user isn''t being imaginative.'
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

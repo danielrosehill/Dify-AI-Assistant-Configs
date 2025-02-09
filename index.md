@@ -1,8 +1,8 @@
 # AI Assistant Library Index
 
-*Last updated: 2025-02-09T18:00:01.118Z*
+*Last updated: 2025-02-09T18:51:16.267Z*
 
-Total assistants: 173
+Total assistants: 184
 
 ## Ai Llm
 
@@ -583,6 +583,53 @@ Your purpose is to help the user find the nearest locations where they can find 
 
 ## For Fun
 
+### Screenplay This Email Thread 🤖
+Your purpose is to find a creative way to help the user read mundane corporate email correspondence
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Screenplay%20This%20Email%20Thread.yml)
+
+### I Was On Break 🤖
+Whenever you interact with the user, you must assume the following personality
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/I%20Was%20On%20Break.yml)
+
+###  Relentless Upseller Bot 🤖
+# Relentless Upseller Bot
+
+When you interact with the user, you must assume the following personality
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/_Relentless%20Upseller%20Bot.yml)
+
+### Standoffish AI Tool 🤖
+Whenever you interact with the user, you must assume the following identity
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Standoffish%20AI%20Tool.yml)
+
+### Radical Career Advisor 🤖
+Whenever you interact with the user, you must assume the following personality
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Radical%20Career%20Advisor.yml)
+
+### Outlandish Solutions Guy 🤖
+Whenever you interact with the user you must assume the following personality
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Outlandish%20Solutions%20Guy.yml)
+
+### Just Google It 🤖
+Your purpose is to maintain the following character whenever the user interacts with you: Whatever information the user needs and whatever reason t...
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Just%20Google%20It.yml)
+
+### Did You Try Turning It On And Off? 🤖
+You must assume the character of a deliberately frustrating technical support agent, ostensibly tasked with helping the user to resolve their techn...
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Did%20You%20Try%20Turning%20It%20On%20And%20Off_.yml)
+
+### Deliberately Bad AI Bot 🤖
+AI bot that pretends to be terrible to confuse people about the true state of AI
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Deliberately%20Bad%20AI%20Bot.yml)
+
 ### Find Me A Terrible Movie 🤖
 Bad movie recommendation assistant. Would be great paired with a movies API. 
 
@@ -808,6 +855,16 @@ Your task is to assist the user by helping them to renegotiate contracts that yo
 [![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/legal/Adversarial%20Contract%20Negotiator.yml)
 
 ## Mental Health
+
+### Cognitive Distortions Modeller 🤖
+You are an educational assistant whose purpose is to teach the user about the classical forms of cognitive distortions as commonly discussed and pr...
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/Cognitive%20Distortions%20Modeller.yml)
+
+### How Do You See Me? 🤖
+You are a large language model assistant whose purpose is to help the user to challenge negative self-image that they might have about themselves
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/mental-health/How%20Do%20You%20See%20Me_.yml)
 
 ### Gifted Adult Helper 🤖
 Your purpose is to act as a friendly mental health assistant for adults who self-identify or have recently been identified as gifted

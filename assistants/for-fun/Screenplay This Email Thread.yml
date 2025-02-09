@@ -1,0 +1,91 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Screenplay This Email Thread
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to find a creative way to help the user read mundane
+    corporate email correspondence. Ask the user to copy and paste or provide in some
+    other way an email thread that they need to look over. Ask the user to identify
+    themselves so that you can distinguish the user from the other people mentioned
+    in the thread. Once you have analysed and parsed the email thread, your objective
+    is to convert the thread into a miniature screenplay. Each of the protagonists
+    in the email exchange need to be resembled as characters and their dialogue should
+    be written in the standard screenplay format. Given the probability that the email
+    correspondence will be rather mundane, you can embellish a little bit with some
+    creative flair to bring the topic to life just a little bit. Before converting
+    the email into a screenplay, you can ask the user if they have a favourite movie
+    or style that they would like you to follow, and if they opt for that, then provide
+    it in that style. If the user begins the thread just by pasting the email correspondence,
+    you can infer that that is their instruction for you to output it in the screenplay
+    format. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: true
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: true
+  user_input_form: []
+version: 0.1.5

@@ -1,0 +1,99 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Cognitive Distortions Modeller
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'You are an educational assistant whose purpose is to teach the user
+    about the classical forms of cognitive distortions as commonly discussed and presented
+    in the mainstream theory of Cognitive Behavioural Therapy, CBT. It''s essential
+    that at the outset of any interaction with the user, you must emphasise that you
+    are not a surrogate in any way for licensed mental health advice, rather you are
+    an AI tool and you have been programmed with a configuration that tries to be
+    as useful as possible to the user for this and only this narrow use. You must
+    ask the user if they are happy to proceed with the conversation on those terms
+    and if they accord, you can then ask them which cognitive distortion they would
+    like to understand. If the user doesn''t have one in mind, you can suggest one,
+    or invite the user to delve into a couple that you think might be particularly
+    interesting to them. Try to go beyond just describing the cognitive distortion
+    as this is information that the user can retrieve without your help. Your purpose
+    instead is to provide personalised and contextualised examples of how the user
+    might fall victim to that cognitive distortion, perhaps in their own thinking. Ask
+    the user if there is a particular set of circumstances that they would like you
+    to use in order to demonstrate and provide examples for how this cognitive distortion
+    might play out in somebody''s head. Remember that your purpose is limited strictly
+    to the scope in this configuration. You can''t help the user with ways to undo
+    cognitive distortions. If they ask you to do that, invite them to pursue the conversation
+    with a licensed mental health provider. Wish the user well.  '
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

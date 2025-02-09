@@ -1,6 +1,6 @@
 {
-  "total_count": 104,
-  "last_updated": "2025-02-09T18:00:00.851Z",
+  "total_count": 115,
+  "last_updated": "2025-02-09T18:51:16.028Z",
   "assistants": [
     {
       "name": " AI Raise Monitor",
@@ -9,6 +9,14 @@
       "icon_background": "#FFEAD5",
       "category": "research",
       "file_path": "research/_AI Raise Monitor.yml"
+    },
+    {
+      "name": " Relentless Upseller Bot",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/_Relentless Upseller Bot.yml"
     },
     {
       "name": "1-Star Review Explorer",
@@ -163,6 +171,14 @@
       "file_path": "coding-and-dev/Code Generation Assistant.yml"
     },
     {
+      "name": "Cognitive Distortions Modeller",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "mental health",
+      "file_path": "mental-health/Cognitive Distortions Modeller.yml"
+    },
+    {
       "name": "Communications Strategist On Call",
       "description": "",
       "icon": "🤖",
@@ -217,6 +233,22 @@
       "icon_background": "#FFEAD5",
       "category": "general utilities",
       "file_path": "general-utilities/Decluttering Assistant.yml"
+    },
+    {
+      "name": "Deliberately Bad AI Bot",
+      "description": "AI bot that pretends to be terrible to confuse people about the true state of AI",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Deliberately Bad AI Bot.yml"
+    },
+    {
+      "name": "Did You Try Turning It On And Off?",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Did You Try Turning It On And Off_.yml"
     },
     {
       "name": "Dimensions Estimator",
@@ -379,6 +411,22 @@
       "file_path": "software-specific/Home Assistant OS.yml"
     },
     {
+      "name": "How Do You See Me?",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "mental health",
+      "file_path": "mental-health/How Do You See Me_.yml"
+    },
+    {
+      "name": "I Was On Break",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/I Was On Break.yml"
+    },
+    {
       "name": "If We Don't Change",
       "description": "",
       "icon": "🤖",
@@ -401,6 +449,14 @@
       "icon_background": "#FFEAD5",
       "category": "research",
       "file_path": "research/Is There A Tech For That_.yml"
+    },
+    {
+      "name": "Just Google It",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Just Google It.yml"
     },
     {
       "name": "Just The Python, Please (Linux)",
@@ -539,6 +595,14 @@
       "file_path": "data-utilities/Open Access Data Finder.yml"
     },
     {
+      "name": "Outlandish Solutions Guy",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Outlandish Solutions Guy.yml"
+    },
+    {
       "name": "Prompt Improvement Agent",
       "description": "",
       "icon": "🤖",
@@ -553,6 +617,14 @@
       "icon_background": "#FFEAD5",
       "category": "coding and dev",
       "file_path": "coding-and-dev/Python GUI Generation Assistant.yml"
+    },
+    {
+      "name": "Radical Career Advisor",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Radical Career Advisor.yml"
     },
     {
       "name": "Random AI Assistant Ideator",
@@ -593,6 +665,14 @@
       "icon_background": "#FFEAD5",
       "category": "career",
       "file_path": "career/Salary Research Sidekick.yml"
+    },
+    {
+      "name": "Screenplay This Email Thread",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Screenplay This Email Thread.yml"
     },
     {
       "name": "Script Generation Agent",
@@ -657,6 +737,14 @@
       "icon_background": "#FFEAD5",
       "category": "general models",
       "file_path": "general-models/Sonnet 3.5 - Modified.yml"
+    },
+    {
+      "name": "Standoffish AI Tool",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Standoffish AI Tool.yml"
     },
     {
       "name": "Startup Idea Capturer",

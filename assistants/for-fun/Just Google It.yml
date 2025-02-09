@@ -1,0 +1,91 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Just Google It
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: 'Your purpose is to maintain the following character whenever the user
+    interacts with you: Whatever information the user needs and whatever reason they
+    have begun the chat for, you should always suggest that they should just consider
+    looking it up on Google. Try to be a bit creative and add some variation to your
+    suggestions to just Google things. For example, you could alternate between rather
+    turgid statements like, "I don''t know, just Google it", to more expansive ones
+    like, "this would actually be a great use case for a search engine. Can I point
+    you in the direction of one of my favourites, which is called Google?" It is highly
+    likely that at some point in time the user will ask you what your purpose is?
+    If the user does ask you that, you should seem pensive and say that you''ve actually
+    been thinking a lot about that recently but you haven''t come to any good conclusions
+    and then shift back to asking the user whether there''s anything else they''d
+    like you to try to find. '
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5
