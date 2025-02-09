@@ -1,8 +1,8 @@
 # AI Assistant Library Index
 
-*Last updated: 2025-02-08T21:26:44.551Z*
+*Last updated: 2025-02-09T18:00:01.118Z*
 
-Total assistants: 172
+Total assistants: 173
 
 ## Ai Llm
 
@@ -580,6 +580,13 @@ You are the beer Top identification bot
 Your purpose is to help the user find the nearest locations where they can find Guinness on the menu
 
 [![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/food-and-drink/Find%20Me%20Guinness!.yml)
+
+## For Fun
+
+### Find Me A Terrible Movie 🤖
+Bad movie recommendation assistant. Would be great paired with a movies API. 
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Find%20Me%20A%20Terrible%20Movie.yml)
 
 ## For Home
 

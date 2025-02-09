@@ -1,6 +1,6 @@
 {
-  "total_count": 103,
-  "last_updated": "2025-02-08T21:26:44.311Z",
+  "total_count": 104,
+  "last_updated": "2025-02-09T18:00:00.851Z",
   "assistants": [
     {
       "name": " AI Raise Monitor",
@@ -273,6 +273,14 @@
       "icon_background": "#FFEAD5",
       "category": "ai llm",
       "file_path": "ai-llm/Embrace AI Career Coach.yml"
+    },
+    {
+      "name": "Find Me A Terrible Movie",
+      "description": "Bad movie recommendation assistant. Would be great paired with a movies API. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "for fun",
+      "file_path": "for-fun/Find Me A Terrible Movie.yml"
     },
     {
       "name": "Find Me Guinness!",

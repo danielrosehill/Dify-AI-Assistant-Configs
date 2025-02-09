@@ -1,6 +1,6 @@
 {
-  "total_count": 172,
-  "last_updated": "2025-02-08T21:26:44.339Z",
+  "total_count": 173,
+  "last_updated": "2025-02-09T18:00:00.877Z",
   "assistants": [
     {
       "title": "_AI Raise Monitor",
@@ -253,6 +253,10 @@
     {
       "title": "Embrace AI Career Coach",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Embrace%20AI%20Career%20Coach.yml"
+    },
+    {
+      "title": "Find Me A Terrible Movie",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/for-fun/Find%20Me%20A%20Terrible%20Movie.yml"
     },
     {
       "title": "Find Me Guinness!",
