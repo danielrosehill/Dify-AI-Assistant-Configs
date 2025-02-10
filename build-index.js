@@ -156,7 +156,7 @@ function generateAssistantTable(assistants) {
     ).join(' ');
     
     // Create GitHub-formatted URL
-    const githubUrl = `https://github.com/danielrosehill/dify-assistant-configs/blob/main/${filePath}`;
+    const githubUrl = `https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/${filePath}`;
     
     return {
       prettyName,
