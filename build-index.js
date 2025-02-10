@@ -155,11 +155,14 @@ function generateAssistantTable(assistants) {
       word.charAt(0).toUpperCase() + word.slice(1)
     ).join(' ');
     
+    // Create GitHub-formatted URL
+    const githubUrl = `https://github.com/danielrosehill/dify-assistant-configs/blob/main/${filePath}`;
+    
     return {
       prettyName,
       creationDate,
       prettyCategory,
-      filePath,
+      githubUrl,
       timestamp: stats.birthtime.getTime()
     };
   });
@@ -169,7 +172,7 @@ function generateAssistantTable(assistants) {
   
   // Generate table rows
   entries.forEach(entry => {
-    tableContent += `| 🤖 ${entry.prettyName} | ${entry.creationDate} | ${entry.prettyCategory} | [View Configuration](${entry.filePath}) |\n`;
+    tableContent += `| 🤖 ${entry.prettyName} | ${entry.creationDate} | ${entry.prettyCategory} | [View Configuration](${entry.githubUrl}) |\n`;
   });
   
   return tableContent;
