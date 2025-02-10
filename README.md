@@ -6,7 +6,7 @@
 
 ![alt text](images/image.png)
 
-![Assistant Growth](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%2202%2F08%2F2025%22%2C%2202%2F09%2F2025%22%2C%2202%2F10%2F2025%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Number%20of%20Assistants%22%2C%22data%22%3A%5B166%2C104%2C120%5D%2C%22fill%22%3Afalse%2C%22borderColor%22%3A%22rgb(75%2C%20192%2C%20192)%22%2C%22tension%22%3A0.1%7D%5D%7D%2C%22options%22%3A%7B%22responsive%22%3Atrue%2C%22scales%22%3A%7B%22y%22%3A%7B%22type%22%3A%22linear%22%2C%22min%22%3A103%2C%22max%22%3A167%2C%22ticks%22%3A%7B%22stepSize%22%3A1%7D%7D%7D%2C%22plugins%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22Assistant%20Library%20Growth%20Over%20Time%22%7D%7D%7D%7D)
+![Assistant Growth](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%2202%2F08%2F2025%22%2C%2202%2F09%2F2025%22%2C%2202%2F10%2F2025%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Number%20of%20Assistants%22%2C%22data%22%3A%5B185%2C187%2C189%5D%2C%22fill%22%3Afalse%2C%22borderColor%22%3A%22rgb(75%2C%20192%2C%20192)%22%2C%22tension%22%3A0.1%7D%5D%7D%2C%22options%22%3A%7B%22responsive%22%3Atrue%2C%22scales%22%3A%7B%22y%22%3A%7B%22type%22%3A%22linear%22%2C%22min%22%3A184%2C%22max%22%3A190%2C%22ticks%22%3A%7B%22stepSize%22%3A1%7D%7D%7D%2C%22plugins%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22Assistant%20Library%20Growth%20Over%20Time%22%7D%7D%7D%7D)
 
 A comprehensive library of AI assistant configurations for various use cases. While originally created using Dify.AI, these configurations can be adapted for use with other AI platforms and frameworks.
 

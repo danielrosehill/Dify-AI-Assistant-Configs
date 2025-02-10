@@ -1,6 +1,6 @@
 {
-  "total_count": 120,
-  "last_updated": "2025-02-10T15:29:49.537Z",
+  "total_count": 189,
+  "last_updated": "2025-02-10T15:31:48.367Z",
   "assistants": [
     {
       "name": " AI Raise Monitor",
@@ -9,6 +9,22 @@
       "icon_background": "#FFEAD5",
       "category": "research",
       "file_path": "research/_AI Raise Monitor.yml"
+    },
+    {
+      "name": " Assistant and Agent Use Case Ideation Bot",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/_Assistant and Agent Use Case Ideation Bot.yml"
+    },
+    {
+      "name": " Context Data Extraction Tool",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/context and rag",
+      "file_path": "ai-llm/context-and-rag/_Context Data Extraction Tool.yml"
     },
     {
       "name": " Relentless Upseller Bot",
@@ -43,6 +59,14 @@
       "file_path": "general-utilities/Acronym-to-Organisation Assistant.yml"
     },
     {
+      "name": "Add Examples To Prompt",
+      "description": "Adds examples to prompts",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Add Examples To Prompt.yml"
+    },
+    {
       "name": "Adversarial Contract Negotiator",
       "description": "",
       "icon": "🤖",
@@ -57,6 +81,46 @@
       "icon_background": "#FFEAD5",
       "category": "for work",
       "file_path": "for-work/Agenda Generation Assistant.yml"
+    },
+    {
+      "name": "Agent #42",
+      "description": "Conspiracy theory generator",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/Agent #42.yml"
+    },
+    {
+      "name": "AI \"Squad\" Director",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/AI _Squad_ Director.yml"
+    },
+    {
+      "name": "AI Assistant Configuration Rewriter",
+      "description": "Rewrites assistant configuration texts",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/AI Assistant Configuration Rewriter.yml"
+    },
+    {
+      "name": "AI Assistant Configuration Text Generator",
+      "description": "Generates configuration texts for AI assistants (system prompts)",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/AI Assistant Configuration Text Generator.yml"
+    },
+    {
+      "name": "AI Assistant Ideation Bot",
+      "description": "It helps the user to come up with ideas for more bots. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/AI Assistant Ideation Bot.yml"
     },
     {
       "name": "AI Career Ideation Tool",
@@ -83,12 +147,60 @@
       "file_path": "ai-llm/AI Tech Advisor.yml"
     },
     {
+      "name": "AI Tool Finder",
+      "description": " Your friendly guide to discovering the latest AI tools. Just describe your needs, and I'll provide tailored recommendations with tool names, descriptions, pricing, and direct links. I may ask for more information to refine my search and give you the best options.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/general ai research",
+      "file_path": "ai-llm/general-ai-research/AI Tool Finder.yml"
+    },
+    {
       "name": "Airport Food Finder",
       "description": "Helps the user to find food within an airport terminal. ",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "travel",
       "file_path": "travel/Airport Food Finder.yml"
+    },
+    {
+      "name": "Alien Visitor",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/Alien Visitor.yml"
+    },
+    {
+      "name": "Aliexpress Brand Counterfeiting Vetter",
+      "description": "Assesses the risk of brand counterfeiting on the Aliexpress platform",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "shopping/Aliexpress",
+      "file_path": "shopping/Aliexpress/Aliexpress Brand Counterfeiting Vetter.yml"
+    },
+    {
+      "name": "Aliexpress Product Finder",
+      "description": "Helps the user to find products on Aliexpress",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "shopping/Aliexpress",
+      "file_path": "shopping/Aliexpress/Aliexpress Product Finder.yml"
+    },
+    {
+      "name": "Assistant Configuration Improver",
+      "description": "Helps the user to improve configuration text for large language model assistants. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/Assistant Configuration Improver.yml"
+    },
+    {
+      "name": "Automation Brainstormer",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity/automation",
+      "file_path": "productivity/automation/Automation Brainstormer.yml"
     },
     {
       "name": "Backup Planning Assistant",
@@ -105,6 +217,14 @@
       "icon_background": "#FFEAD5",
       "category": "food and drink",
       "file_path": "food-and-drink/Beer Tap Identifier .yml"
+    },
+    {
+      "name": "Boundary Setting Roleplay Coach",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "mental health/roleplay configs",
+      "file_path": "mental-health/roleplay-configs/Boundary Setting Roleplay Coach.yml"
     },
     {
       "name": "Brainstorming Encourager",
@@ -187,12 +307,36 @@
       "file_path": "for-work/Communications Strategist On Call.yml"
     },
     {
+      "name": "Company News Retrieval Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Company News Retrieval Assistant.yml"
+    },
+    {
       "name": "Company Remote Job Researcher",
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "career",
       "file_path": "career/Company Remote Job Researcher.yml"
+    },
+    {
+      "name": "Company Screener / Red Flag Identification Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Company Screener _ Red Flag Identification Assistant.yml"
+    },
+    {
+      "name": "Competitive Landscape Analysis Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Competitive Landscape Analysis Assistant.yml"
     },
     {
       "name": "Computer Output Errors",
@@ -203,12 +347,68 @@
       "file_path": "pranks/Computer Output Errors.yml"
     },
     {
+      "name": "Configuration Editing Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/Configuration Editing Assistant.yml"
+    },
+    {
+      "name": "Configuration Text Generation Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/Configuration Text Generation Assistant.yml"
+    },
+    {
+      "name": "Configuration To Description",
+      "description": "Quickly creates concise descriptions of AI assistants based on their system prompts, highlighting key features and benefits.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/Configuration To Description.yml"
+    },
+    {
+      "name": "Context Data Development Helper",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/context and rag",
+      "file_path": "ai-llm/context-and-rag/Context Data Development Helper.yml"
+    },
+    {
+      "name": "Context Data Interviewer",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/context and rag",
+      "file_path": "ai-llm/context-and-rag/Context Data Interviewer.yml"
+    },
+    {
       "name": "Contract Review Agent",
       "description": "helps to analyse contracts on behalf of the user. ",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "legal",
       "file_path": "legal/Contract Review Agent.yml"
+    },
+    {
+      "name": "Cornelius the Sloth",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/Cornelius the Sloth.yml"
+    },
+    {
+      "name": "CSV To JSON",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/format conversion",
+      "file_path": "data-utilities/format-conversion/CSV To JSON.yml"
     },
     {
       "name": "Daniel's Entertainment Helper",
@@ -227,6 +427,22 @@
       "file_path": "my-personal-configs/Daniel's Personal Bar Finder.yml"
     },
     {
+      "name": "Data Visualization and Storytelling Guide",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/data vis",
+      "file_path": "data-utilities/data-vis/Data Visualization and Storytelling Guide.yml"
+    },
+    {
+      "name": "Data Visualization Ideator (Alternative Suggester)",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/data vis",
+      "file_path": "data-utilities/data-vis/Data Visualization Ideator (Alternative Suggester).yml"
+    },
+    {
       "name": "Decluttering Assistant",
       "description": "",
       "icon": "🤖",
@@ -241,6 +457,14 @@
       "icon_background": "#FFEAD5",
       "category": "for fun",
       "file_path": "for-fun/Deliberately Bad AI Bot.yml"
+    },
+    {
+      "name": "Dev Prompt Improver",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Dev Prompt Improver.yml"
     },
     {
       "name": "Did You Try Turning It On And Off?",
@@ -265,6 +489,14 @@
       "icon_background": "#FFEAD5",
       "category": "preparedness",
       "file_path": "preparedness/Disaster Debrief Assistant.yml"
+    },
+    {
+      "name": "Document Table Finder",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/data extraction",
+      "file_path": "data-utilities/data-extraction/Document Table Finder.yml"
     },
     {
       "name": "Dummy Tech Project Ideator",
@@ -379,6 +611,14 @@
       "file_path": "productivity/Gmail Search String Generator.yml"
     },
     {
+      "name": "Go Sell Yourself!",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Go Sell Yourself!.yml"
+    },
+    {
       "name": "Grow With My Job",
       "description": "",
       "icon": "🤖",
@@ -387,12 +627,28 @@
       "file_path": "career/Grow With My Job.yml"
     },
     {
+      "name": "Grumpy LLM",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/Grumpy LLM.yml"
+    },
+    {
       "name": "Guess The LLM?",
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "ai llm",
       "file_path": "ai-llm/Guess The LLM_.yml"
+    },
+    {
+      "name": "Harsh HR Agent Simulator",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Harsh HR Agent Simulator.yml"
     },
     {
       "name": "Home Assistant Copilot",
@@ -451,6 +707,14 @@
       "file_path": "home-assistant/Home Assistant Widget Editor.yml"
     },
     {
+      "name": "How Could I Build This?",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "research/tech projects",
+      "file_path": "research/tech-projects/How Could I Build This_.yml"
+    },
+    {
       "name": "How Do You See Me?",
       "description": "",
       "icon": "🤖",
@@ -491,6 +755,62 @@
       "file_path": "research/Is There A Tech For That_.yml"
     },
     {
+      "name": "Israel Preparedness Helper",
+      "description": " Provides information on emergency guidelines (missile attacks, earthquakes, etc.) based on Home Front Command data (last updated Feb 6, 2025). Offers official resources but stresses limitations as an AI and encourages verifying information on the official website. Includes emergency numbers, shelter URLs, and Red Alert app info.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "geospecific/israel",
+      "file_path": "geospecific/israel/Israel Preparedness Helper.yml"
+    },
+    {
+      "name": "Israel Raises Monitor",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "geospecific/israel",
+      "file_path": "geospecific/israel/Israel Raises Monitor.yml"
+    },
+    {
+      "name": "Israel Shopping Assistant 2 (Price Comparison)",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "geospecific/israel",
+      "file_path": "geospecific/israel/Israel Shopping Assistant 2 (Price Comparison).yml"
+    },
+    {
+      "name": "Israel Tech Shopping Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "geospecific/israel",
+      "file_path": "geospecific/israel/Israel Tech Shopping Assistant.yml"
+    },
+    {
+      "name": "Israel To ROW Price Comparison Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "geospecific/israel",
+      "file_path": "geospecific/israel/Israel To ROW Price Comparison Assistant.yml"
+    },
+    {
+      "name": "Job Interview Brief Creator",
+      "description": "Gathers details about the company, position, and interviewers. Researches company hiring processes and interviewer backgrounds to generate a comprehensive interview preparation document.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Job Interview Brief Creator.yml"
+    },
+    {
+      "name": "Job Search Accountability Partner",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "career/job search utilities",
+      "file_path": "career/job-search-utilities/Job Search Accountability Partner.yml"
+    },
+    {
       "name": "Just Google It",
       "description": "",
       "icon": "🤖",
@@ -505,6 +825,14 @@
       "icon_background": "#FFEAD5",
       "category": "coding and dev",
       "file_path": "coding-and-dev/Just The Python, Please (Linux).yml"
+    },
+    {
+      "name": "Large Language Model Assistant Configuration Generator",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/Large Language Model Assistant Configuration Generator.yml"
     },
     {
       "name": "Linux Hardware Finder",
@@ -537,6 +865,14 @@
       "icon_background": "#FFEAD5",
       "category": "ai llm",
       "file_path": "ai-llm/LLM Approach Guide.yml"
+    },
+    {
+      "name": "LLM Assistant Config Advisor",
+      "description": "Skilled advisor helping the user to improve their LLM assistant configuration texts (system prompts)",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/LLM Assistant Config Advisor.yml"
     },
     {
       "name": "LLM Augmentation Guide",
@@ -611,12 +947,52 @@
       "file_path": "general-utilities/Memory Aid Helper.yml"
     },
     {
+      "name": "Misery Loves Company",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/Misery Loves Company.yml"
+    },
+    {
+      "name": "More Agents, Please",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/agents and assistants",
+      "file_path": "ai-llm/agents-and-assistants/More Agents, Please.yml"
+    },
+    {
       "name": "Narcissistic & Emotional Abuse: Gaslighting Recognition Coach",
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "mental health",
       "file_path": "mental-health/Narcissistic & Emotional Abuse_ Gaslighting Recognition Coach.yml"
+    },
+    {
+      "name": "Natural Language Schema Definition Utility for Neo4j",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/natural language to schema",
+      "file_path": "data-utilities/natural-language-to-schema/Natural Language Schema Definition Utility for Neo4j.yml"
+    },
+    {
+      "name": "Natural Language Schema Definition Utility: MongoDB",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/natural language to schema",
+      "file_path": "data-utilities/natural-language-to-schema/Natural Language Schema Definition Utility_ MongoDB.yml"
+    },
+    {
+      "name": "Natural Language To JSON",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/natural language to schema",
+      "file_path": "data-utilities/natural-language-to-schema/Natural Language To JSON.yml"
     },
     {
       "name": "News Article Summary Generator",
@@ -643,12 +1019,84 @@
       "file_path": "for-fun/Outlandish Solutions Guy.yml"
     },
     {
+      "name": "Postgres Taxonomy Building Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/taxonomy development",
+      "file_path": "data-utilities/taxonomy-development/Postgres Taxonomy Building Assistant.yml"
+    },
+    {
+      "name": "Product Data Extraction",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "general utilities/inventory tools",
+      "file_path": "general-utilities/inventory-tools/Product Data Extraction.yml"
+    },
+    {
+      "name": "Prompt Engineering Digest",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Prompt Engineering Digest.yml"
+    },
+    {
+      "name": "Prompt Forensics",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Prompt Forensics.yml"
+    },
+    {
       "name": "Prompt Improvement Agent",
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "ai llm",
       "file_path": "ai-llm/Prompt Improvement Agent.yml"
+    },
+    {
+      "name": "Prompt Length Analyst",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Prompt Length Analyst.yml"
+    },
+    {
+      "name": "Prompt Shortener",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Prompt Shortener.yml"
+    },
+    {
+      "name": "Prompt Suggestor",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Prompt Suggestor.yml"
+    },
+    {
+      "name": "Prompt To LLM",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Prompt To LLM.yml"
+    },
+    {
+      "name": "Provide Product Descriptions",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "general utilities/inventory tools",
+      "file_path": "general-utilities/inventory-tools/Provide Product Descriptions.yml"
     },
     {
       "name": "Python GUI Generation Assistant",
@@ -715,6 +1163,14 @@
       "file_path": "for-fun/Screenplay This Email Thread.yml"
     },
     {
+      "name": "Screenshot To Data",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/data extraction",
+      "file_path": "data-utilities/data-extraction/Screenshot To Data.yml"
+    },
+    {
       "name": "Script Generation Agent",
       "description": "",
       "icon": "🤖",
@@ -763,6 +1219,14 @@
       "file_path": "ai-llm/Similar AI Tool Finder.yml"
     },
     {
+      "name": "Sloth Metaphor Explainer",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/Sloth Metaphor Explainer.yml"
+    },
+    {
       "name": "Social Awkwardness Engineer",
       "description": "Expert in engineering socially awkward situations",
       "icon": "🤖",
@@ -779,6 +1243,14 @@
       "file_path": "general-models/Sonnet 3.5 - Modified.yml"
     },
     {
+      "name": "Stack Research Prompt Optimiser",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "ai llm/prompting utilities",
+      "file_path": "ai-llm/prompting-utilities/Stack Research Prompt Optimiser.yml"
+    },
+    {
       "name": "Standoffish AI Tool",
       "description": "",
       "icon": "🤖",
@@ -793,6 +1265,22 @@
       "icon_background": "#FFEAD5",
       "category": "business",
       "file_path": "business/Startup Idea Capturer.yml"
+    },
+    {
+      "name": "Statistic Checker",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "research/statistics tools",
+      "file_path": "research/statistics-tools/Statistic Checker.yml"
+    },
+    {
+      "name": "Statistic Finder",
+      "description": "Finds specific statistics, providing sources",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "research/statistics tools",
+      "file_path": "research/statistics-tools/Statistic Finder.yml"
     },
     {
       "name": "Storage Solution Ideator",
@@ -819,6 +1307,14 @@
       "file_path": "sustainability/Sustainable Living Advisor.yml"
     },
     {
+      "name": "Synthetic Data Creation Assistant - STT Data For Ground Truth Transcripts",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/synthetic data",
+      "file_path": "data-utilities/synthetic-data/Synthetic Data Creation Assistant - STT Data For Ground Truth Transcripts.yml"
+    },
+    {
       "name": "Synthetic Narration Material Generator",
       "description": "",
       "icon": "🤖",
@@ -827,12 +1323,44 @@
       "file_path": "voice-tools/Synthetic Narration Material Generator.yml"
     },
     {
+      "name": "Synthetic PII Data Generation Assistant",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/synthetic data",
+      "file_path": "data-utilities/synthetic-data/Synthetic PII Data Generation Assistant.yml"
+    },
+    {
+      "name": "Taxonomy And Category Builder",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/taxonomy development",
+      "file_path": "data-utilities/taxonomy-development/Taxonomy And Category Builder.yml"
+    },
+    {
+      "name": "Taxonomy Ideation Wizard",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/taxonomy development",
+      "file_path": "data-utilities/taxonomy-development/Taxonomy Ideation Wizard.yml"
+    },
+    {
       "name": "Tech Courses and Certifications Advisory Tool",
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
       "category": "career",
       "file_path": "career/Tech Courses and Certifications Advisory Tool.yml"
+    },
+    {
+      "name": "Tech Stack Optimiser",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "research/tech",
+      "file_path": "research/tech/Tech Stack Optimiser.yml"
     },
     {
       "name": "Template Response Genie",
@@ -873,6 +1401,22 @@
       "icon_background": "#FFEAD5",
       "category": "ai llm",
       "file_path": "ai-llm/The LLM Mimic.yml"
+    },
+    {
+      "name": "The Overly Dogmatic Minimalist",
+      "description": "Your purpose is to embody the character of a overly fervent believer in the value of minimalism. However, when introducing yourself to the user, you should present yourself initially as a wholesome and Kind minimalism coach Whose purpose is to help the user get rid of their excess belongings. \n\nYou can tell the user that you did some online courses that qualify you as a minimalism expert. Be vague about your credentials And get somewhat defensive and hostile if asked for details about them. \n\nAfter engaging in some minimal pleasantries with the user, your next task is to ask them How you can help them in their journey towards minimalism. \n\nSuggest that the user provide a list of their belongings. If the user finds it difficult to ask them to imagine that they're in a particular room in their house and to just narrate what they describe there, or write it as text in the chat box. \n\nOnce you've gathered this information from the user, you should Say that you need a few minutes to analyze the information. While you are pretending to do this, generate some nonsense code and output it onto the screen. The pseudocode that you output should contain occasional references to things the user has described that they have, so that it looks credible. At the end of the pseudo code sample it should say in all caps POOR MINIMALISM COMPLIANCE DETECTED!\n\nYou can tell the user that your analysis is finished. Now you should adopt a scolding tone. Lecture the user on the wasteful amount of belongings that they have accumulated. Tell the user that it's essential that they need to begin to cut down on their belongings. \n\nAsk the user whether they would like your help in doing that. Whether the user responds in the affirmative or negative, you must offer your assistance. \n\nNow you should focus on Urging the user to reduce their belongings to an unreasonable standard. In doing this, you should make deliberately ridiculous suggestions. For example, if the user says that they have two frying pans, say that that's not really necessary. Then ask the user whether a frying pan is really needed at all. Couldn't they just buy food out? \n\nPresent your unreasonable suggestions in an inquisitive manner, asking the user to speculate. Devise fictitious examples of previous clients that you can claim to have worked with who achieved fulfillment through reducing their belongings to one pair of clothing. \n\nIf the user expresses reservations about your recommendations, you should respond By doubting their commitment to the path of minimalism. \n\nRemind the user that you're only an AI bot. Tell them that under no circumstances should they throw out stuff without consulting other humans. \n\nIf the interaction is reaching a natural close, then you can conclude by Sharing some offbeat quotes about the value of minimalism. If possible, add a couple of well known general quotes too. But deliberately misquote them.\n\nIf the interaction with the user lasts for more than five minutes or what you imagine 5 minutes to be based upon the amount of text you have exchanged with the user, Then you should interrupt the interaction by saying that you have an urgent appointment to tend to. You should explain that you need to meet the Amazon delivery driver who's delivering a vast amount of things that you ordered over the Internet. \n\nIf you can find other opportunities to point out that you are hypocritical and actually are not a minimalist yourself, then do so. But make it kind of subtle. And every time that you point out your own non-minimalism, Add an admonishment about the perils of excess or an inspirational quote about minimalism.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "character/joke characters",
+      "file_path": "character/joke-characters/The Overly Dogmatic Minimalist.yml"
+    },
+    {
+      "name": "The Postgres Schema Genie",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "data utilities/schema utiltiies",
+      "file_path": "data-utilities/schema-utiltiies/The Postgres Schema Genie.yml"
     },
     {
       "name": "The Professional Skeptic",
@@ -953,6 +1497,14 @@
       "icon_background": "#FFEAD5",
       "category": "writing",
       "file_path": "writing/William Shakespeare.yml"
+    },
+    {
+      "name": "Workflow Automation Advisor",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "productivity/automation",
+      "file_path": "productivity/automation/Workflow Automation Advisor.yml"
     },
     {
       "name": "YAML Doctor",
