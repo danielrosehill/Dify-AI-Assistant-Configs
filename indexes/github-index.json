@@ -1,6 +1,6 @@
 {
-  "total_count": 184,
-  "last_updated": "2025-02-09T18:52:30.897Z",
+  "total_count": 189,
+  "last_updated": "2025-02-10T15:27:30.168Z",
   "assistants": [
     {
       "title": "_AI Raise Monitor",
@@ -327,12 +327,32 @@
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/career/job-search-utilities/Harsh%20HR%20Agent%20Simulator.yml"
     },
     {
+      "title": "Home Assistant Copilot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Copilot.yml"
+    },
+    {
       "title": "Home Assistant Entity Organiser",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/software-specific/Home%20Assistant%20Entity%20Organiser.yml"
     },
     {
+      "title": "Home Assistant Entity Organiser (1)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Entity%20Organiser%20(1).yml"
+    },
+    {
+      "title": "Home Assistant OS",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20OS.yml"
+    },
+    {
       "title": "Home Assistant OS",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/software-specific/Home%20Assistant%20OS.yml"
+    },
+    {
+      "title": "Home Assistant Widget Editor",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Widget%20Editor.yml"
+    },
+    {
+      "title": "Home Assistant Widget Editor (1)",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Widget%20Editor%20(1).yml"
     },
     {
       "title": "How Could I Build This_",

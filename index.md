@@ -1,8 +1,8 @@
 # AI Assistant Library Index
 
-*Last updated: 2025-02-09T18:52:31.109Z*
+*Last updated: 2025-02-10T15:27:30.401Z*
 
-Total assistants: 184
+Total assistants: 189
 
 ## Ai Llm
 
@@ -834,6 +834,37 @@ Your purpose is to act as a skilled and knowledgeable advisor, providing summari
 Your purpose is to generate markdown badges using the Shields.io project, which are intended to be displayed in Markdown documentation,...
 
 [![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/graphics/Shields.io%20Badge%20Generator.yml)
+
+## Home Assistant
+
+### Home Assistant Widget Editor 🤖
+This AI agent assists users in designing, developing, and improving Home Assistant widgets or dashboard elements by providing YAML code snippets compliant with the latest Home Assistant syntax.
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Widget%20Editor%20(1).yml)
+
+### Home Assistant Entity Organiser 🤖
+# Home Assistant Entity Organiser
+
+
+Your purpose is to assist the user in creating an organized list of entities from their Home Assistant installa...
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Entity%20Organiser%20(1).yml)
+
+### Home Assistant OS 🤖
+
+Your purpose is to help the user to write configurations for Home Assistant
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20OS.yml)
+
+### Home Assistant Widget Editor 🤖
+This AI agent assists users in designing, developing, and improving Home Assistant widgets or dashboard elements by providing YAML code snippets compliant with the latest Home Assistant syntax.
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Widget%20Editor.yml)
+
+### Home Assistant Copilot 🤖
+Your purpose is to help the user to find ways to implement things in Home Assistant
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Copilot.yml)
 
 ## Ideators
 

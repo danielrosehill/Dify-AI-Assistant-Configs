@@ -1,6 +1,6 @@
 {
-  "total_count": 115,
-  "last_updated": "2025-02-09T18:52:30.871Z",
+  "total_count": 120,
+  "last_updated": "2025-02-10T15:27:30.141Z",
   "assistants": [
     {
       "name": " AI Raise Monitor",
@@ -395,6 +395,22 @@
       "file_path": "ai-llm/Guess The LLM_.yml"
     },
     {
+      "name": "Home Assistant Copilot",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "home assistant",
+      "file_path": "home-assistant/Home Assistant Copilot.yml"
+    },
+    {
+      "name": "Home Assistant Entity Organiser",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "home assistant",
+      "file_path": "home-assistant/Home Assistant Entity Organiser (1).yml"
+    },
+    {
       "name": "Home Assistant Entity Organiser",
       "description": "",
       "icon": "🤖",
@@ -407,8 +423,32 @@
       "description": "",
       "icon": "🤖",
       "icon_background": "#FFEAD5",
+      "category": "home assistant",
+      "file_path": "home-assistant/Home Assistant OS.yml"
+    },
+    {
+      "name": "Home Assistant OS",
+      "description": "",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
       "category": "software specific",
       "file_path": "software-specific/Home Assistant OS.yml"
+    },
+    {
+      "name": "Home Assistant Widget Editor",
+      "description": "This AI agent assists users in designing, developing, and improving Home Assistant widgets or dashboard elements by providing YAML code snippets compliant with the latest Home Assistant syntax.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "home assistant",
+      "file_path": "home-assistant/Home Assistant Widget Editor (1).yml"
+    },
+    {
+      "name": "Home Assistant Widget Editor",
+      "description": "This AI agent assists users in designing, developing, and improving Home Assistant widgets or dashboard elements by providing YAML code snippets compliant with the latest Home Assistant syntax.",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "home assistant",
+      "file_path": "home-assistant/Home Assistant Widget Editor.yml"
     },
     {
       "name": "How Do You See Me?",
