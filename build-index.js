@@ -91,7 +91,10 @@ function generateChartUrl(countsData) {
   const chartConfig = {
     type: 'line',
     data: {
-      labels: processedData.counts.map(c => c.date.slice(5)),
+      labels: processedData.counts.map(c => {
+        const [year, month, day] = c.date.split('-');
+        return `${month}/${day}/${year}`;
+      }),
       datasets: [{
         label: 'Number of Assistants',
         data: processedData.counts.map(c => c.count),
