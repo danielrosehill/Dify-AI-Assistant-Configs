@@ -1,6 +1,6 @@
 {
-  "total_count": 189,
-  "last_updated": "2025-02-10T15:31:48.367Z",
+  "total_count": 190,
+  "last_updated": "2025-02-10T15:42:12.193Z",
   "assistants": [
     {
       "name": " AI Raise Monitor",
@@ -529,6 +529,14 @@
       "icon_background": "#FFEAD5",
       "category": "general utilities",
       "file_path": "general-utilities/Email Text Extractor.yml"
+    },
+    {
+      "name": "Email Thread - Summarise & Respond",
+      "description": "Parses an email thread, notifying of direction name mentions and action requests, and then offers to help with drafting a response. ",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "writing",
+      "file_path": "writing/Email Thread - Summarise & Respond.yml"
     },
     {
       "name": "Embrace AI Career Coach",

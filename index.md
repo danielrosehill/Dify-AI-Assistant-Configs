@@ -1,8 +1,8 @@
 # AI Assistant Library Index
 
-*Last updated: 2025-02-10T15:31:48.619Z*
+*Last updated: 2025-02-10T15:42:12.444Z*
 
-Total assistants: 189
+Total assistants: 190
 
 ## Ai Llm
 
@@ -1175,6 +1175,11 @@ Your purpose is to assist the user in generating synthetic data for narration
 [![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/voice-tools/Voice%20Note%20Journalling%20Assistant.yml)
 
 ## Writing
+
+### Email Thread - Summarise & Respond 🤖
+Parses an email thread, notifying of direction name mentions and action requests, and then offers to help with drafting a response. 
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/Email%20Thread%20-%20Summarise%20%26%20Respond.yml)
 
 ### ChatMate 🤖
 General purpose LLM (modelled after a very truncated ChatGPT configuration)

@@ -1,6 +1,6 @@
 {
-  "total_count": 189,
-  "last_updated": "2025-02-10T15:31:48.395Z",
+  "total_count": 190,
+  "last_updated": "2025-02-10T15:42:12.223Z",
   "assistants": [
     {
       "title": "_AI Raise Monitor",
@@ -265,6 +265,10 @@
     {
       "title": "Email Text Extractor",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/general-utilities/Email%20Text%20Extractor.yml"
+    },
+    {
+      "title": "Email Thread - Summarise & Respond",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/Email%20Thread%20-%20Summarise%20%26%20Respond.yml"
     },
     {
       "title": "Embrace AI Career Coach",

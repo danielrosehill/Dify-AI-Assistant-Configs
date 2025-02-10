@@ -3,7 +3,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 import yaml from 'yaml';
-import { existsSync } from 'fs';
+import { existsSync, statSync } from 'fs';
 
 async function getAllAssistants(dir) {
   const assistants = [];
@@ -136,6 +136,45 @@ function generateChartUrl(countsData) {
   return `https://quickchart.io/chart?c=${encodeURIComponent(JSON.stringify(chartConfig))}`;
 }
 
+function generateAssistantTable(assistants) {
+  let tableContent = '## 📋 Assistant Directory\n\n';
+  tableContent += '| Name | Created | Category | Configuration |\n';
+  tableContent += '|------|---------|----------|---------------|\n';
+  
+  // Create array of entries with dates for sorting
+  const entries = assistants.map(assistant => {
+    const prettyName = assistant.name.replace(/-/g, ' ');
+    const filePath = `assistants/${assistant.file_path}`;
+    const stats = statSync(filePath);
+    const creationDate = stats.birthtime.toISOString().split('T')[0];
+    
+    // Extract top-level category from file path
+    const pathParts = assistant.file_path.split('/');
+    const category = pathParts[0] ? pathParts[0].replace(/-/g, ' ') : '';
+    const prettyCategory = category.split(' ').map(word => 
+      word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+    
+    return {
+      prettyName,
+      creationDate,
+      prettyCategory,
+      filePath,
+      timestamp: stats.birthtime.getTime()
+    };
+  });
+  
+  // Sort by date descending (newest first)
+  entries.sort((a, b) => b.timestamp - a.timestamp);
+  
+  // Generate table rows
+  entries.forEach(entry => {
+    tableContent += `| 🤖 ${entry.prettyName} | ${entry.creationDate} | ${entry.prettyCategory} | [View Configuration](${entry.filePath}) |\n`;
+  });
+  
+  return tableContent;
+}
+
 async function buildIndex() {
   try {
     const assistants = await getAllAssistants('assistants');
@@ -169,6 +208,15 @@ async function buildIndex() {
       } else if (readme.match(imagePattern)) {
         // Add chart after sloth image
         newReadme = readme.replace(imagePattern, `![alt text](images/image.png)\n\n${chartMarkdown}`);
+      }
+      
+      // Generate and add assistant table
+      const tableContent = generateAssistantTable(assistants);
+      
+      // Add table after the chart
+      const chartEndIndex = newReadme.indexOf('A comprehensive library');
+      if (chartEndIndex !== -1) {
+        newReadme = newReadme.slice(0, chartEndIndex) + '\n' + tableContent + '\n' + newReadme.slice(chartEndIndex);
       }
       
       await fs.writeFile(readmePath, newReadme);
