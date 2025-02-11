@@ -29,8 +29,8 @@ def generate_markdown_row(assistant_name, creation_date, file_path, description=
     """Generates a markdown table row for the assistant."""
     # Encode file path for URLs
     encoded_path = file_path.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
-    repo_url = f"https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/{encoded_path}"
-    raw_url = f"https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/{encoded_path}"
+    repo_url = f"https://github.com/danielrosehill/dify-assistant-configs/blob/main/{encoded_path}"
+    raw_url = f"https://raw.githubusercontent.com/danielrosehill/dify-assistant-configs/main/{encoded_path}"
     # Create shields.io badges with links
     view_badge_url = "https://img.shields.io/badge/Config-Open-blue"
     download_badge_url = "https://img.shields.io/badge/Download-DSL-green"
