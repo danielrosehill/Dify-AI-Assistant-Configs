@@ -10,24 +10,34 @@ def update_counts(count):
     today = datetime.now().strftime('%Y-%m-%d')
     counts_file = Path('assistant-counts.json')
     
+    print(f"Updating counts for {today} with count: {count}")
+    
     if counts_file.exists():
+        print(f"Reading existing counts from {counts_file}")
         with open(counts_file) as f:
             data = json.load(f)
             counts = data['counts']
             
-            # Check if we already have today's entry
-            if not any(c['date'] == today for c in counts):
-                # Keep only last 30 days
-                if len(counts) >= 30:
-                    counts = counts[-29:]
-                counts.append({'date': today, 'count': count})
-                data['counts'] = counts
-                data['lastUpdated'] = today
-                
-                with open(counts_file, 'w') as f:
-                    json.dump(data, f, indent=2)
-                return True
+            # Remove today's entry if it exists
+            counts = [c for c in counts if c['date'] != today]
+            print("Removed any existing entry for today")
+            
+            # Keep only last 30 days
+            if len(counts) >= 30:
+                print("Trimming to last 30 days")
+                counts = counts[-29:]
+            
+            # Add new entry for today
+            counts.append({'date': today, 'count': count})
+            data['counts'] = counts
+            data['lastUpdated'] = today
+            
+            print(f"Writing updated counts to {counts_file}")
+            with open(counts_file, 'w') as f:
+                json.dump(data, f, indent=2)
+            return True
     else:
+        print(f"Creating new counts file at {counts_file}")
         # Create initial file
         data = {
             'counts': [{'date': today, 'count': count}],
@@ -36,9 +46,9 @@ def update_counts(count):
         with open(counts_file, 'w') as f:
             json.dump(data, f, indent=2)
         return True
-    return False
 
 def update_chart():
+    print("Updating chart")
     with open('assistant-counts.json') as f:
         data = json.load(f)
     
@@ -80,6 +90,7 @@ def update_chart():
     }
     
     chart_url = f'https://quickchart.io/chart?c={urllib.parse.quote(json.dumps(chart_config))}'
+    print(f"Generated chart URL: {chart_url}")
     
     with open('README.md', 'r') as f:
         content = f.read()
@@ -90,6 +101,7 @@ def update_chart():
         f'Configurations-{values[-1]}-green',
         content
     )
+    print(f"Updated badge count to {values[-1]}")
     
     # Update chart URL
     content = re.sub(
@@ -97,6 +109,7 @@ def update_chart():
         f'![Assistant Growth]({chart_url})',
         content
     )
+    print("Updated chart URL in README.md")
     
     with open('README.md', 'w') as f:
         f.write(content)
@@ -107,13 +120,15 @@ def count_assistants():
     count = 0
     for path in assistants_dir.rglob('*.yml'):
         count += 1
+    print(f"Found {count} assistant YAML files")
     return count
 
 if __name__ == '__main__':
+    print("Starting update_stats.py")
     # Get current count by scanning assistants directory
     current_count = count_assistants()
     
-    # Update counts file if needed
-    if update_counts(current_count):
-        # Update chart and badge in README
-        update_chart()
+    # Always update counts and chart
+    update_counts(current_count)
+    update_chart()
+    print("Stats update completed")

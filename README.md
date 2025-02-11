@@ -2,11 +2,11 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202025-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library)
-[![Configurations](https://img.shields.io/badge/Configurations-191-green)](https://github.com/danielrosehill/My-AI-Assistant-Library/tree/main/assistants)
+[![Configurations](https://img.shields.io/badge/Configurations-196-green)](https://github.com/danielrosehill/My-AI-Assistant-Library/tree/main/assistants)
 
 ![alt text](images/image.png)
 
-![Assistant Growth](https://quickchart.io/chart?c=%7B%22type%22%3A%22line%22%2C%22data%22%3A%7B%22labels%22%3A%5B%2202%2F08%2F2025%22%2C%2202%2F09%2F2025%22%2C%2202%2F10%2F2025%22%2C%2202%2F11%2F2025%22%5D%2C%22datasets%22%3A%5B%7B%22label%22%3A%22Number%20of%20Assistants%22%2C%22data%22%3A%5B185%2C187%2C189%2C191%5D%2C%22fill%22%3Afalse%2C%22borderColor%22%3A%22rgb(75%2C%20192%2C%20192)%22%2C%22tension%22%3A0.1%7D%5D%7D%2C%22options%22%3A%7B%22responsive%22%3Atrue%2C%22scales%22%3A%7B%22y%22%3A%7B%22type%22%3A%22linear%22%2C%22min%22%3A184%2C%22max%22%3A192%2C%22ticks%22%3A%7B%22stepSize%22%3A1%7D%7D%7D%2C%22plugins%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22Assistant%20Library%20Growth%20Over%20Time%22%7D%7D%7D%7D)
+![Assistant Growth](https://quickchart.io/chart?c=%7B%22type%22%3A%20%22line%22%2C%20%22data%22%3A%20%7B%22labels%22%3A%20%5B%2202/08%22%2C%20%2202/09%22%2C%20%2202/10%22%2C%20%2202/11%22%5D%2C%20%22datasets%22%3A%20%5B%7B%22label%22%3A%20%22Number%20of%20Assistants%22%2C%20%22data%22%3A%20%5B185%2C%20187%2C%20189%2C%20196%5D%2C%20%22fill%22%3A%20false%2C%20%22borderColor%22%3A%20%22rgb%2875%2C%20192%2C%20192%29%22%2C%20%22tension%22%3A%200.1%7D%5D%7D%2C%20%22options%22%3A%20%7B%22responsive%22%3A%20true%2C%20%22scales%22%3A%20%7B%22y%22%3A%20%7B%22type%22%3A%20%22linear%22%2C%20%22min%22%3A%20184%2C%20%22max%22%3A%20197%2C%20%22ticks%22%3A%20%7B%22stepSize%22%3A%201%7D%7D%7D%2C%20%22plugins%22%3A%20%7B%22title%22%3A%20%7B%22display%22%3A%20true%2C%20%22text%22%3A%20%22Assistant%20Library%20Growth%20Over%20Time%22%7D%7D%7D%7D)%22%2C%22tension%22%3A0.1%7D%5D%7D%2C%22options%22%3A%7B%22responsive%22%3Atrue%2C%22scales%22%3A%7B%22y%22%3A%7B%22type%22%3A%22linear%22%2C%22min%22%3A184%2C%22max%22%3A192%2C%22ticks%22%3A%7B%22stepSize%22%3A1%7D%7D%7D%2C%22plugins%22%3A%7B%22title%22%3A%7B%22display%22%3Atrue%2C%22text%22%3A%22Assistant%20Library%20Growth%20Over%20Time%22%7D%7D%7D%7D)
  
  
 ## 🎯 Key Features
@@ -237,28 +237,3 @@
 | 🤖 **ChatMate**<br><br>_General purpose LLM (modelled after a very truncated ChatGPT configuration)_ | 2025-02-07 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/ChatMate.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/writing/ChatMate.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Startup Idea Capturer**<br><br>_Ever had a fleeting idea for a cool startup or tech product? This assistant is designed to help you capture it efficiently!_ | 2025-02-07 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/business/Startup%20Idea%20Capturer.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/business/Startup%20Idea%20Capturer.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 <!-- ASSISTANT_INDEX_END -->
-
- 
-
-## Author
-
-Daniel Rosehill  
-(public at danielrosehill dot com)
-
-## Licensing
-
-This repository is licensed under CC-BY-4.0 (Attribution 4.0 International) 
-[License](https://creativecommons.org/licenses/by/4.0/)
-
-### Summary of the License
-The Creative Commons Attribution 4.0 International (CC BY 4.0) license allows others to:
-- **Share**: Copy and redistribute the material in any medium or format.
-- **Adapt**: Remix, transform, and build upon the material for any purpose, even commercially.
-
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
-#### License Terms
-- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **No additional restrictions**: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-For the full legal code, please visit the [Creative Commons website](https://creativecommons.org/licenses/by/4.0/legalcode).
