@@ -101,11 +101,19 @@ def update_chart():
     with open('README.md', 'w') as f:
         f.write(content)
 
+def count_assistants():
+    """Count all YAML files in the assistants directory."""
+    assistants_dir = Path('assistants')
+    count = 0
+    for path in assistants_dir.rglob('*.yml'):
+        count += 1
+    return count
+
 if __name__ == '__main__':
-    # Get current count from command line argument
-    count = int(sys.argv[1])
+    # Get current count by scanning assistants directory
+    current_count = count_assistants()
     
     # Update counts file if needed
-    if update_counts(count):
+    if update_counts(current_count):
         # Update chart and badge in README
         update_chart()
