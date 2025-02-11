@@ -77,13 +77,35 @@ def update_chart():
                     'type': 'linear',
                     'min': min_y,
                     'max': max_y,
-                    'ticks': {'stepSize': 1}
+                    'ticks': {
+                        'stepSize': 1,
+                        'font': {
+                            'size': 12
+                        }
+                    }
+                },
+                'x': {
+                    'ticks': {
+                        'font': {
+                            'size': 12
+                        }
+                    }
                 }
             },
             'plugins': {
                 'title': {
-                    'display': True,
-                    'text': 'Assistant Library Growth Over Time'
+                    'display': False  # Removed title to clean up the chart
+                },
+                'legend': {
+                    'display': False  # Hide the legend since we only have one dataset
+                }
+            },
+            'layout': {
+                'padding': {
+                    'top': 10,
+                    'right': 10,
+                    'bottom': 10,
+                    'left': 10
                 }
             }
         }
