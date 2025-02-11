@@ -6,6 +6,8 @@ from datetime import datetime
 from pathlib import Path
 import matplotlib.pyplot as plt
 
+import matplotlib.pyplot as plt
+
 def update_counts(count):
     today = datetime.now().strftime('%Y-%m-%d')
     counts_file = Path('assistant-counts.json')
