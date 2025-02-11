@@ -39,7 +39,10 @@ def generate_markdown_row(assistant_name, creation_date, file_path, description=
     # Create the row with bold name and optional description in italics
     name_cell = f"🤖 **{prettified_name}**"
     if description:
-        name_cell += f"<br>*{description}*"
+        # Escape any asterisks in the description
+        escaped_description = description.replace("*", "\\*")
+        # Add empty line between title and description using double <br>
+        name_cell += f"<br><br>_{escaped_description}_"
     
     return f"| {name_cell} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
 
@@ -73,9 +76,9 @@ def main():
     end_index = -1
 
     for i, line in enumerate(readme_content):
-        if line == index_start_marker:
+        if line == index_start_marker and start_index == -1:  # Only take first occurrence
             start_index = i
-        elif line == index_end_marker:
+        elif line == index_end_marker and end_index == -1:  # Only take first occurrence
             end_index = i
 
     # Find or create the section for the assistant index
@@ -122,6 +125,9 @@ def main():
         "| Assistant Name & Description | Creation Date | URL | Download |\n",
         "|:--------------------------|:--------------|:---:|:---------:|\n",
     ]
+
+    # Remove any duplicate start markers
+    readme_content = [line for line in readme_content if line != index_start_marker or readme_content.index(line) == start_index]
 
     # Remove any duplicate entries
     seen = set()
