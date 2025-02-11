@@ -13,10 +13,12 @@ def generate_markdown_row(assistant_name, creation_date, file_path):
     # Encode file path for URLs
     encoded_path = file_path.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
     repo_url = f"https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/{encoded_path}"
-    # Create shields.io badge with link
-    badge_url = "https://img.shields.io/badge/Config-Open-blue"
+    raw_url = f"https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/{encoded_path}"
+    # Create shields.io badges with links
+    view_badge_url = "https://img.shields.io/badge/Config-Open-blue"
+    download_badge_url = "https://img.shields.io/badge/Download-DSL-green"
     prettified_name = assistant_name.replace(".yml", "").replace("_", " ").strip()
-    return f"| 🤖 {prettified_name} | {creation_date} | [![Open Config]({badge_url})]({repo_url}) |\n"
+    return f"| 🤖 {prettified_name} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download YAML]({download_badge_url})</a> |\n"
 
 def main():
     """Main function to update the assistant index in README.md."""
@@ -53,34 +55,67 @@ def main():
         elif line == index_end_marker:
             end_index = i
 
-    if start_index == -1 or end_index == -1:
-        print("Index markers not found in README.md. Please add them.")
-        return
+    # Find or create the section for the assistant index
+    if start_index == -1:
+        # Find a good spot to insert the index (after the usage section)
+        for i, line in enumerate(readme_content):
+            if "## 🚀 Usage Options" in line:
+                # Skip past the usage section to find the next section
+                while i < len(readme_content) and not line.startswith("##"):
+                    i += 1
+                    if i < len(readme_content):
+                        line = readme_content[i]
+                start_index = i - 1
+                break
+        
+        if start_index == -1:
+            # If no good spot found, add to end of file before author section
+            for i, line in enumerate(readme_content):
+                if "## Author" in line:
+                    start_index = i - 1
+                    break
+            if start_index == -1:
+                start_index = len(readme_content) - 1
+        
+        # Insert a newline and the start marker
+        readme_content.insert(start_index + 1, "\n")
+        readme_content.insert(start_index + 2, index_start_marker)
+        start_index += 2
 
-    # Remove existing table rows between the markers
+    # Find or create end marker position
+    if end_index == -1:
+        end_index = start_index + 1
+        while end_index < len(readme_content):
+            if readme_content[end_index].startswith("##"):
+                break
+            end_index += 1
+        readme_content.insert(end_index, index_end_marker)
+
+    # Remove any existing content between markers
     del readme_content[start_index + 1:end_index]
 
     # Insert the new markdown table between the markers
     table_header = [
-        "| Assistant Name | Creation Date | URL |\n",
-        "|---|---|---|\n",
+        "| Assistant Name | Creation Date | URL | Download |\n",
+        "|---|---|---|---|\n",
     ]
+
     # Remove any duplicate entries
     seen = set()
     unique_rows = []
     for row in markdown_table:
-        # Extract assistant name from the first column (index 1 after split)
-        # Format is "| 🤖 Name | Date | URL |"
         assistant_name = row.split("|")[1].replace("🤖", "").strip()
         if assistant_name not in seen:
             seen.add(assistant_name)
             unique_rows.append(row)
 
+    # Insert the new content
     readme_content = (
-        readme_content[: start_index + 1]
+        readme_content[:start_index + 1]
         + table_header
         + unique_rows
-        + readme_content[end_index:]
+        + [index_end_marker]
+        + readme_content[end_index + 1:]
     )
 
     with open(readme_path, "w") as f:
