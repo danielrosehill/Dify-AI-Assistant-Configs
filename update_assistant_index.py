@@ -18,7 +18,7 @@ def generate_markdown_row(assistant_name, creation_date, file_path):
     view_badge_url = "https://img.shields.io/badge/Config-Open-blue"
     download_badge_url = "https://img.shields.io/badge/Download-DSL-green"
     prettified_name = assistant_name.replace(".yml", "").replace("_", " ").strip()
-    return f"| 🤖 {prettified_name} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download YAML]({download_badge_url})</a> |\n"
+    return f"| 🤖 {prettified_name} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
 
 def main():
     """Main function to update the assistant index in README.md."""
