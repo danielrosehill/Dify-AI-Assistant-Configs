@@ -1,0 +1,43 @@
+name: Update Assistant Statistics
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assistants/**/*.yml'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Make scripts executable
+        run: |
+          chmod +x scripts/update_stats.py
+          chmod +x update_assistant_index.py
+
+      - name: Update statistics and index
+        run: |
+          # Get current count of YAML files
+          COUNT=$(find assistants -name "*.yml" | wc -l)
+          echo "Found $COUNT assistants"
+          
+          # Run update scripts
+          python scripts/update_stats.py $COUNT
+          python update_assistant_index.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md assistant-counts.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update assistant statistics and index" && git push)
