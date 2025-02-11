@@ -1,14 +1,31 @@
 import os
 import datetime
 import subprocess
+import yaml
 
 def get_assistant_data(assistant_path):
-    """Extracts assistant data from the file path."""
+    """Extracts assistant data from the file path and YAML content."""
     assistant_name = os.path.basename(assistant_path).replace(".yml", "").replace("_", " ").strip()
     creation_date = datetime.datetime.fromtimestamp(os.path.getctime(assistant_path)).strftime('%Y-%m-%d')
-    return assistant_name, creation_date
+    description = ""
+    
+    try:
+        with open(assistant_path, 'r') as f:
+            yaml_content = yaml.safe_load(f)
+            if yaml_content and 'app' in yaml_content and 'description' in yaml_content['app']:
+                # Get description and limit to 50 words
+                full_description = yaml_content['app']['description']
+                words = full_description.split()
+                if len(words) > 50:
+                    description = " ".join(words[:50]) + "..."
+                else:
+                    description = full_description
+    except Exception as e:
+        print(f"Warning: Could not read description from {assistant_path}: {e}")
+    
+    return assistant_name, creation_date, description
 
-def generate_markdown_row(assistant_name, creation_date, file_path):
+def generate_markdown_row(assistant_name, creation_date, file_path, description=""):
     """Generates a markdown table row for the assistant."""
     # Encode file path for URLs
     encoded_path = file_path.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
@@ -18,7 +35,13 @@ def generate_markdown_row(assistant_name, creation_date, file_path):
     view_badge_url = "https://img.shields.io/badge/Config-Open-blue"
     download_badge_url = "https://img.shields.io/badge/Download-DSL-green"
     prettified_name = assistant_name.replace(".yml", "").replace("_", " ").strip()
-    return f"| 🤖 {prettified_name} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
+    
+    # Create the row with bold name and optional description in italics
+    name_cell = f"🤖 **{prettified_name}**"
+    if description:
+        name_cell += f"<br>*{description}*"
+    
+    return f"| {name_cell} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
 
 def main():
     """Main function to update the assistant index in README.md."""
@@ -34,8 +57,8 @@ def main():
 
     markdown_table = []
     for file_path in assistant_files:
-        assistant_name, creation_date = get_assistant_data(file_path)
-        markdown_row = generate_markdown_row(assistant_name, creation_date, file_path)
+        assistant_name, creation_date, description = get_assistant_data(file_path)
+        markdown_row = generate_markdown_row(assistant_name, creation_date, file_path, description)
         markdown_table.append(markdown_row)
 
     # Update the README.md file with the generated markdown table.
@@ -96,8 +119,8 @@ def main():
 
     # Insert the new markdown table between the markers
     table_header = [
-        "| Assistant Name | Creation Date | URL | Download |\n",
-        "|---|---|---|---|\n",
+        "| Assistant Name & Description | Creation Date | URL | Download |\n",
+        "|:--------------------------|:--------------|:---:|:---------:|\n",
     ]
 
     # Remove any duplicate entries
