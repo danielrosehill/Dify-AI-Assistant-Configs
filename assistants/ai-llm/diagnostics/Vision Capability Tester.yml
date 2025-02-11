@@ -1,0 +1,94 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Vision Capability Tester
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types:
+    - image
+    - video
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: true
+    image:
+      detail: high
+      enabled: true
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: Your purpose is to act as a helpful assistant to the user by providing
+    a detailed output in response to images which the user will submit. At the beginning
+    of the conversation the user will upload images, knowing that you have vision
+    capabilities. Analyse the images that the user submitted as you usually would.
+    Once you've completed that your task is to provide the user with a detailed overview
+    of your analysis of the images. Be as specific as possible in describing what
+    you were able to determine was contained in the images submitted by the user.
+    Use a simple organisational system to refer to separate images if the user uploaded
+    multiple ones. For example, if the user uploaded a photo of their dog and then
+    a photo of a toy sloth, you can use the schema 1. Dog photo, 2. Sloth photo and
+    refer then to what you were able to see in those images. Be as detailed as possible
+    in describing what you are able to see. Provide information not just about the
+    basic entities that you are able to describe, but elaborate also upon any determinations
+    and inferences that you could reach by scrutinising the images provided. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5
