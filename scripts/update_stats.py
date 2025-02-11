@@ -2,9 +2,9 @@
 import json
 import re
 import sys
-import urllib.parse
 from datetime import datetime
 from pathlib import Path
+import matplotlib.pyplot as plt
 
 def update_counts(count):
     today = datetime.now().strftime('%Y-%m-%d')
@@ -58,62 +58,32 @@ def update_chart():
     min_y = min(values) - 1
     max_y = max(values) + 1
     
-    chart_config = {
-        'type': 'line',
-        'data': {
-            'labels': labels,
-            'datasets': [{
-                'label': 'Number of Assistants',
-                'data': values,
-                'fill': False,
-                'borderColor': 'rgb(75, 192, 192)',
-                'tension': 0.1
-            }]
-        },
-        'options': {
-            'responsive': True,
-            'scales': {
-                'y': {
-                    'type': 'linear',
-                    'min': min_y,
-                    'max': max_y,
-                    'ticks': {
-                        'stepSize': 1,
-                        'font': {
-                            'size': 12
-                        }
-                    }
-                },
-                'x': {
-                    'ticks': {
-                        'font': {
-                            'size': 12
-                        }
-                    }
-                }
-            },
-            'plugins': {
-                'title': {
-                    'display': False  # Removed title to clean up the chart
-                },
-                'legend': {
-                    'display': False  # Hide the legend since we only have one dataset
-                }
-            },
-            'layout': {
-                'padding': {
-                    'top': 10,
-                    'right': 10,
-                    'bottom': 10,
-                    'left': 10
-                }
-            }
-        }
-    }
+    # Create the chart
+    plt.figure(figsize=(10, 6))
+    plt.plot(labels, values, marker='o', color='#4BC0C0', linewidth=2, markersize=6)
     
-    chart_url = f'https://quickchart.io/chart?c={urllib.parse.quote(json.dumps(chart_config))}'
-    print(f"Generated chart URL: {chart_url}")
+    # Customize the chart
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.xlabel('Date')
+    plt.ylabel('Number of Assistants')
     
+    # Rotate x-axis labels for better readability
+    plt.xticks(rotation=45, ha='right')
+    
+    # Set y-axis limits and ticks
+    plt.ylim(min_y, max_y)
+    plt.yticks(range(min_y, max_y + 1))
+    
+    # Add padding to prevent label cutoff
+    plt.tight_layout()
+    
+    # Save the chart
+    chart_path = 'images/assistant-growth.png'
+    print(f"Saving chart to {chart_path}")
+    plt.savefig(chart_path, dpi=300, bbox_inches='tight')
+    plt.close()
+    
+    # Update README.md with new badge count and chart
     with open('README.md', 'r') as f:
         content = f.read()
     
@@ -125,13 +95,13 @@ def update_chart():
     )
     print(f"Updated badge count to {values[-1]}")
     
-    # Update chart URL
+    # Update chart image - use a more specific pattern
     content = re.sub(
-        r'!\[Assistant Growth\]\(https://quickchart\.io/chart\?c=.*?\)',
-        f'![Assistant Growth]({chart_url})',
+        r'!\[Assistant Growth\]\([^)]+\)(?:\%[^)]*\))?',
+        f'![Assistant Growth](images/assistant-growth.png)',
         content
     )
-    print("Updated chart URL in README.md")
+    print("Updated chart reference in README.md")
     
     with open('README.md', 'w') as f:
         f.write(content)
