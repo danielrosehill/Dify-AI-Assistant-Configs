@@ -237,3 +237,28 @@
 | 🤖 **ChatMate**<br><br>_General purpose LLM (modelled after a very truncated ChatGPT configuration)_ | 2025-02-07 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/ChatMate.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/writing/ChatMate.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Startup Idea Capturer**<br><br>_Ever had a fleeting idea for a cool startup or tech product? This assistant is designed to help you capture it efficiently!_ | 2025-02-07 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/business/Startup%20Idea%20Capturer.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/business/Startup%20Idea%20Capturer.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 <!-- ASSISTANT_INDEX_END -->
+
+ 
+
+## Author
+
+Daniel Rosehill  
+(public at danielrosehill dot com)
+
+## Licensing
+
+This repository is licensed under CC-BY-4.0 (Attribution 4.0 International) 
+[License](https://creativecommons.org/licenses/by/4.0/)
+
+### Summary of the License
+The Creative Commons Attribution 4.0 International (CC BY 4.0) license allows others to:
+- **Share**: Copy and redistribute the material in any medium or format.
+- **Adapt**: Remix, transform, and build upon the material for any purpose, even commercially.
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+#### License Terms
+- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **No additional restrictions**: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+For the full legal code, please visit the [Creative Commons website](https://creativecommons.org/licenses/by/4.0/legalcode).
