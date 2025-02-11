@@ -24,13 +24,17 @@ def get_assistant_data(assistant_path):
         print(f"Warning: Could not read description from {assistant_path}: {e}")
     
     return assistant_name, creation_date, description
+# Repository configuration
+REPO_NAME = "danielrosehill/My-AI-Assistant-Library"
+REPO_URL = f"https://github.com/{REPO_NAME}"
+RAW_URL_BASE = f"https://raw.githubusercontent.com/{REPO_NAME}/main"
 
 def generate_markdown_row(assistant_name, creation_date, file_path, description=""):
     """Generates a markdown table row for the assistant."""
     # Encode file path for URLs
     encoded_path = file_path.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
-    repo_url = f"https://github.com/danielrosehill/dify-assistant-configs/blob/main/{encoded_path}"
-    raw_url = f"https://raw.githubusercontent.com/danielrosehill/dify-assistant-configs/main/{encoded_path}"
+    repo_url = f"{REPO_URL}/blob/main/{encoded_path}"
+    raw_url = f"{RAW_URL_BASE}/{encoded_path}"
     # Create shields.io badges with links
     view_badge_url = "https://img.shields.io/badge/Config-Open-blue"
     download_badge_url = "https://img.shields.io/badge/Download-DSL-green"
@@ -68,6 +72,13 @@ def main():
     readme_path = "README.md"
     with open(readme_path, "r") as f:
         readme_content = f.readlines()
+        
+    # Update the badge URLs
+    for i, line in enumerate(readme_content):
+        if "Last%20Updated" in line:
+            readme_content[i] = f'[![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202025-blue)]({REPO_URL})\n'
+        elif "Configurations" in line:
+            readme_content[i] = f'[![Configurations](https://img.shields.io/badge/Configurations-191-green)]({REPO_URL}/tree/main/assistants)\n'
 
     # Find the index start and end markers in the README
     index_start_marker = "<!-- ASSISTANT_INDEX_START -->\n"

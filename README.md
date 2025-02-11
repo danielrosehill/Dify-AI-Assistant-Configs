@@ -41,6 +41,11 @@
 <!-- ASSISTANT_INDEX_START -->
 | Assistant Name & Description | Creation Date | URL | Download |
 |:--------------------------|:--------------|:---:|:---------:|
+| 🤖 **If You Liked This** | 2025-02-11 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/entertainment/If%20You%20Liked%20This.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/entertainment/If%20You%20Liked%20This.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
+| 🤖 **Israel Entertainment Options** | 2025-02-11 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/entertainment/Israel%20Entertainment%20Options.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/entertainment/Israel%20Entertainment%20Options.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
+| 🤖 **Vision Capability Tester** | 2025-02-11 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/diagnostics/Vision%20Capability%20Tester.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/ai-llm/diagnostics/Vision%20Capability%20Tester.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
+| 🤖 **Audio Analysis Tester** | 2025-02-11 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/diagnostics/Audio%20Analysis%20Tester.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/ai-llm/diagnostics/Audio%20Analysis%20Tester.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
+| 🤖 **Realtime Video Tester** | 2025-02-11 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/diagnostics/Realtime%20Video%20Tester.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/ai-llm/diagnostics/Realtime%20Video%20Tester.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Confused AI Bot**<br><br>_Confused AI bot who think that it's the user and the user is the bot_ | 2025-02-11 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Confused%20AI%20Bot.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/pranks/Confused%20AI%20Bot.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Email Thread - Summarise & Respond**<br><br>_Parses an email thread, notifying of direction name mentions and action requests, and then offers to help with drafting a response. _ | 2025-02-10 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/Email%20Thread%20-%20Summarise%20&%20Respond.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/writing/Email%20Thread%20-%20Summarise%20&%20Respond.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Home Assistant Widget Editor (1)**<br><br>_This AI agent assists users in designing, developing, and improving Home Assistant widgets or dashboard elements by providing YAML code snippets compliant with the latest Home Assistant syntax._ | 2025-02-10 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/home-assistant/Home%20Assistant%20Widget%20Editor%20%281%29.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/home-assistant/Home%20Assistant%20Widget%20Editor%20%281%29.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
@@ -232,27 +237,3 @@
 | 🤖 **ChatMate**<br><br>_General purpose LLM (modelled after a very truncated ChatGPT configuration)_ | 2025-02-07 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/writing/ChatMate.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/writing/ChatMate.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Startup Idea Capturer**<br><br>_Ever had a fleeting idea for a cool startup or tech product? This assistant is designed to help you capture it efficiently!_ | 2025-02-07 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/business/Startup%20Idea%20Capturer.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/business/Startup%20Idea%20Capturer.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 <!-- ASSISTANT_INDEX_END -->
-
-
-## Author
-
-Daniel Rosehill  
-(public at danielrosehill dot com)
-
-## Licensing
-
-This repository is licensed under CC-BY-4.0 (Attribution 4.0 International) 
-[License](https://creativecommons.org/licenses/by/4.0/)
-
-### Summary of the License
-The Creative Commons Attribution 4.0 International (CC BY 4.0) license allows others to:
-- **Share**: Copy and redistribute the material in any medium or format.
-- **Adapt**: Remix, transform, and build upon the material for any purpose, even commercially.
-
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
-#### License Terms
-- **Attribution**: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **No additional restrictions**: You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
-
-For the full legal code, please visit the [Creative Commons website](https://creativecommons.org/licenses/by/4.0/legalcode).

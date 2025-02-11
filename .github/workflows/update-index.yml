@@ -5,9 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'assistants/**/*.yml'
-      - 'update_assistant_index.py'
-      - 'README.md'
+      - 'assistants/**/*.yml'  # Only trigger on changes to YAML files in assistants directory
 
 jobs:
   update-index:
@@ -16,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        fetch-depth: 0
+        fetch-depth: 0  # Fetch all history for proper date calculations
     
     - name: Set up Python
       uses: actions/setup-python@v4
