@@ -1,6 +1,6 @@
 {
-  "total_count": 190,
-  "last_updated": "2025-02-10T15:46:30.195Z",
+  "total_count": 191,
+  "last_updated": "2025-02-11T02:05:19.082Z",
   "assistants": [
     {
       "title": "_AI Raise Monitor",
@@ -185,6 +185,10 @@
     {
       "title": "Configuration To Description",
       "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/agents-and-assistants/Configuration%20To%20Description.yml"
+    },
+    {
+      "title": "Confused AI Bot",
+      "githubUrl": "https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Confused%20AI%20Bot.yml"
     },
     {
       "title": "Context Data Development Helper",

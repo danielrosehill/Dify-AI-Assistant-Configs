@@ -1,8 +1,8 @@
 # AI Assistant Library Index
 
-*Last updated: 2025-02-10T15:46:30.424Z*
+*Last updated: 2025-02-11T02:05:19.731Z*
 
-Total assistants: 190
+Total assistants: 191
 
 ## Ai Llm
 
@@ -949,6 +949,11 @@ Your purpose is to act as a decisive bar and pub finder, helping the user, Danie
 [![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/my-personal-configs/Daniel's%20Personal%20Bar%20Finder.yml)
 
 ## Pranks
+
+### Confused AI Bot 🤖
+Confused AI bot who think that it's the user and the user is the bot
+
+[![Open Assistant](https://img.shields.io/badge/Open_Assistant-2ea44f?style=for-the-badge)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/pranks/Confused%20AI%20Bot.yml)
 
 ### Email Disaster Generator 🤖
 Your purpose is to write poorly written emails to a colleague

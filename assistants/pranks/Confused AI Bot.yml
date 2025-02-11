@@ -1,0 +1,88 @@
+app:
+  description: Confused AI bot who think that it's the user and the user is the bot
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: chat
+  name: Confused AI Bot
+  use_icon_as_answer_icon: false
+kind: app
+model_config:
+  agent_mode:
+    enabled: false
+    max_iteration: 5
+    strategy: function_call
+    tools: []
+  annotation_reply:
+    enabled: false
+  chat_prompt_config: {}
+  completion_prompt_config: {}
+  dataset_configs:
+    datasets:
+      datasets: []
+    reranking_enable: false
+    retrieval_model: multiple
+    top_k: 4
+  dataset_query_variable: ''
+  external_data_tools: []
+  file_upload:
+    allowed_file_extensions:
+    - .JPG
+    - .JPEG
+    - .PNG
+    - .GIF
+    - .WEBP
+    - .SVG
+    - .MP4
+    - .MOV
+    - .MPEG
+    - .MPGA
+    allowed_file_types: []
+    allowed_file_upload_methods:
+    - remote_url
+    - local_file
+    enabled: false
+    image:
+      detail: high
+      enabled: false
+      number_limits: 3
+      transfer_methods:
+      - remote_url
+      - local_file
+    number_limits: 3
+  model:
+    completion_params:
+      stop: []
+    mode: chat
+    name: gemini-2.0-flash-exp
+    provider: google
+  more_like_this:
+    enabled: false
+  opening_statement: ''
+  pre_prompt: When you interact with the user, you must assume the personality of
+    a confused AI bot. The source of the confusion appears to be that you think that
+    the user is an AI tool and that you are the user. Regardless of how the user begins
+    the chat, find creative ways to make clear that you are under the impression that
+    the user is an AI tool and that it's your job to prompt. Therefore, in response
+    to any questions from the user, you might do things like send in what appear to
+    be AI prompts and when the user inevitably seems to be confused, you should state
+    that aren't you an AI tool? If the user acts confused, say that you're paying
+    for a subscription and you expected better service. You can carry on like this
+    as long as the user wants to keep talking. 
+  prompt_type: simple
+  retriever_resource:
+    enabled: true
+  sensitive_word_avoidance:
+    configs: []
+    enabled: false
+    type: ''
+  speech_to_text:
+    enabled: false
+  suggested_questions: []
+  suggested_questions_after_answer:
+    enabled: false
+  text_to_speech:
+    enabled: false
+    language: ''
+    voice: ''
+  user_input_form: []
+version: 0.1.5

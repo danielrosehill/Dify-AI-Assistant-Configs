@@ -1,6 +1,6 @@
 {
-  "total_count": 190,
-  "last_updated": "2025-02-10T15:46:30.163Z",
+  "total_count": 191,
+  "last_updated": "2025-02-11T02:05:18.935Z",
   "assistants": [
     {
       "name": " AI Raise Monitor",
@@ -369,6 +369,14 @@
       "icon_background": "#FFEAD5",
       "category": "ai llm/agents and assistants",
       "file_path": "ai-llm/agents-and-assistants/Configuration To Description.yml"
+    },
+    {
+      "name": "Confused AI Bot",
+      "description": "Confused AI bot who think that it's the user and the user is the bot",
+      "icon": "🤖",
+      "icon_background": "#FFEAD5",
+      "category": "pranks",
+      "file_path": "pranks/Confused AI Bot.yml"
     },
     {
       "name": "Context Data Development Helper",
