@@ -30,13 +30,16 @@ def generate_markdown_row(assistant_name, creation_date, file_path, description=
     try:
         with open(file_path, 'r') as f:
             yaml_content = yaml.safe_load(f)
-            if yaml_content and 'description' in yaml_content:
-                description = yaml_content['description']
+            if yaml_content and 'app' in yaml_content and 'description' in yaml_content['app']:
+                description = yaml_content['app']['description']
     except:
-        pass  # Use empty description if YAML parsing fails
+        description = ""  # Use empty string if YAML parsing fails
+
+    # Format description - only add if not empty
+    desc_text = f"<br><br>_{description}_" if description else ""
 
     # Create table row with name, description, badges
-    return f"| 🤖 **{prettified_name}**<br><br>_{description}_ | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
+    return f"| 🤖 **{prettified_name}**{desc_text} | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
 
 def main():
     """Main function to update the assistant index in README.md."""
@@ -50,12 +53,22 @@ def main():
     # Sort assistants by creation date in reverse chronological order
     assistant_files.sort(key=os.path.getctime, reverse=True)
 
-    markdown_list = []
+    # Create table header
+    table_header = [
+        "| Assistant | Last Updated | Config | Download |\n",
+        "|-----------|--------------|---------|----------|\n"
+    ]
+    
+    # Generate table rows
+    table_rows = []
     for file_path in assistant_files:
         assistant_name, creation_date, _ = get_assistant_data(file_path)
-        markdown_list.append(generate_markdown_row(assistant_name, creation_date, file_path))
+        table_rows.append(generate_markdown_row(assistant_name, creation_date, file_path))
 
-    # Update the README.md file with the generated markdown list.
+    # Combine header and rows
+    markdown_content = table_header + table_rows
+
+    # Update the README.md file with the generated table
     readme_path = "README.md"
     with open(readme_path, "r") as f:
         readme_content = f.readlines()
@@ -119,29 +132,22 @@ def main():
     # Remove any existing content between markers
     del readme_content[start_index + 1:end_index]
 
-    # Insert the new markdown table between the markers
-    table_header = [
-        "| Assistant | Last Updated | Config | Download |\n",
-        "|-----------|--------------|---------|----------|\n"
-    ]
-
     # Remove any duplicate start markers
     readme_content = [line for line in readme_content if line != index_start_marker or readme_content.index(line) == start_index]
 
     # Remove any duplicate entries
     seen = set()
-    unique_items = []
-    for item in markdown_list:
-        assistant_name = item.split("🤖")[1].split("**")[1]
+    unique_rows = []
+    for row in table_rows:
+        assistant_name = row.split("🤖")[1].split("**")[1]
         if assistant_name not in seen:
             seen.add(assistant_name)
-            unique_items.append(item)
+            unique_rows.append(row)
 
     # Insert the new content with table headers
     readme_content = (
         readme_content[:start_index + 1]
-        + table_header
-        + unique_items
+        + markdown_content  # This already includes headers and rows
         + [index_end_marker]
         + readme_content[end_index + 1:]
     )
