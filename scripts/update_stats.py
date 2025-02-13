@@ -97,6 +97,14 @@ def update_chart_and_readme(current_count, assistant_files):
     )
     print(f"Updated badge count to {current_count}")
     
+    # Update count in Key Features section
+    content = re.sub(
+        r'\*\*Extensive Collection\*\*: \d+\+',
+        f'**Extensive Collection**: {current_count}+',
+        content
+    )
+    print(f"Updated count in Key Features section to {current_count}+")
+    
     # Update chart image - use a more specific pattern
     content = re.sub(
         r'!\[Assistant Growth\]\([^)]+\)(?:\%[^)]*\))?',
@@ -142,9 +150,10 @@ def update_readme_assistants(content, assistant_list):
     """Update the list of assistants in the README."""
     start_marker = "<!-- ASSISTANT_INDEX_START -->"
     end_marker = "<!-- ASSISTANT_INDEX_END -->"
+    table_header = "| Assistant | Last Updated | Config | Download |\n|-----------|--------------|---------|----------|\n"
     new_content = re.sub(
         f"{start_marker}.*?{end_marker}",
-        f"{start_marker}\n{assistant_list}\n{end_marker}",
+        f"{start_marker}\n{table_header}{assistant_list}\n{end_marker}",
         content,
         flags=re.DOTALL
     )

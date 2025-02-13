@@ -11,7 +11,7 @@
  
 ## 🎯 Key Features
 
-- **Extensive Collection**: 166+ specialized AI assistant configurations
+- **Extensive Collection**: 196+ specialized AI assistant configurations
 - **Platform Flexibility**: System prompts can be extracted and used with any AI platform
 - **Organized Categories**: Well-structured library covering diverse domains
 - **Special Capabilities**: Support for vision, RAG, and internet-enabled features
@@ -39,6 +39,8 @@
 > **Note**: Check capability indicators (👁️, 📚, 🌐) to ensure your platform supports required features.
 
 <!-- ASSISTANT_INDEX_START -->
+| Assistant | Last Updated | Config | Download |
+|-----------|--------------|---------|----------|
 | 🤖 **AI Team Manager**<br><br>_'Directs the user towards other assistants. '_ | 2025-02-13 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/AI Team Manager.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/ai-llm/AI Team Manager.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **AI Tech Advisor**<br><br>_''_ | 2025-02-13 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/AI Tech Advisor.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/ai-llm/AI Tech Advisor.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |
 | 🤖 **Embrace AI Career Coach**<br><br>_''_ | 2025-02-13 | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/ai-llm/Embrace AI Career Coach.yml) | <a href="https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/ai-llm/Embrace AI Career Coach.yml" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |

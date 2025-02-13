@@ -15,20 +15,28 @@ REPO_URL = f"https://github.com/{REPO_NAME}"
 RAW_URL_BASE = f"https://raw.githubusercontent.com/{REPO_NAME}/main"
 
 def generate_markdown_row(assistant_name, creation_date, file_path, description=""):
-    """Generates a simplified markdown list item for the assistant."""
+    """Generates a markdown table row for the assistant."""
     # Encode file path for URLs
     encoded_path = file_path.replace(" ", "%20").replace("(", "%28").replace(")", "%29")
     repo_url = f"{REPO_URL}/blob/main/{encoded_path}"
     raw_url = f"{RAW_URL_BASE}/{encoded_path}"
+    
     # Create shields.io badges with links
     view_badge_url = "https://img.shields.io/badge/Config-Open-blue"
     download_badge_url = "https://img.shields.io/badge/Download-DSL-green"
     prettified_name = assistant_name.replace(".yml", "").replace("_", " ").strip()
 
-    badge_links = f"[![Open Config]({view_badge_url})]({repo_url}) [![Download DSL]({download_badge_url})]({raw_url})"
+    # Get description from YAML file if available
+    try:
+        with open(file_path, 'r') as f:
+            yaml_content = yaml.safe_load(f)
+            if yaml_content and 'description' in yaml_content:
+                description = yaml_content['description']
+    except:
+        pass  # Use empty description if YAML parsing fails
 
-    # Create the list item with bold name and badges
-    return f"- 🤖 **{prettified_name}** {badge_links} ({creation_date})\n"
+    # Create table row with name, description, badges
+    return f"| 🤖 **{prettified_name}**<br><br>_{description}_ | {creation_date} | [![Open Config]({view_badge_url})]({repo_url}) | <a href=\"{raw_url}\" download>![Download DSL]({download_badge_url})</a> |\n"
 
 def main():
     """Main function to update the assistant index in README.md."""
@@ -111,8 +119,11 @@ def main():
     # Remove any existing content between markers
     del readme_content[start_index + 1:end_index]
 
-    # Insert the new markdown list between the markers
-    list_header = []
+    # Insert the new markdown table between the markers
+    table_header = [
+        "| Assistant | Last Updated | Config | Download |\n",
+        "|-----------|--------------|---------|----------|\n"
+    ]
 
     # Remove any duplicate start markers
     readme_content = [line for line in readme_content if line != index_start_marker or readme_content.index(line) == start_index]
@@ -121,14 +132,15 @@ def main():
     seen = set()
     unique_items = []
     for item in markdown_list:
-        assistant_name = item.split("🤖")[1].split(" ")[1]
+        assistant_name = item.split("🤖")[1].split("**")[1]
         if assistant_name not in seen:
             seen.add(assistant_name)
             unique_items.append(item)
 
-    # Insert the new content
+    # Insert the new content with table headers
     readme_content = (
         readme_content[:start_index + 1]
+        + table_header
         + unique_items
         + [index_end_marker]
         + readme_content[end_index + 1:]
