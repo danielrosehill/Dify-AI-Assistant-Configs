@@ -49,8 +49,8 @@ def update_counts(count):
             json.dump(data, f, indent=2)
         return True
 
-def update_chart():
-    print("Updating chart")
+def update_chart_and_readme(current_count, assistant_files):
+    print("Updating chart and README")
     with open('assistant-counts.json') as f:
         data = json.load(f)
     
@@ -85,17 +85,17 @@ def update_chart():
     plt.savefig(chart_path, dpi=300, bbox_inches='tight')
     plt.close()
     
-    # Update README.md with new badge count and chart
+    # Update README.md with new badge count, chart, and assistant list
     with open('README.md', 'r') as f:
         content = f.read()
     
     # Update badge count
     content = re.sub(
         r'Configurations-\d+-green',
-        f'Configurations-{values[-1]}-green',
+        f'Configurations-{current_count}-green',
         content
     )
-    print(f"Updated badge count to {values[-1]}")
+    print(f"Updated badge count to {current_count}")
     
     # Update chart image - use a more specific pattern
     content = re.sub(
@@ -105,6 +105,11 @@ def update_chart():
     )
     print("Updated chart reference in README.md")
     
+    # Update assistant list
+    assistant_list = generate_assistant_list(assistant_files)
+    content = update_readme_assistants(content, assistant_list)
+    print("Updated assistant list in README.md")
+    
     with open('README.md', 'w') as f:
         f.write(content)
 
@@ -112,17 +117,48 @@ def count_assistants():
     """Count all YAML files in the assistants directory."""
     assistants_dir = Path('assistants')
     count = 0
+    assistant_files = []
     for path in assistants_dir.rglob('*.yml'):
         count += 1
+        assistant_files.append(path)
     print(f"Found {count} assistant YAML files")
-    return count
+    return count, assistant_files
+
+def generate_assistant_list(assistant_files):
+    """Generate the list of assistants for the README."""
+    assistant_list = []
+    for file in sorted(assistant_files):
+        with open(file, 'r') as f:
+            content = f.read()
+            name_match = re.search(r'name:\s*(.+)', content)
+            description_match = re.search(r'description:\s*(.+)', content)
+            name = name_match.group(1) if name_match else file.stem
+            description = description_match.group(1) if description_match else ""
+            relative_path = file.relative_to(Path('assistants'))
+            assistant_list.append(f"| 🤖 **{name}**<br><br>_{description}_ | {datetime.now().strftime('%Y-%m-%d')} | [![Open Config](https://img.shields.io/badge/Config-Open-blue)](https://github.com/danielrosehill/My-AI-Assistant-Library/blob/main/assistants/{relative_path}) | <a href=\"https://raw.githubusercontent.com/danielrosehill/My-AI-Assistant-Library/main/assistants/{relative_path}\" download>![Download DSL](https://img.shields.io/badge/Download-DSL-green)</a> |")
+    return "\n".join(assistant_list)
+
+def update_readme_assistants(content, assistant_list):
+    """Update the list of assistants in the README."""
+    start_marker = "<!-- ASSISTANT_INDEX_START -->"
+    end_marker = "<!-- ASSISTANT_INDEX_END -->"
+    new_content = re.sub(
+        f"{start_marker}.*?{end_marker}",
+        f"{start_marker}\n{assistant_list}\n{end_marker}",
+        content,
+        flags=re.DOTALL
+    )
+    return new_content
 
 if __name__ == '__main__':
     print("Starting update_stats.py")
-    # Get current count by scanning assistants directory
-    current_count = count_assistants()
+    # Get current count and list of assistant files
+    current_count, assistant_files = count_assistants()
     
-    # Always update counts and chart
+    # Update counts in JSON file
     update_counts(current_count)
-    update_chart()
+    
+    # Update chart and README (including badge count and assistant list)
+    update_chart_and_readme(current_count, assistant_files)
+    
     print("Stats update completed")
