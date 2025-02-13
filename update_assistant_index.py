@@ -2,6 +2,7 @@ import os
 import datetime
 import subprocess
 import yaml
+from scripts.update_stats import count_assistants
 
 def get_assistant_data(assistant_path):
     """Extracts assistant data from the file path and YAML content."""
@@ -56,7 +57,8 @@ def main():
         if "Last%20Updated" in line:
             readme_content[i] = f'[![Last Updated](https://img.shields.io/badge/Last%20Updated-February%202025-blue)]({REPO_URL})\n'
         elif "Configurations" in line:
-            readme_content[i] = f'[![Configurations](https://img.shields.io/badge/Configurations-191-green)]({REPO_URL}/tree/main/assistants)\n'
+            assistant_count, _ = count_assistants()
+            readme_content[i] = f'[![Configurations](https://img.shields.io/badge/Configurations-{assistant_count}-green)]({REPO_URL}/tree/main/assistants)\n'
 
     # Find the index start and end markers in the README
     index_start_marker = "<!-- ASSISTANT_INDEX_START -->\n"
